@@ -1,0 +1,7 @@
+variable,meaning,data_support,status
+G_t,Goal funding,Positive cash flow × goal allocation factor,SUPPORTED
+I_t,Monthly investment contribution,No explicit monthly contribution exists,DO NOT INVENT
+C_t,Residual cash,Can be mathematically derived,DERIVED ONLY
+D,Goal shortfall,Target minus goal funding,SUPPORTED
+Portfolio_t,Portfolio state,Observed portfolio_value,STATE VARIABLE
+InitialInvestment,Starting portfolio value,Observed initial_investment,PARAMETER

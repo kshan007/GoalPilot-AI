@@ -1,0 +1,62 @@
+
+{
+  "eligible_users": 14,
+  "deltas": [
+    {
+      "policy": "Savings only",
+      "users": 14,
+      "achievement_flag_off": 0.5873240054186104,
+      "achievement_flag_on": 0.6332561586095543,
+      "delta_achievement": 0.045932153190943854,
+      "idle_flag_off": 0.27467020393803954,
+      "idle_flag_on": 0.04725738453860739,
+      "users_improved": 12,
+      "users_worsened": 0
+    },
+    {
+      "policy": "Investments only",
+      "users": 14,
+      "achievement_flag_off": 0.6160868654340851,
+      "achievement_flag_on": 0.6544645923889802,
+      "delta_achievement": 0.03837772695489515,
+      "idle_flag_off": 0.2940739861402748,
+      "idle_flag_on": 0.02948793838809204,
+      "users_improved": 12,
+      "users_worsened": 1
+    },
+    {
+      "policy": "Mixed (0.50/0.50)",
+      "users": 14,
+      "achievement_flag_off": 0.6160868654340851,
+      "achievement_flag_on": 0.6544645923889802,
+      "delta_achievement": 0.03837772695489515,
+      "idle_flag_off": 0.2940739861402748,
+      "idle_flag_on": 0.029487938388092046,
+      "users_improved": 12,
+      "users_worsened": 1
+    },
+    {
+      "policy": "Rule-based urgency",
+      "users": 14,
+      "achievement_flag_off": 0.37130279259169446,
+      "achievement_flag_on": 0.37130279259169446,
+      "delta_achievement": 0.0,
+      "idle_flag_off": 0.04725738453860738,
+      "idle_flag_on": 0.04725738453860738,
+      "users_improved": 0,
+      "users_worsened": 0
+    },
+    {
+      "policy": "LP optimizer plan",
+      "users": 14,
+      "achievement_flag_off": 0.6113034208033389,
+      "achievement_flag_on": 0.6383998702292493,
+      "delta_achievement": 0.02709644942591041,
+      "idle_flag_off": 0.2579819128318614,
+      "idle_flag_on": 0.031716388483144946,
+      "users_improved": 10,
+      "users_worsened": 2
+    }
+  ]
+}
+

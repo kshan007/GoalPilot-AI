@@ -1,0 +1,12 @@
+constraint,mathematical_form,basis,status
+Non-negativity,"G_t >= 0, I_t >= 0, C_t >= 0, D >= 0",Standard allocation requirement,SUPPORTED
+Monthly budget,G_t + I_t + C_t <= available positive cash flow,Existing monthly surplus structure,SUPPORTED
+Goal allocation,G_t <= positive_cash_flow_t × goal_allocation_factor,Step 5I exact existing funding formula,STRONGLY SUPPORTED
+Goal monthly capacity,G_t <= goal_specific_monthly_capacity,Existing LP field,SUPPORTED
+Investment capacity,I_t <= available_cash_flow × investment_capacity_ratio,Existing LP field and Step 5B/5D audit,SUPPORTED AS CANDIDATE
+Horizon,"t = 1,...,goal_horizon_months",Existing goal horizon,SUPPORTED
+Goal target,SUM(G_t) + eligible_initial_goal_funding >= target_amount,Goal target field,FORMULATION DECISION REQUIRED
+Initial savings,Initial savings may be available as initial goal funding,Existing initial state,FORMULATION DECISION REQUIRED
+Initial investment,Initial investment enters as existing portfolio state,Existing initial state,SUPPORTED AS INITIAL STATE
+Borrowing,No borrowing variable in base LP,No borrowing decision field exists,EXCLUDED
+WALR,No WALR term in base LP,Borrowing is not modeled,EXCLUDED

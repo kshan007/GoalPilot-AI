@@ -1,0 +1,119 @@
+streaming base + validated in lockstep ...
+{
+  "base_rows": 1430000,
+  "val_rows": 1430000,
+  "base_users": 10000,
+  "val_users": 10000,
+  "checks": {
+    "A1_surplus_identity": {
+      "check": "A1_surplus_identity",
+      "description": "monthly_surplus == income - expenditure - emi",
+      "comparisons": 1430000,
+      "failures": 601744,
+      "max_abs_deviation": 139834.6514099795,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "FAIL"
+    },
+    "A1b_surplus_excl_emi": {
+      "check": "A1b_surplus_excl_emi",
+      "description": "monthly_surplus == income - expenditure (EMI excluded)",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 9.458744898438454e-11,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "A3_portfolio_compounding": {
+      "check": "A3_portfolio_compounding",
+      "description": "portfolio_value[t] == prev*(1+return[t])",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 5.587935447692871e-09,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "A4_return_eq_exposure_x_nifty": {
+      "check": "A4_return_eq_exposure_x_nifty",
+      "description": "portfolio_return == market_exposure * nifty_monthly_return",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 9.999054535747565e-17,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "A5_exposure_eq_risk": {
+      "check": "A5_exposure_eq_risk",
+      "description": "market_exposure == risk_score",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "A2_constant_profile_income": {
+      "check": "A2_constant_profile_income",
+      "description": "monthly_income constant within a user",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "A2_constant_profile_expenditure": {
+      "check": "A2_constant_profile_expenditure",
+      "description": "monthly_expenditure constant within a user",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "A6_range": {
+      "check": "A6_range",
+      "description": "investment_capacity_ratio and risk_score in [0,1]",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "X1_same_key_sequence": {
+      "check": "X1_same_key_sequence",
+      "description": "identical (user_id, period) sequence across files",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "X2_portfolio_return_agrees": {
+      "check": "X2_portfolio_return_agrees",
+      "description": "portfolio_return matches across files",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    },
+    "X2_portfolio_value_agrees": {
+      "check": "X2_portfolio_value_agrees",
+      "description": "portfolio_value matches across files",
+      "comparisons": 1430000,
+      "failures": 0,
+      "max_abs_deviation": 0.0,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "status": "PASS"
+    }
+  }
+}

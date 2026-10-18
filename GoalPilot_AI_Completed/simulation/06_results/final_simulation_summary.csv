@@ -1,0 +1,32 @@
+metric,value
+simulation_users,10000
+simulation_months,143
+simulation_start,2015-02-01 00:00:00
+simulation_end,2026-12-01 00:00:00
+monthly_simulation_records,1430000
+final_user_level_records,10000
+median_monthly_income,47770.48575030218
+median_monthly_expenditure,35750.0
+median_initial_savings,104229.70150836353
+median_initial_investment,9154.05485134513
+conservative_users,3333
+moderate_risk_users,3334
+aggressive_users,3333
+high_saving_users,2043
+moderate_saving_users,4560
+low_saving_users,2923
+financial_stress_users,474
+successful_goals,6451
+failed_goals,3549
+goal_success_rate,0.6451
+median_goal_target,107313.0554274146
+median_goal_horizon_months,63.0
+median_goal_horizon_funding,236498.48196910552
+median_goal_shortfall,0.0
+median_final_savings,2346684.5126413014
+median_final_portfolio,13458.015922862642
+median_final_total_financial_wealth,2407303.952042097
+median_final_portfolio_share,0.011903206967491455
+failed_goal_count,3549
+median_failed_goal_shortfall,66881.76490834764
+mean_failed_goal_shortfall,86166.49870631473

@@ -1,0 +1,9 @@
+metric,value
+surplus_mean_abs_error,4.381543353831896e-12
+surplus_max_abs_error,6.984919309616089e-10
+positive_cash_flow_mean_abs_error,0.0
+positive_cash_flow_max_abs_error,0.0
+goal_funding_mean_abs_error,1814572.1247206805
+goal_funding_max_abs_error,72058294.28072314
+first_portfolio_mean_abs_error,3.8873110952408755e-12
+first_portfolio_max_abs_error,4.656612873077393e-10

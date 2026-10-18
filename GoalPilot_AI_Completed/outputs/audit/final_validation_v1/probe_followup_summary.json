@@ -1,0 +1,212 @@
+{
+  "recon_attribution": [
+    {
+      "config": "archived",
+      "max_abs_episode_recon_residual": 13352497.353258338,
+      "sum_writeoff_residual": 5080.950786384779,
+      "n_writeoffs": 4,
+      "sum_residual_all_events": 177546592.54799736
+    },
+    {
+      "config": "corrected_accounting",
+      "max_abs_episode_recon_residual": 2534.5198367868707,
+      "sum_writeoff_residual": 5080.950786384779,
+      "n_writeoffs": 4,
+      "sum_residual_all_events": 177546592.54799736
+    },
+    {
+      "config": "lp_parity",
+      "max_abs_episode_recon_residual": 236.4789583243496,
+      "sum_writeoff_residual": 472.95791664468265,
+      "n_writeoffs": 2,
+      "sum_residual_all_events": 169914063.97753984
+    },
+    {
+      "config": "recommended",
+      "max_abs_episode_recon_residual": 236.4789583243496,
+      "sum_writeoff_residual": 472.95791664468265,
+      "n_writeoffs": 2,
+      "sum_residual_all_events": 169914063.97753984
+    }
+  ],
+  "d2b_borrowing": [
+    {
+      "action_mode": "magnitude",
+      "goal_credit": "face_value",
+      "policy": "Savings+loan (0.5,0,1)",
+      "months_with_loan": 16,
+      "total_loan": 924617.823667634
+    },
+    {
+      "action_mode": "magnitude",
+      "goal_credit": "face_value",
+      "policy": "Loan only (0,0,1)",
+      "months_with_loan": 33,
+      "total_loan": 4170436.0544833597
+    },
+    {
+      "action_mode": "magnitude",
+      "goal_credit": "growth_weighted",
+      "policy": "Savings+loan (0.5,0,1)",
+      "months_with_loan": 16,
+      "total_loan": 924617.823667634
+    },
+    {
+      "action_mode": "magnitude",
+      "goal_credit": "growth_weighted",
+      "policy": "Loan only (0,0,1)",
+      "months_with_loan": 33,
+      "total_loan": 4170436.0544833597
+    },
+    {
+      "action_mode": "share",
+      "goal_credit": "face_value",
+      "policy": "Savings+loan (0.5,0,1)",
+      "months_with_loan": 16,
+      "total_loan": 924617.823667634
+    },
+    {
+      "action_mode": "share",
+      "goal_credit": "face_value",
+      "policy": "Loan only (0,0,1)",
+      "months_with_loan": 33,
+      "total_loan": 4170436.0544833597
+    },
+    {
+      "action_mode": "share",
+      "goal_credit": "growth_weighted",
+      "policy": "Savings+loan (0.5,0,1)",
+      "months_with_loan": 16,
+      "total_loan": 924617.823667634
+    },
+    {
+      "action_mode": "share",
+      "goal_credit": "growth_weighted",
+      "policy": "Loan only (0,0,1)",
+      "months_with_loan": 33,
+      "total_loan": 4170436.0544833597
+    }
+  ],
+  "d6_reserve": [
+    {
+      "config": "lp_parity",
+      "user_id": "USER_00001",
+      "initial_savings": 178733.65247033344,
+      "emergency_reserve": 178733.65247033344,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 45777.54811976057,
+      "initial_net_worth": 45777.54811976057,
+      "on_balance_sheet": 45777.54811976057,
+      "reserve_off_balance_sheet": 132956.10435057286
+    },
+    {
+      "config": "lp_parity",
+      "user_id": "USER_00005",
+      "initial_savings": 205810.04597290856,
+      "emergency_reserve": 205810.04597290856,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 105774.93437864486,
+      "initial_net_worth": 105774.93437864486,
+      "on_balance_sheet": 105774.93437864486,
+      "reserve_off_balance_sheet": 100035.1115942637
+    },
+    {
+      "config": "lp_parity",
+      "user_id": "USER_00011",
+      "initial_savings": 54235.719086725454,
+      "emergency_reserve": 54235.719086725454,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 40453.56348425282,
+      "initial_net_worth": 40453.56348425282,
+      "on_balance_sheet": 40453.56348425282,
+      "reserve_off_balance_sheet": 13782.15560247263
+    },
+    {
+      "config": "lp_parity",
+      "user_id": "USER_00013",
+      "initial_savings": 61114.61140731367,
+      "emergency_reserve": 61114.61140731367,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 16162.91844726756,
+      "initial_net_worth": 16162.91844726756,
+      "on_balance_sheet": 16162.91844726756,
+      "reserve_off_balance_sheet": 44951.69296004611
+    },
+    {
+      "config": "lp_parity",
+      "user_id": "USER_00019",
+      "initial_savings": 65278.649053975605,
+      "emergency_reserve": 65278.649053975605,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 33043.600345543164,
+      "initial_net_worth": 33043.600345543164,
+      "on_balance_sheet": 33043.600345543164,
+      "reserve_off_balance_sheet": 32235.04870843244
+    },
+    {
+      "config": "recommended",
+      "user_id": "USER_00001",
+      "initial_savings": 178733.65247033344,
+      "emergency_reserve": 178733.65247033344,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 45777.54811976057,
+      "initial_net_worth": 45777.54811976057,
+      "on_balance_sheet": 45777.54811976057,
+      "reserve_off_balance_sheet": 132956.10435057286
+    },
+    {
+      "config": "recommended",
+      "user_id": "USER_00005",
+      "initial_savings": 205810.04597290856,
+      "emergency_reserve": 205810.04597290856,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 105774.93437864486,
+      "initial_net_worth": 105774.93437864486,
+      "on_balance_sheet": 105774.93437864486,
+      "reserve_off_balance_sheet": 100035.1115942637
+    },
+    {
+      "config": "recommended",
+      "user_id": "USER_00011",
+      "initial_savings": 54235.719086725454,
+      "emergency_reserve": 54235.719086725454,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 40453.56348425282,
+      "initial_net_worth": 40453.56348425282,
+      "on_balance_sheet": 40453.56348425282,
+      "reserve_off_balance_sheet": 13782.15560247263
+    },
+    {
+      "config": "recommended",
+      "user_id": "USER_00013",
+      "initial_savings": 61114.61140731367,
+      "emergency_reserve": 61114.61140731367,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 16162.91844726756,
+      "initial_net_worth": 16162.91844726756,
+      "on_balance_sheet": 16162.91844726756,
+      "reserve_off_balance_sheet": 44951.69296004611
+    },
+    {
+      "config": "recommended",
+      "user_id": "USER_00019",
+      "initial_savings": 65278.649053975605,
+      "emergency_reserve": 65278.649053975605,
+      "earmarked": 0.0,
+      "cash_at_reset": 0.0,
+      "portfolio_at_reset": 33043.600345543164,
+      "initial_net_worth": 33043.600345543164,
+      "on_balance_sheet": 33043.600345543164,
+      "reserve_off_balance_sheet": 32235.04870843244
+    }
+  ]
+}

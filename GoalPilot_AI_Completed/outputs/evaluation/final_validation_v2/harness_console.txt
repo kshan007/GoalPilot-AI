@@ -1,0 +1,95 @@
+
+{
+  "policies": [
+    "Investments only",
+    "LP optimizer plan",
+    "RL archived_v1 seed17",
+    "RL archived_v1 seed27",
+    "RL archived_v1 seed7",
+    "RL candidate_a seed17",
+    "RL candidate_a seed27",
+    "RL candidate_a seed7",
+    "Rule-based urgency",
+    "Savings only"
+  ],
+  "users": 20,
+  "rows": 200,
+  "total_affordability_violations": 0,
+  "max_budget_check_residual": 2.9103830456733704e-11,
+  "archive_status_counts": {
+    "optimal": 20
+  },
+  "key_means": {
+    "Investments only": {
+      "weighted_goal_achievement": 0.4313,
+      "pct_goals_fully_funded": 0.3342,
+      "pct_goals_met_by_deadline": 0.1508,
+      "net_worth": 2493177.4563,
+      "total_interest_paid": 0.0
+    },
+    "LP optimizer plan": {
+      "weighted_goal_achievement": 0.4279,
+      "pct_goals_fully_funded": 0.3008,
+      "pct_goals_met_by_deadline": 0.1242,
+      "net_worth": 2522091.5935,
+      "total_interest_paid": 3599.8509
+    },
+    "RL archived_v1 seed17": {
+      "weighted_goal_achievement": 0.2988,
+      "pct_goals_fully_funded": 0.2158,
+      "pct_goals_met_by_deadline": 0.0592,
+      "net_worth": 2374106.7126,
+      "total_interest_paid": 1058.6422
+    },
+    "RL archived_v1 seed27": {
+      "weighted_goal_achievement": 0.3192,
+      "pct_goals_fully_funded": 0.2192,
+      "pct_goals_met_by_deadline": 0.0633,
+      "net_worth": 2505822.9305,
+      "total_interest_paid": 10366.9695
+    },
+    "RL archived_v1 seed7": {
+      "weighted_goal_achievement": 0.3427,
+      "pct_goals_fully_funded": 0.2583,
+      "pct_goals_met_by_deadline": 0.1117,
+      "net_worth": 2304972.2186,
+      "total_interest_paid": 5599.8189
+    },
+    "RL candidate_a seed17": {
+      "weighted_goal_achievement": 0.3778,
+      "pct_goals_fully_funded": 0.3175,
+      "pct_goals_met_by_deadline": 0.1275,
+      "net_worth": 2304707.5277,
+      "total_interest_paid": 9916.6712
+    },
+    "RL candidate_a seed27": {
+      "weighted_goal_achievement": 0.412,
+      "pct_goals_fully_funded": 0.3433,
+      "pct_goals_met_by_deadline": 0.1183,
+      "net_worth": 2484922.4063,
+      "total_interest_paid": 19431.6039
+    },
+    "RL candidate_a seed7": {
+      "weighted_goal_achievement": 0.4174,
+      "pct_goals_fully_funded": 0.3475,
+      "pct_goals_met_by_deadline": 0.1342,
+      "net_worth": 2399575.2,
+      "total_interest_paid": 11835.3612
+    },
+    "Rule-based urgency": {
+      "weighted_goal_achievement": 0.2599,
+      "pct_goals_fully_funded": 0.05,
+      "pct_goals_met_by_deadline": 0.0,
+      "net_worth": 2104570.1594,
+      "total_interest_paid": 0.0
+    },
+    "Savings only": {
+      "weighted_goal_achievement": 0.4111,
+      "pct_goals_fully_funded": 0.3175,
+      "pct_goals_met_by_deadline": 0.1508,
+      "net_worth": 2104570.1594,
+      "total_interest_paid": 0.0
+    }
+  }
+}
+

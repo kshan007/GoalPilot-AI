@@ -1,0 +1,4 @@
+objective,mean_goal_funding,mean_shortfall,successful_users,total_users
+A — Maximize goal funding,1189897.7683336125,22240.82745179166,7582,10000
+B — Minimize shortfall,116113.00752071626,22240.82745179166,7582,10000
+C — Preserve existing policy,944964.8307231049,30580.490390871095,6451,10000

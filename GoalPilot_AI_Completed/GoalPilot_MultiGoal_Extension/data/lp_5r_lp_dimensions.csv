@@ -1,0 +1,13 @@
+metric,value
+users,10000
+horizon_rows,626970
+G_variables,626970
+D_variables,10000
+total_variables,636970
+G_nonnegativity,626970
+G_upper_bounds,626970
+D_nonnegativity,10000
+target_equalities,10000
+total_constraints,1273940
+LP_feasible_users,7582
+LP_infeasible_users,2418

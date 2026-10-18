@@ -1,0 +1,100 @@
+{
+  "rows": 1430000,
+  "n_users": 10000,
+  "A1": {
+    "fail_rows": 601744,
+    "fail_fraction": 0.4208,
+    "fail_with_emi_zero": 0,
+    "fail_with_emi_nonzero": 601744,
+    "pattern_fail_x_emi_zero": {
+      "fail=False,emi_zero=True": 828256,
+      "fail=True,emi_zero=False": 601744
+    },
+    "users_with_nonconstant_surplus": 0,
+    "users_with_nonconstant_emi": 0,
+    "users_total": 10000,
+    "examples": [
+      {
+        "user_id": "USER_00002",
+        "period": "2015-02-01",
+        "monthly_income": 26415.41733400316,
+        "monthly_expenditure": 27500.0,
+        "monthly_emi": 11814.37143594865,
+        "monthly_surplus": -1084.582665996841,
+        "income_minus_exp_minus_emi": -12898.95410194549,
+        "deviation": 11814.37143594865
+      },
+      {
+        "user_id": "USER_00002",
+        "period": "2015-03-01",
+        "monthly_income": 26415.41733400316,
+        "monthly_expenditure": 27500.0,
+        "monthly_emi": 11814.37143594865,
+        "monthly_surplus": -1084.582665996841,
+        "income_minus_exp_minus_emi": -12898.95410194549,
+        "deviation": 11814.37143594865
+      },
+      {
+        "user_id": "USER_00002",
+        "period": "2015-04-01",
+        "monthly_income": 26415.41733400316,
+        "monthly_expenditure": 27500.0,
+        "monthly_emi": 11814.37143594865,
+        "monthly_surplus": -1084.582665996841,
+        "income_minus_exp_minus_emi": -12898.95410194549,
+        "deviation": 11814.37143594865
+      },
+      {
+        "user_id": "USER_00002",
+        "period": "2015-05-01",
+        "monthly_income": 26415.41733400316,
+        "monthly_expenditure": 27500.0,
+        "monthly_emi": 11814.37143594865,
+        "monthly_surplus": -1084.582665996841,
+        "income_minus_exp_minus_emi": -12898.95410194549,
+        "deviation": 11814.37143594865
+      },
+      {
+        "user_id": "USER_00002",
+        "period": "2015-06-01",
+        "monthly_income": 26415.41733400316,
+        "monthly_expenditure": 27500.0,
+        "monthly_emi": 11814.37143594865,
+        "monthly_surplus": -1084.582665996841,
+        "income_minus_exp_minus_emi": -12898.95410194549,
+        "deviation": 11814.37143594865
+      },
+      {
+        "user_id": "USER_00002",
+        "period": "2015-07-01",
+        "monthly_income": 26415.41733400316,
+        "monthly_expenditure": 27500.0,
+        "monthly_emi": 11814.37143594865,
+        "monthly_surplus": -1084.582665996841,
+        "income_minus_exp_minus_emi": -12898.95410194549,
+        "deviation": 11814.37143594865
+      }
+    ]
+  },
+  "A3": {
+    "n_failures": 2,
+    "failures": [
+      {
+        "user_id": "USER_00001",
+        "period": "2015-02-01",
+        "prev_value": 45777.54811976057,
+        "portfolio_return": 0.0028793939383075,
+        "expected": 0.0,
+        "actual": 45909.35971432719
+      },
+      {
+        "user_id": "USER_06994",
+        "period": "2015-03-01",
+        "prev_value": 217880.9036686118,
+        "portfolio_return": -0.0223603407792996,
+        "expected": 0.0,
+        "actual": 213009.0124132799
+      }
+    ]
+  }
+}

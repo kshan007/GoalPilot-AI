@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 940" width="1280" height="940" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .box{stroke:#44546a;stroke-width:1.5;rx:8}
+      .t{fill:#1f2937;font-size:15px}
+      .ttl{fill:#0f172a;font-size:16px;font-weight:600}
+      .sm{fill:#475569;font-size:12.5px}
+      .lbl{fill:#44546a;font-size:13px;font-weight:600}
+      .flow{stroke:#44546a;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <text x="40" y="42" font-size="26" font-weight="700" fill="#0f172a">GoalPilot AI — architecture</text>
+  <text x="40" y="68" class="sm">Research system (S:\fyp\GoalPilot_AI_Completed) and companion application (S:\fyp\GoalPilot_Application). Every box maps to real files; see docs/REQUIREMENTS_TRACEABILITY.md.</text>
+
+  <!-- DATA -->
+  <rect class="box" x="40" y="92" width="1200" height="118" fill="#eef6ff"/>
+  <text x="58" y="118" class="ttl">1 · Data layer (preserved, read-only)</text>
+  <rect class="box" x="60" y="132" width="250" height="62" fill="#ffffff"/>
+  <text x="74" y="156" class="t">HCES 2023–24 expenditure</text>
+  <text x="74" y="176" class="sm">household_profiles.csv · 10,000 users</text>
+  <rect class="box" x="330" y="132" width="250" height="62" fill="#ffffff"/>
+  <text x="344" y="156" class="t">RBI CPI + WALR</text>
+  <text x="344" y="176" class="sm">cpi_historical_calibration · walr_scaled</text>
+  <rect class="box" x="600" y="132" width="250" height="62" fill="#ffffff"/>
+  <text x="614" y="156" class="t">NIFTY 50 history</text>
+  <text x="614" y="176" class="sm">market_scaled · 142 months</text>
+  <rect class="box" x="870" y="132" width="350" height="62" fill="#fff7ed"/>
+  <text x="884" y="156" class="t">RL sample (100 users · 390 goals)</text>
+  <text x="884" y="176" class="sm">profiles · goals · market_credit_validated · split</text>
+
+  <!-- SIMULATION -->
+  <rect class="box" x="40" y="236" width="1200" height="120" fill="#f0fdf4"/>
+  <text x="58" y="262" class="ttl">2 · Financial simulation (simulation/)</text>
+  <rect class="box" x="60" y="276" width="360" height="64" fill="#ffffff"/>
+  <text x="74" y="300" class="t">Population &amp; profiles</text>
+  <text x="74" y="320" class="sm">income · expenditure · debt · risk · savings</text>
+  <rect class="box" x="440" y="276" width="360" height="64" fill="#ffffff"/>
+  <text x="454" y="300" class="t">Longitudinal monthly lifecycle</text>
+  <text x="454" y="320" class="sm">inflation · market path · EMI · goal balances</text>
+  <rect class="box" x="820" y="276" width="400" height="64" fill="#ffffff"/>
+  <text x="834" y="300" class="t">Outputs (validated this pass)</text>
+  <text x="834" y="320" class="sm">base CSV 1,430,000 rows · portfolio CSV — 0 identity failures</text>
+
+  <!-- OPTIMISATION -->
+  <rect class="box" x="40" y="382" width="585" height="150" fill="#fefce8"/>
+  <text x="58" y="408" class="ttl">3 · LP optimisation (GoalPilot_MultiGoal_Extension/)</text>
+  <rect class="box" x="60" y="422" width="255" height="94" fill="#ffffff"/>
+  <text x="74" y="446" class="t">multi_goal_optimizer.py</text>
+  <text x="74" y="466" class="sm">scipy linprog HiGHS</text>
+  <text x="74" y="486" class="sm">per-goal save / invest / loan</text>
+  <text x="74" y="506" class="sm">UNCHANGED since v1</text>
+  <rect class="box" x="335" y="422" width="275" height="94" fill="#ffffff"/>
+  <text x="349" y="446" class="t">goalpilot_constrained_lp.py</text>
+  <text x="349" y="466" class="sm">+ investment capacity</text>
+  <text x="349" y="486" class="sm">+ single-loan limit</text>
+  <text x="349" y="506" class="sm">the FAIR benchmark</text>
+
+  <!-- RL -->
+  <rect class="box" x="652" y="382" width="588" height="150" fill="#fdf2f8"/>
+  <text x="670" y="408" class="ttl">4 · RL environment &amp; policy (simulation/…/rl_prototype/)</text>
+  <rect class="box" x="672" y="422" width="270" height="94" fill="#ffffff"/>
+  <text x="686" y="446" class="t">goalpilot_env.py</text>
+  <text x="686" y="466" class="sm">Gymnasium · obs 42 · action Box(5,3)</text>
+  <text x="686" y="486" class="sm">ledger accounting · reserve · EMI</text>
+  <text x="686" y="506" class="sm">archived parity to 1e-12</text>
+  <rect class="box" x="962" y="422" width="260" height="94" fill="#ffffff"/>
+  <text x="976" y="446" class="t">goalpilot_config.py</text>
+  <text x="976" y="466" class="sm">7 presets, opt-in only</text>
+  <text x="976" y="486" class="sm">action_mode · accounting</text>
+  <text x="976" y="506" class="sm">goal_credit · reward_version</text>
+
+  <!-- POLICY / MODEL -->
+  <rect class="box" x="40" y="560" width="1200" height="96" fill="#f5f3ff"/>
+  <text x="58" y="586" class="ttl">5 · Decision policy</text>
+  <rect class="box" x="60" y="600" width="330" height="42" fill="#ffffff"/>
+  <text x="74" y="626" class="t">PPO (stable-baselines3) — archived checkpoints + v8 runs</text>
+  <rect class="box" x="410" y="600" width="330" height="42" fill="#ffffff"/>
+  <text x="424" y="626" class="t">Rule baselines: savings / investment / urgency</text>
+  <rect class="box" x="760" y="600" width="460" height="42" fill="#ffffff"/>
+  <text x="774" y="626" class="t">LP plan encoder → monthly share action (goalpilot_lp_encoder.py)</text>
+
+  <!-- EVAL -->
+  <rect class="box" x="40" y="684" width="770" height="106" fill="#eff6ff"/>
+  <text x="58" y="710" class="ttl">6 · Evaluation &amp; explainability</text>
+  <rect class="box" x="60" y="722" width="350" height="52" fill="#ffffff"/>
+  <text x="74" y="744" class="t">evaluation/ + audit_tools/80_…</text>
+  <text x="74" y="763" class="sm">achievement · deadline · shortfall · capacity · CIs</text>
+  <rect class="box" x="430" y="722" width="360" height="52" fill="#ffffff"/>
+  <text x="444" y="744" class="t">goalpilot_explain.py + goalpilot_knowledge.py</text>
+  <text x="444" y="763" class="sm">grounded explanation · uncited principles · sensitivity</text>
+
+  <!-- APP -->
+  <rect class="box" x="836" y="684" width="404" height="106" fill="#fef2f2"/>
+  <text x="854" y="710" class="ttl">7 · Application (GoalPilot_Application/)</text>
+  <rect class="box" x="856" y="722" width="364" height="52" fill="#ffffff"/>
+  <text x="870" y="744" class="t">FastAPI: /api/health · /api/optimize · /api/derive-profile</text>
+  <text x="870" y="763" class="sm">Vite + React UI · single-goal LP · 15 backend tests</text>
+
+  <!-- FLOWS -->
+  <path class="flow" d="M 640 210 L 640 236"/>
+  <text x="650" y="228" class="lbl">calibration</text>
+  <path class="flow" d="M 330 356 L 330 382"/>
+  <text x="340" y="374" class="lbl">profiles &amp; goals</text>
+  <path class="flow" d="M 900 356 L 900 382"/>
+  <text x="910" y="374" class="lbl">state / market path</text>
+  <path class="flow" d="M 330 532 L 330 560"/>
+  <text x="340" y="552" class="lbl">plan</text>
+  <path class="flow" d="M 900 532 L 900 560"/>
+  <text x="910" y="552" class="lbl">action</text>
+  <path class="flow" d="M 640 656 L 640 684"/>
+  <text x="650" y="676" class="lbl">rollouts</text>
+  <path class="flow" d="M 950 790 L 950 790"/>
+
+  <text x="40" y="828" class="sm">Historical outputs v1–v7 are preserved and never overwritten; every new experiment writes to its own versioned folder.</text>
+  <text x="40" y="850" class="sm">Guarantees: archived environment reproduction to 1e-12 · no future data in any decision · no fabricated results.</text>
+  <text x="40" y="880" class="sm">Status: research prototype and educational demo. Not a financial-advice system.</text>
+</svg>

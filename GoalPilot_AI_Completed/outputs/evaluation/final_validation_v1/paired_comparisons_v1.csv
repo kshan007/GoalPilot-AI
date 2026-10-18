@@ -1,0 +1,70 @@
+config,policy,reference,metric,n_pairs,mean_paired_difference,median_paired_difference,ci95_low,ci95_high,significantly_different
+archived,No action,Savings only,weighted_goal_achievement,20,-0.4191604212104786,-0.4470683986041435,-0.5523923152103641,-0.27597086539857246,True
+archived,No action,Savings only,net_worth,20,-1070416.6844199866,-551299.1438877471,-1937584.7512872936,-493524.33279610734,True
+archived,No action,Savings only,funding_vs_inflated_targets,20,-0.2115384797756767,-0.12417334413451458,-0.32304339236372615,-0.1098758544858203,True
+archived,Investments only,Savings only,weighted_goal_achievement,20,-0.031114022039728982,0.0,-0.06353111778543462,-0.0031833707977338777,True
+archived,Investments only,Savings only,net_worth,20,880128.2146393188,285208.0928418484,321189.0705091802,1702342.007480464,True
+archived,Investments only,Savings only,funding_vs_inflated_targets,20,-0.011207411468578727,0.0,-0.021753824897682433,-0.002134750251383495,True
+archived,Mixed (0.50/0.50),Savings only,weighted_goal_achievement,20,0.0,0.0,0.0,0.0,False
+archived,Mixed (0.50/0.50),Savings only,net_worth,20,267501.04892006493,119744.41780733305,99505.63167644155,531941.8598250049,True
+archived,Mixed (0.50/0.50),Savings only,funding_vs_inflated_targets,20,0.0,0.0,0.0,0.0,False
+archived,Savings + loan,Savings only,weighted_goal_achievement,20,0.0073747135039937016,0.0,6.8624877192870425e-06,0.016920363306798556,True
+archived,Savings + loan,Savings only,net_worth,20,-65948.62958725361,-4849.669775491115,-109507.20041030289,-28370.056174766796,True
+archived,Savings + loan,Savings only,funding_vs_inflated_targets,20,0.007105756902206152,0.0,-0.001438182299034171,0.02037901906273108,False
+archived,Rule-based urgency (savings),Savings only,weighted_goal_achievement,20,-0.12265748944041865,-0.08801865947494981,-0.20248598084407474,-0.05016186265167986,True
+archived,Rule-based urgency (savings),Savings only,net_worth,20,691560.9611146462,83648.13462895341,184373.07415929757,1385905.7471662306,True
+archived,Rule-based urgency (savings),Savings only,funding_vs_inflated_targets,20,0.08528266849070851,0.016818076402155636,0.03682859849134021,0.1388739011372172,True
+archived,Archived PPO,Savings only,weighted_goal_achievement,20,-0.1397323738675828,-0.10858730478339446,-0.19905100119749236,-0.08456749245380464,True
+archived,Archived PPO,Savings only,net_worth,20,-415627.6007178691,-114175.39712141018,-768528.7488767768,-151790.29098912585,True
+archived,Archived PPO,Savings only,funding_vs_inflated_targets,20,-0.04609888607551365,-0.0308420556371969,-0.07218802443104583,-0.023417933450103425,True
+corrected_accounting,No action,Savings only,weighted_goal_achievement,20,-0.4191604212104786,-0.4470683986041435,-0.5523923152103641,-0.27597086539857246,True
+corrected_accounting,No action,Savings only,net_worth,20,0.0,0.0,0.0,0.0,False
+corrected_accounting,No action,Savings only,funding_vs_inflated_targets,20,-0.2115384797756767,-0.12417334413451458,-0.32304339236372615,-0.1098758544858203,True
+corrected_accounting,Investments only,Savings only,weighted_goal_achievement,20,-0.031114022039728982,0.0,-0.06353111778543462,-0.0031833707977338777,True
+corrected_accounting,Investments only,Savings only,net_worth,20,952637.6356417362,485361.5345044589,407105.2207340156,1738010.4047947528,True
+corrected_accounting,Investments only,Savings only,funding_vs_inflated_targets,20,-0.011207411468578727,0.0,-0.021753824897682433,-0.002134750251383495,True
+corrected_accounting,Mixed (0.50/0.50),Savings only,weighted_goal_achievement,20,0.0,0.0,0.0,0.0,False
+corrected_accounting,Mixed (0.50/0.50),Savings only,net_worth,20,267501.04892006505,119744.41780733247,99505.63167644259,531941.8598250024,True
+corrected_accounting,Mixed (0.50/0.50),Savings only,funding_vs_inflated_targets,20,0.0,0.0,0.0,0.0,False
+corrected_accounting,Savings + loan,Savings only,weighted_goal_achievement,20,0.0073747135039937016,0.0,6.8624877192870425e-06,0.016920363306798556,True
+corrected_accounting,Savings + loan,Savings only,net_worth,20,-12845.621269426047,-1015.2891231721733,-21235.653857888494,-5407.368095722066,True
+corrected_accounting,Savings + loan,Savings only,funding_vs_inflated_targets,20,0.007105756902206152,0.0,-0.001438182299034171,0.02037901906273108,False
+corrected_accounting,Rule-based urgency (savings),Savings only,weighted_goal_achievement,20,-0.12265748944041865,-0.08801865947494981,-0.20248598084407474,-0.05016186265167986,True
+corrected_accounting,Rule-based urgency (savings),Savings only,net_worth,20,0.0,0.0,0.0,0.0,False
+corrected_accounting,Rule-based urgency (savings),Savings only,funding_vs_inflated_targets,20,0.08528266849070851,0.016818076402155636,0.03682859849134021,0.1388739011372172,True
+lp_parity,No action,Savings only,weighted_goal_achievement,20,-0.40974183961743266,-0.4307651134178653,-0.5445005473435497,-0.2676927774677529,True
+lp_parity,No action,Savings only,net_worth,20,0.0,0.0,0.0,0.0,False
+lp_parity,No action,Savings only,funding_vs_inflated_targets,20,-0.1914473227458358,-0.09943596111193907,-0.3072240911308401,-0.0912297239269305,True
+lp_parity,Investments only,Savings only,weighted_goal_achievement,20,-0.03128775182693748,0.0,-0.06302222571482652,-0.0034072756314468986,True
+lp_parity,Investments only,Savings only,net_worth,20,991141.9156884933,513944.39110463695,418351.05637231213,1823626.9032369517,True
+lp_parity,Investments only,Savings only,funding_vs_inflated_targets,20,-0.009531379480458457,0.0,-0.018779057913687305,-0.0017051098665427826,True
+lp_parity,Mixed (0.50/0.50),Savings only,weighted_goal_achievement,20,0.0,0.0,0.0,0.0,False
+lp_parity,Mixed (0.50/0.50),Savings only,net_worth,20,279143.63585158315,127510.25090370676,102767.7264954379,557694.2362518779,True
+lp_parity,Mixed (0.50/0.50),Savings only,funding_vs_inflated_targets,20,-6.938893903907229e-19,0.0,-2.0816681711721684e-18,0.0,False
+lp_parity,Savings + loan,Savings only,weighted_goal_achievement,20,0.0038698139593452753,0.0,-0.0007729961719766675,0.01110605728274499,False
+lp_parity,Savings + loan,Savings only,net_worth,20,-10665.116669944342,-351.00634052878013,-19764.860315870872,-3392.8506818404253,True
+lp_parity,Savings + loan,Savings only,funding_vs_inflated_targets,20,0.0029514320583750387,0.0,-0.00022173672731896546,0.006936626781062781,False
+lp_parity,Rule-based urgency (savings),Savings only,weighted_goal_achievement,20,-0.15121484897884124,-0.13364587109182077,-0.22839032497108183,-0.079050508721415,True
+lp_parity,Rule-based urgency (savings),Savings only,net_worth,20,0.0,0.0,0.0,0.0,False
+lp_parity,Rule-based urgency (savings),Savings only,funding_vs_inflated_targets,20,0.06420661689136366,0.010510877751473847,0.0275942582560216,0.10469518795492758,True
+lp_parity,LP optimizer plan,Savings only,weighted_goal_achievement,20,-0.2514729233152481,-0.26969436731914664,-0.3532714612621461,-0.15650633828587004,True
+lp_parity,LP optimizer plan,Savings only,net_worth,20,569846.0486719016,143923.77283713163,141968.5806482051,1252722.5760017238,True
+lp_parity,LP optimizer plan,Savings only,funding_vs_inflated_targets,20,-0.06734782252600369,-0.0462796880960124,-0.1024468081002062,-0.03586207903016608,True
+recommended,No action,Savings only,weighted_goal_achievement,20,-0.40974183961743266,-0.4307651134178653,-0.5445005473435497,-0.2676927774677529,True
+recommended,No action,Savings only,net_worth,20,0.0,0.0,0.0,0.0,False
+recommended,No action,Savings only,funding_vs_inflated_targets,20,-0.1914473227458358,-0.09943596111193907,-0.3072240911308401,-0.0912297239269305,True
+recommended,Investments only,Savings only,weighted_goal_achievement,20,0.020134002010832205,0.008473691565844044,0.010197189977051692,0.03228268572335399,True
+recommended,Investments only,Savings only,net_worth,20,388607.2968761501,169769.44709650776,132199.6697071139,798591.8669325543,True
+recommended,Investments only,Savings only,funding_vs_inflated_targets,20,0.02396233835600197,0.00814695549231265,0.011198157707588365,0.03878085066672318,True
+recommended,Mixed (0.50/0.50),Savings only,weighted_goal_achievement,20,0.020134002010832205,0.008473691565844044,0.010197189977051692,0.03228268572335399,True
+recommended,Mixed (0.50/0.50),Savings only,net_worth,20,388607.2968761501,169769.44709650776,132199.6697071139,798591.8669325543,True
+recommended,Mixed (0.50/0.50),Savings only,funding_vs_inflated_targets,20,0.02396233835600197,0.00814695549231265,0.011198157707588365,0.03878085066672318,True
+recommended,Savings + loan,Savings only,weighted_goal_achievement,20,0.0038698139593452753,0.0,-0.0007729961719766675,0.01110605728274499,False
+recommended,Savings + loan,Savings only,net_worth,20,-10665.116669944342,-351.00634052878013,-19764.860315870872,-3392.8506818404253,True
+recommended,Savings + loan,Savings only,funding_vs_inflated_targets,20,0.0029514320583750356,0.0,-0.00022173672731896546,0.006936626781062772,False
+recommended,Rule-based urgency (savings),Savings only,weighted_goal_achievement,20,-0.15121484897884124,-0.13364587109182077,-0.22839032497108183,-0.079050508721415,True
+recommended,Rule-based urgency (savings),Savings only,net_worth,20,0.0,0.0,0.0,0.0,False
+recommended,Rule-based urgency (savings),Savings only,funding_vs_inflated_targets,20,0.06420661689136366,0.010510877751473847,0.0275942582560216,0.10469518795492758,True
+recommended,LP optimizer plan,Savings only,weighted_goal_achievement,20,0.016785590769309803,0.0,-0.003372319585289287,0.03660898945752888,False
+recommended,LP optimizer plan,Savings only,net_worth,20,417521.43403427093,126880.79817019362,133906.15849376525,774416.5764816788,True
+recommended,LP optimizer plan,Savings only,funding_vs_inflated_targets,20,0.03976070286269658,0.0032763492923927884,0.0050957879247652774,0.07723897357853998,True

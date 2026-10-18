@@ -1,0 +1,10 @@
+reward_version,seed,timesteps,seconds,steps_per_second,episodes_completed,mean_train_episode_return,final_train_episode_return,checkpoint,checkpoint_saved,record_source
+archived_v1,7,,,,353,-13.344519485888586,-10.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\archived_v1\ppo_archived_v1_seed7.zip,True,reconstructed_from_artifacts
+archived_v1,17,,,,353,-13.15987451291811,-14.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\archived_v1\ppo_archived_v1_seed17.zip,True,reconstructed_from_artifacts
+archived_v1,27,,,,353,-12.802476741266961,-13.262520358126762,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\archived_v1\ppo_archived_v1_seed27.zip,True,reconstructed_from_artifacts
+candidate_a,7,,,,353,-52.49627446163778,-65.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_a\ppo_candidate_a_seed7.zip,True,reconstructed_from_artifacts
+candidate_a,17,,,,353,-51.07836768277253,-89.75,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_a\ppo_candidate_a_seed17.zip,True,reconstructed_from_artifacts
+candidate_a,27,,,,353,-48.769938502443985,-31.058910719673783,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_a\ppo_candidate_a_seed27.zip,True,reconstructed_from_artifacts
+candidate_b,7,50000.0,91.42702627182007,546.8842424268059,353,6736.980232820076,-65.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_b\ppo_candidate_b_seed7.zip,True,
+candidate_b,17,50000.0,88.83757281303406,562.8249221219618,353,6434.86501947053,-89.75,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_b\ppo_candidate_b_seed17.zip,True,
+candidate_b,27,50000.0,77.1654748916626,647.9581713220596,353,6202.655729444589,268.83944738018073,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_b\ppo_candidate_b_seed27.zip,True,

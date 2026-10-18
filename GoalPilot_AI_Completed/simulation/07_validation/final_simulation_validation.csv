@@ -1,0 +1,17 @@
+validation_category,check,actual_value,expected_value,status
+Dataset Integrity,Unique users,10000,10000,PASS
+Dataset Integrity,Duplicate rows,0,0,PASS
+Dataset Integrity,Missing values,0,0,PASS
+Financial Validity,Negative target amounts,0,0,PASS
+Financial Validity,Negative goal funding,0,0,PASS
+Financial Validity,Negative goal shortfall,0,0,PASS
+Goal Consistency,Successful goals with positive shortfall,0,0,PASS
+Goal Consistency,Failed goals without positive shortfall,0,0,PASS
+Simulation Structure,Records per user,143,143,PASS
+Goal Outcome,Successful goals,6451,6451,PASS
+Goal Outcome,Failed goals,3549,3549,PASS
+Goal Outcome,Overall success rate,0.6451,0.6451,PASS
+Risk Relationship,Risk score vs investment capacity correlation,0.9132350665856669,0.913235,PASS
+Methodology,Aggressive success higher than conservative,True,True,PASS
+Methodology,Long-term success higher than immediate,True,True,PASS
+Methodology,High-saving success higher than financial-stress,True,True,PASS

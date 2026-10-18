@@ -1,0 +1,6 @@
+objective,description,data_status,interpretation
+Objective A,Maximize total goal funding,SUPPORTED,Equivalent to minimizing shortfall under the stated constraints
+Objective B,Minimize goal shortfall,SUPPORTED,Equivalent to maximizing goal funding
+Objective C,Preserve existing allocation factor,SUPPORTED,Reproduces historical policy; limited optimization effect
+Investment optimization,Optimize monthly investment contribution,NOT SUPPORTED,No monthly contribution variable exists
+Residual cash optimization,Optimize unused cash / reserve,NOT YET SUPPORTED,No explicit reserve policy exists

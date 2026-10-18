@@ -1,0 +1,14 @@
+metric,value
+lp_rows,10000.0
+monthly_rows,1430000.0
+lp_unique_users,10000.0
+monthly_unique_users,10000.0
+duplicate_user_period_rows,0.0
+users_with_143_months,10000.0
+first_portfolio_initial_matches,4555.0
+first_portfolio_initial_mean_abs_diff,156.47650931594373
+return_reconstruction_rows,1420000.0
+return_reconstruction_mean_abs_error,8.978458990367485e-12
+return_reconstruction_max_abs_error,5.587935447692871e-09
+return_reconstruction_matches_1e-6,1420000.0
+material_unexplained_change_rows,0.0

@@ -1,0 +1,27 @@
+category,field,lp_role,candidate_lp_use,status
+IDENTIFIER,user_id,User identifier,Index / reporting only,SUPPORTED
+FINANCIAL_PARAMETER,monthly_income,Monthly income,Budget/resource parameter,SUPPORTED
+FINANCIAL_PARAMETER,monthly_expenditure,Monthly expenditure,Budget/resource parameter,SUPPORTED
+FINANCIAL_PARAMETER,monthly_emi,Monthly EMI obligation,Fixed obligation / budget constraint,SUPPORTED
+FINANCIAL_PARAMETER,initial_savings,Initial savings balance,Initial state; treatment in goal funding must be verified,REQUIRES_FORMULATION_DECISION
+FINANCIAL_PARAMETER,initial_investment,Initial investment value,Initial investment state,SUPPORTED_AS_INITIAL_STATE
+CAPACITY_PARAMETER,investment_capacity_ratio,Investment capacity ratio,Upper bound on investment allocation,SUPPORTED
+RISK_PARAMETER,risk_score,Risk score,Existing risk descriptor; avoid inventing new thresholds,SUPPORTED_AS_PARAMETER
+RISK_PARAMETER,risk_profile,Risk profile,Existing categorical risk descriptor,SUPPORTED_AS_PARAMETER
+GOAL_PARAMETER,goal_horizon_months,Goal horizon,Number of LP periods,SUPPORTED
+GOAL_PARAMETER,goal_horizon_type,Goal horizon type,Descriptive goal parameter,SUPPORTED_AS_PARAMETER
+GOAL_PARAMETER,target_amount,Goal target,Required target in objective/constraint,SUPPORTED
+GOAL_PARAMETER,goal_specific_monthly_capacity,Goal-specific monthly capacity,Upper bound on goal contribution,SUPPORTED
+GOAL_PARAMETER,goal_allocation_factor,Goal allocation factor,Scales goal contribution capacity,SUPPORTED
+DERIVED_PARAMETER,financial_situation,Financial situation category,Parameter / segmentation,SUPPORTED_AS_PARAMETER
+DERIVED_PARAMETER,target_to_annual_income_ratio,Target relative to annual income,Diagnostic / validation,VALIDATION_ONLY
+DERIVED_PARAMETER,target_to_savings_ratio,Target relative to savings,Diagnostic / validation,VALIDATION_ONLY
+SIMULATION_OUTCOME,final_monthly_income,Simulated income outcome,Validation / comparison,VALIDATION_ONLY
+SIMULATION_OUTCOME,final_monthly_expenditure,Simulated expenditure outcome,Validation / comparison,VALIDATION_ONLY
+SIMULATION_OUTCOME,final_monthly_surplus,Simulated surplus outcome,Validation / comparison,VALIDATION_ONLY
+SIMULATION_OUTCOME,final_savings_balance,Final savings outcome,Validation / comparison,VALIDATION_ONLY
+SIMULATION_OUTCOME,final_portfolio_value,Final investment portfolio,Validation / comparison,VALIDATION_ONLY
+SIMULATION_OUTCOME,final_total_financial_wealth,Final financial wealth,Validation / comparison,VALIDATION_ONLY
+SIMULATION_OUTCOME,goal_shortfall_actual,Observed simulated goal shortfall,Validation target,VALIDATION_ONLY
+SIMULATION_OUTCOME,goal_achieved_on_time_actual,Observed simulated goal achievement,Validation target,VALIDATION_ONLY
+SIMULATION_OUTCOME,goal_outcome,Observed simulation outcome,Validation target,VALIDATION_ONLY

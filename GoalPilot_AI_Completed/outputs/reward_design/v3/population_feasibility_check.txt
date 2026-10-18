@@ -1,0 +1,14 @@
+
+users 100
+free surplus  min -16409.26  p25 1200.81  median 7147.90  p75 21066.36  max 94007.71
+zero-or-negative surplus users: 22 / 100 (22.0%)
+investment_capacity_ratio==0 users: 22
+
+EMI as share of (income-expenditure):
+  median 0.000  p90 1.318  max 34.924
+  users with EMI > free cashflow: 22 (22.0%)
+  EMI > 0.35*income (outside the stated cap): 1
+
+expenditure > income users: 4
+risk_score vs surplus correlation: 0.673
+

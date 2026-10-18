@@ -1,0 +1,4 @@
+goal_id,goal_name,future_goal_cost,existing_funding,funding_gap,goal_priority_score,initial_savings_allocated,existing_assets_allocated,monthly_savings_contribution,monthly_investment_contribution,loan_principal,estimated_loan_emi,estimated_loan_total_repayment,estimated_loan_interest_cost,projected_new_funding,shortfall,achievement_ratio,time_horizon_months
+G1,Professional certification,92700.0,10000,82700.0,20.0,-0.0,0.0,6891.666666666667,0.0,0.0,0.0,0.0,0,82700.0,0.0,1.0,12
+G2,Vehicle down payment,327818.1,50000,277818.1,6.0,0.0,0.0,7717.169444444444,0.0,0.0,0.0,0.0,0,277818.1,0.0,1.0,36
+G3,Home deposit,1106886.478882383,100000,1006886.4788823831,11.428571428571427,0.0,0.0,0.0,10076.580427705492,0.0,0.0,0.0,0,1006886.4788823831,0.0,1.0,84

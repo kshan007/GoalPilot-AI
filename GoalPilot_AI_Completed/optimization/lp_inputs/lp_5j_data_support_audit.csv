@@ -1,0 +1,14 @@
+field,exists,missing_values,unique_values
+monthly_income,True,0,10000
+monthly_expenditure,True,0,1449
+monthly_emi,True,0,4209
+initial_savings,True,0,10000
+initial_investment,True,0,5446
+investment_capacity_ratio,True,0,7871
+risk_score,True,0,8754
+risk_profile,True,0,3
+goal_horizon_months,True,0,115
+target_amount,True,0,10000
+goal_specific_monthly_capacity,True,0,7871
+goal_allocation_factor,True,0,7871
+goal_horizon_funding_actual,True,0,8536

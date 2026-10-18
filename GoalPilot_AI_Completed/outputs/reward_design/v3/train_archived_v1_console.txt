@@ -1,0 +1,6 @@
+
+[train] 1 versions x 3 seeds x 50000 steps on 48 fresh train users
+      archived_v1 seed=7: 420 steps/s, 353 episodes, saved=True
+      archived_v1 seed=17: 273 steps/s, 353 episodes, saved=True
+      archived_v1 seed=27: 216 steps/s, 353 episodes, saved=True
+

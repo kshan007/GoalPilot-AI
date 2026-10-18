@@ -1,0 +1,5 @@
+variable,description,unit,nonnegative,status
+G_t,Goal contribution in month t,currency/month,YES,SUPPORTED
+I_t,New investment contribution in month t,currency/month,YES,SUPPORTED AS DECISION CONCEPT
+C_t,Cash/savings retained in month t,currency/month,YES,SUPPORTED AS DECISION CONCEPT
+D,Goal shortfall at horizon,currency,YES,SUPPORTED

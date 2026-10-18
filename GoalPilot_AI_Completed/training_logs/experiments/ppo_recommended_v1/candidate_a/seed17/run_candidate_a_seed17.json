@@ -1,0 +1,15 @@
+{
+  "reward_version": "candidate_a",
+  "seed": 17,
+  "timesteps": 50000,
+  "config_preset": "recommended",
+  "train_users": 48,
+  "validation_users": 16,
+  "seconds": 769.4065744876862,
+  "steps_per_second": 64.98514785020234,
+  "episodes_completed": 353,
+  "mean_train_episode_return": -55.179604220431855,
+  "best_validation_checkpoint": "S:\\fyp\\GoalPilot_AI_Completed\\training_logs\\experiments\\ppo_recommended_v1\\candidate_a\\seed17\\best\\best_model.zip",
+  "best_validation_exists": true,
+  "final_checkpoint": "S:\\fyp\\GoalPilot_AI_Completed\\training_logs\\experiments\\ppo_recommended_v1\\candidate_a\\seed17\\ppo_candidate_a_seed17_final.zip"
+}

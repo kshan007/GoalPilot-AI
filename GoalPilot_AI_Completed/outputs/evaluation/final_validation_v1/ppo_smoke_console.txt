@@ -1,0 +1,13 @@
+
+  logger.warn("`check_env(warn=...)` parameter is now ignored.")
+{
+  "check_env": "passed",
+  "episode_months": 142,
+  "archived_loaded": true,
+  "archived_episode_reward": -12.421241053755143,
+  "smoke_saved": true,
+  "new_model_episode_reward": -11.632156533780856,
+  "config": "S:\\fyp\\GoalPilot_AI_Completed\\training_logs\\experiments\\experiment_config_v1.json",
+  "report": "S:\\fyp\\GoalPilot_AI_Completed\\outputs\\evaluation\\final_validation_v1\\ppo_smoke_test.json"
+}
+

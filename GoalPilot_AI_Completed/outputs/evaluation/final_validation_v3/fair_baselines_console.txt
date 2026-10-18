@@ -1,0 +1,335 @@
+
+{
+  "fresh_test_users": 16,
+  "eligibility_eligible": 14,
+  "total_affordability_violations": 0.0,
+  "ranking_flag_off": [
+    {
+      "policy": "RL archived_v1 seed7",
+      "weighted_goal_achievement": 0.5908,
+      "pct_goals_fully_funded": 0.4812,
+      "pct_goals_met_by_deadline": 0.1146,
+      "net_worth": 2748924.8111,
+      "downside_exposure": -837610.5075,
+      "total_interest_paid": 8716.0681
+    },
+    {
+      "policy": "Rule: need-proportional investment",
+      "weighted_goal_achievement": 0.5835,
+      "pct_goals_fully_funded": 0.4281,
+      "pct_goals_met_by_deadline": 0.1271,
+      "net_worth": 2840802.6339,
+      "downside_exposure": -1021366.6513,
+      "total_interest_paid": 0.0
+    },
+    {
+      "policy": "Rule: uniform 50/50",
+      "weighted_goal_achievement": 0.58,
+      "pct_goals_fully_funded": 0.4656,
+      "pct_goals_met_by_deadline": 0.1427,
+      "net_worth": 2751776.9413,
+      "downside_exposure": -834020.7333,
+      "total_interest_paid": 0.0
+    },
+    {
+      "policy": "Rule: uniform investment",
+      "weighted_goal_achievement": 0.58,
+      "pct_goals_fully_funded": 0.4656,
+      "pct_goals_met_by_deadline": 0.1427,
+      "net_worth": 2751776.9413,
+      "downside_exposure": -834020.7333,
+      "total_interest_paid": 0.0
+    },
+    {
+      "policy": "RL candidate_a seed27",
+      "weighted_goal_achievement": 0.5586,
+      "pct_goals_fully_funded": 0.3771,
+      "pct_goals_met_by_deadline": 0.1479,
+      "net_worth": 2709945.5167,
+      "downside_exposure": -773103.3317,
+      "total_interest_paid": 7224.351
+    },
+    {
+      "policy": "Rule: uniform savings",
+      "weighted_goal_achievement": 0.5584,
+      "pct_goals_fully_funded": 0.4531,
+      "pct_goals_met_by_deadline": 0.1427,
+      "net_worth": 2363889.6201,
+      "downside_exposure": -141574.9121,
+      "total_interest_paid": 0.0
+    },
+    {
+      "policy": "RL candidate_a seed17",
+      "weighted_goal_achievement": 0.5299,
+      "pct_goals_fully_funded": 0.4073,
+      "pct_goals_met_by_deadline": 0.0938,
+      "net_worth": 2653331.5791,
+      "downside_exposure": -724279.697,
+      "total_interest_paid": 39269.447
+    },
+    {
+      "policy": "RL archived_v1 seed17",
+      "weighted_goal_achievement": 0.5265,
+      "pct_goals_fully_funded": 0.4198,
+      "pct_goals_met_by_deadline": 0.1198,
+      "net_worth": 2677196.8239,
+      "downside_exposure": -714453.752,
+      "total_interest_paid": 16540.9161
+    },
+    {
+      "policy": "LP optimizer plan",
+      "weighted_goal_achievement": 0.4955,
+      "pct_goals_fully_funded": 0.3771,
+      "pct_goals_met_by_deadline": 0.1687,
+      "net_worth": 2688698.9861,
+      "downside_exposure": -725526.405,
+      "total_interest_paid": 7423.5824
+    },
+    {
+      "policy": "RL candidate_a seed7",
+      "weighted_goal_achievement": 0.4895,
+      "pct_goals_fully_funded": 0.3792,
+      "pct_goals_met_by_deadline": 0.151,
+      "net_worth": 2669111.2733,
+      "downside_exposure": -694813.2711,
+      "total_interest_paid": 15711.0998
+    },
+    {
+      "policy": "RL archived_v1 seed27",
+      "weighted_goal_achievement": 0.4399,
+      "pct_goals_fully_funded": 0.3177,
+      "pct_goals_met_by_deadline": 0.1115,
+      "net_worth": 2661715.4642,
+      "downside_exposure": -697261.1909,
+      "total_interest_paid": 19859.9541
+    },
+    {
+      "policy": "Rule: urgency (known-defective)",
+      "weighted_goal_achievement": 0.4051,
+      "pct_goals_fully_funded": 0.0625,
+      "pct_goals_met_by_deadline": 0.0,
+      "net_worth": 2363889.6201,
+      "downside_exposure": -141574.9121,
+      "total_interest_paid": 0.0
+    },
+    {
+      "policy": "Rule: need-proportional both",
+      "weighted_goal_achievement": 0.3629,
+      "pct_goals_fully_funded": 0.0625,
+      "pct_goals_met_by_deadline": 0.0,
+      "net_worth": 2840539.0251,
+      "downside_exposure": -1016705.8254,
+      "total_interest_paid": 0.0
+    },
+    {
+      "policy": "Rule: need-proportional savings",
+      "weighted_goal_achievement": 0.3211,
+      "pct_goals_fully_funded": 0.0625,
+      "pct_goals_met_by_deadline": 0.0,
+      "net_worth": 2363889.6201,
+      "downside_exposure": -141574.9121,
+      "total_interest_paid": 0.0
+    }
+  ],
+  "uncertainty_eligible": [
+    {
+      "config": "flag_off_recommended",
+      "policy": "LP optimizer plan",
+      "eligible_users": 14,
+      "achievement_mean": 0.5663,
+      "ci95_low": 0.459,
+      "ci95_high": 0.6698,
+      "sd_across_users": 0.2092
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "RL archived_v1 seed17",
+      "eligible_users": 14,
+      "achievement_mean": 0.6017,
+      "ci95_low": 0.5156,
+      "ci95_high": 0.6826,
+      "sd_across_users": 0.1658
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "RL archived_v1 seed27",
+      "eligible_users": 14,
+      "achievement_mean": 0.5028,
+      "ci95_low": 0.4083,
+      "ci95_high": 0.596,
+      "sd_across_users": 0.1861
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "RL archived_v1 seed7",
+      "eligible_users": 14,
+      "achievement_mean": 0.6753,
+      "ci95_low": 0.6026,
+      "ci95_high": 0.745,
+      "sd_across_users": 0.1438
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "RL candidate_a seed17",
+      "eligible_users": 14,
+      "achievement_mean": 0.6056,
+      "ci95_low": 0.5134,
+      "ci95_high": 0.6922,
+      "sd_across_users": 0.1796
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "RL candidate_a seed27",
+      "eligible_users": 14,
+      "achievement_mean": 0.6384,
+      "ci95_low": 0.5712,
+      "ci95_high": 0.6998,
+      "sd_across_users": 0.1302
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "RL candidate_a seed7",
+      "eligible_users": 14,
+      "achievement_mean": 0.5594,
+      "ci95_low": 0.4648,
+      "ci95_high": 0.6591,
+      "sd_across_users": 0.1953
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: need-proportional both",
+      "eligible_users": 14,
+      "achievement_mean": 0.4147,
+      "ci95_low": 0.2866,
+      "ci95_high": 0.56,
+      "sd_across_users": 0.2772
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: need-proportional investment",
+      "eligible_users": 14,
+      "achievement_mean": 0.6669,
+      "ci95_low": 0.5831,
+      "ci95_high": 0.754,
+      "sd_across_users": 0.1721
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: need-proportional savings",
+      "eligible_users": 14,
+      "achievement_mean": 0.3669,
+      "ci95_low": 0.2429,
+      "ci95_high": 0.5112,
+      "sd_across_users": 0.2706
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: uniform 50/50",
+      "eligible_users": 14,
+      "achievement_mean": 0.6628,
+      "ci95_low": 0.5893,
+      "ci95_high": 0.7329,
+      "sd_across_users": 0.1453
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: uniform investment",
+      "eligible_users": 14,
+      "achievement_mean": 0.6628,
+      "ci95_low": 0.5893,
+      "ci95_high": 0.7329,
+      "sd_across_users": 0.1453
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: uniform savings",
+      "eligible_users": 14,
+      "achievement_mean": 0.6382,
+      "ci95_low": 0.5651,
+      "ci95_high": 0.7085,
+      "sd_across_users": 0.1456
+    },
+    {
+      "config": "flag_off_recommended",
+      "policy": "Rule: urgency (known-defective)",
+      "eligible_users": 14,
+      "achievement_mean": 0.463,
+      "ci95_low": 0.3524,
+      "ci95_high": 0.5818,
+      "sd_across_users": 0.2293
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "LP optimizer plan",
+      "eligible_users": 14,
+      "achievement_mean": 0.5935,
+      "ci95_low": 0.4773,
+      "ci95_high": 0.7077,
+      "sd_across_users": 0.2283
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: need-proportional both",
+      "eligible_users": 14,
+      "achievement_mean": 0.4144,
+      "ci95_low": 0.2866,
+      "ci95_high": 0.5587,
+      "sd_across_users": 0.2763
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: need-proportional investment",
+      "eligible_users": 14,
+      "achievement_mean": 0.6857,
+      "ci95_low": 0.5991,
+      "ci95_high": 0.7728,
+      "sd_across_users": 0.1756
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: need-proportional savings",
+      "eligible_users": 14,
+      "achievement_mean": 0.3669,
+      "ci95_low": 0.2429,
+      "ci95_high": 0.5112,
+      "sd_across_users": 0.2706
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: uniform 50/50",
+      "eligible_users": 14,
+      "achievement_mean": 0.6962,
+      "ci95_low": 0.6157,
+      "ci95_high": 0.7771,
+      "sd_across_users": 0.1625
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: uniform investment",
+      "eligible_users": 14,
+      "achievement_mean": 0.6962,
+      "ci95_low": 0.6157,
+      "ci95_high": 0.7771,
+      "sd_across_users": 0.1625
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: uniform savings",
+      "eligible_users": 14,
+      "achievement_mean": 0.6801,
+      "ci95_low": 0.5972,
+      "ci95_high": 0.7646,
+      "sd_across_users": 0.1686
+    },
+    {
+      "config": "flag_on_with_reallocation",
+      "policy": "Rule: urgency (known-defective)",
+      "eligible_users": 14,
+      "achievement_mean": 0.463,
+      "ci95_low": 0.3524,
+      "ci95_high": 0.5818,
+      "sd_across_users": 0.2293
+    }
+  ]
+}
+

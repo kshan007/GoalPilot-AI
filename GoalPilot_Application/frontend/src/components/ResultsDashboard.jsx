@@ -317,7 +317,7 @@ export default function ResultsDashboard({ result, onReset, onModifyInputs, onSe
 
             <div style={{ marginTop: 20, background: 'var(--bg-elevated)', padding: 16, borderRadius: 'var(--radius-md)' }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: 'var(--accent-amber)', marginBottom: 8 }}>
-                NISM Investor Guidance & Financial Best Practices
+                Investor Guidance & Financial Best Practices
               </h4>
               <ul style={{ paddingLeft: 18, fontSize: 12, color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: 6 }}>
                 {explanation.nism_guidance_notes.map((note, idx) => (

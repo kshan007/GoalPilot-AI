@@ -1,0 +1,4 @@
+goal_id,goal_name,current_cost,target_date,time_horizon_months,priority,criticality,existing_funding,future_goal_cost,funding_gap,goal_priority_score,required_monthly_contribution
+G1,Professional certification,90000,2027-10-10,12,4,5,10000,92700.0,82700.0,20.0,6891.666666666667
+G2,Vehicle down payment,300000,2029-10-10,36,3,3,50000,327818.1,277818.1,6.0,7717.169444444444
+G3,Home deposit,900000,2033-10-10,84,5,4,100000,1106886.478882383,1006886.4788823831,11.428571428571427,11986.743796218847

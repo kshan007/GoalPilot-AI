@@ -1,0 +1,5 @@
+objective,form,basis,verified_by_existing_methodology,status
+Maximize goal funding,max SUM(G_t),Directly aligned with goal funding,NO,CANDIDATE ONLY
+Minimize goal shortfall,min D,Goal shortfall is an existing outcome,NO,CANDIDATE ONLY
+Minimize shortfall subject to investment allocation,min D with investment constraints,Potential optimization formulation,NO,CANDIDATE ONLY
+Maximize total wealth,max final savings + final investment,Existing wealth fields,NO,NOT SELECTED

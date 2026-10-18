@@ -1,0 +1,13 @@
+field,LP_role,meaning,verified,source_basis
+monthly_income,Parameter,Monthly income available to the financial plan,YES,Existing LP input
+monthly_expenditure,Parameter,Monthly expenditure,YES,Existing LP input
+monthly_emi,Parameter,Monthly EMI obligation,YES,Existing LP input
+initial_savings,Initial state,Savings available at start,YES,Existing LP input
+initial_investment,Initial state,Existing investment value at start,YES,Existing LP input
+investment_capacity_ratio,Upper-bound parameter,User-specific investment capacity ratio,YES,Existing LP input
+risk_score,Parameter,User risk score,YES,Existing LP input
+risk_profile,Parameter,Aggressive / moderate / conservative profile,YES,Existing LP input
+goal_horizon_months,Parameter,Number of months available for goal,YES,Existing LP input
+target_amount,Parameter,Required goal target,YES,Existing LP input
+goal_specific_monthly_capacity,Upper-bound parameter,Existing monthly goal capacity,YES,Existing LP input
+goal_allocation_factor,Verified allocation parameter,Fraction of positive cash flow allocated to goal,YES,Step 5I exact reconstruction

@@ -1,0 +1,11 @@
+constraint,candidate_form,data_support,status
+Non-negativity,"G_t >= 0, I_t >= 0, C_t >= 0",Direct,SUPPORTED
+Monthly financial budget,"G_t + I_t + C_t <= max(0, income - expenditure - EMI)","Income, expenditure and EMI exist",CANDIDATE — needs confirmation against project methodology
+Goal monthly capacity,G_t <= goal_specific_monthly_capacity × goal_allocation_factor,Both fields exist,SUPPORTED
+Investment capacity,I_t <= positive_surplus × investment_capacity_ratio,Surplus and investment capacity ratio exist,SUPPORTED AS EXISTING LOGIC
+Goal horizon,"t = 1,...,goal_horizon_months",goal_horizon_months exists,SUPPORTED
+Goal target,Eligible goal funding + D >= target_amount,target_amount exists,FORMULATION REQUIRES DEFINITION OF ELIGIBLE FUNDING
+Initial savings treatment,Initial savings may or may not be included in eligible goal funding,initial_savings exists,NOT YET DECIDED
+Initial investment treatment,Initial investment remains an initial portfolio state unless methodology says otherwise,initial_investment exists,SUPPORTED AS INITIAL STATE
+Borrowing,No borrowing variable introduced,No explicit borrowing capacity/principal field identified,EXCLUDED FOR NOW
+WALR,Not directly inserted into LP without an explicit borrowing mechanism,"WALR exists in economic environment, but no borrowing decision variable",EXCLUDED FROM BASE LP FOR NOW

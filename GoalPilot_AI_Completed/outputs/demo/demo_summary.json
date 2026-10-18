@@ -1,0 +1,54 @@
+{
+  "config_preset": "recommended",
+  "buckets": {
+    "feasible": 1,
+    "partial": 77,
+    "infeasible": 22
+  },
+  "selected": {
+    "feasible": "USER_00058",
+    "partial": "USER_00001",
+    "infeasible": "USER_00002"
+  },
+  "scenarios": [
+    {
+      "kind": "feasible",
+      "user_id": "USER_00058",
+      "investable_surplus": 19760.800394421356,
+      "n_goals": 3,
+      "total_target": 505554.9647048954,
+      "total_funded": 505554.9647048954,
+      "total_shortfall": 0.0,
+      "weighted_achievement": 1.0,
+      "net_worth": 3503590.8141101236,
+      "sensitivity_note": "Under `capacity x0.5` the weighted achievement becomes 0.8669 (change -0.1331 vs the 1.0000 baseline); shortfall +53,265.",
+      "file": "S:\\fyp\\GoalPilot_AI_Completed\\outputs\\demo\\feasible_USER_00058.md"
+    },
+    {
+      "kind": "partial",
+      "user_id": "USER_00001",
+      "investable_surplus": 14481.335333988885,
+      "n_goals": 3,
+      "total_target": 12592268.885608,
+      "total_funded": 2516588.016512876,
+      "total_shortfall": 10075680.869095124,
+      "weighted_achievement": 0.08002535422225984,
+      "net_worth": 2817588.193997081,
+      "sensitivity_note": "Under `capacity x0.5` the weighted achievement becomes 0.0727 (change -0.0073 vs the 0.0800 baseline); shortfall +230,119.",
+      "file": "S:\\fyp\\GoalPilot_AI_Completed\\outputs\\demo\\partial_USER_00001.md"
+    },
+    {
+      "kind": "infeasible",
+      "user_id": "USER_00002",
+      "investable_surplus": -12898.95410194549,
+      "n_goals": 3,
+      "total_target": 461064.5831498057,
+      "total_funded": 0.0,
+      "total_shortfall": 461064.5831498057,
+      "weighted_achievement": 0.0,
+      "net_worth": 13659.350863135336,
+      "sensitivity_note": "Under `capacity x0.5` the weighted achievement becomes 0.0000 (change +0.0000 vs the 0.0000 baseline); shortfall +0.",
+      "file": "S:\\fyp\\GoalPilot_AI_Completed\\outputs\\demo\\infeasible_USER_00002.md"
+    }
+  ]
+}

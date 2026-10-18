@@ -1,0 +1,306 @@
+
+{
+  "feasible_users": 14,
+  "ranking": [
+    {
+      "policy": "Need-proportional invest",
+      "weighted_achievement": 0.635,
+      "pct_goals_fully_funded": 0.4155,
+      "allocated_fraction": 0.8256,
+      "idle_fraction": 0.1744,
+      "market_value_earmarked": 1738583.0336,
+      "net_worth": 3756622.6602
+    },
+    {
+      "policy": "AGGRESSIVE all channels",
+      "weighted_achievement": 0.6252,
+      "pct_goals_fully_funded": 0.4774,
+      "allocated_fraction": 0.7078,
+      "idle_fraction": 0.2922,
+      "market_value_earmarked": 1085818.7316,
+      "net_worth": 3507316.9912
+    },
+    {
+      "policy": "Investments only",
+      "weighted_achievement": 0.6161,
+      "pct_goals_fully_funded": 0.4774,
+      "allocated_fraction": 0.7059,
+      "idle_fraction": 0.2941,
+      "market_value_earmarked": 1117511.8769,
+      "net_worth": 3537837.7872
+    },
+    {
+      "policy": "Mixed (0.50/0.50)",
+      "weighted_achievement": 0.6161,
+      "pct_goals_fully_funded": 0.4774,
+      "allocated_fraction": 0.7059,
+      "idle_fraction": 0.2941,
+      "market_value_earmarked": 1117511.8769,
+      "net_worth": 3537837.7872
+    },
+    {
+      "policy": "LP optimizer plan",
+      "weighted_achievement": 0.6113,
+      "pct_goals_fully_funded": 0.4298,
+      "allocated_fraction": 0.742,
+      "idle_fraction": 0.258,
+      "market_value_earmarked": 1248065.5235,
+      "net_worth": 3579143.6974
+    },
+    {
+      "policy": "RL candidate_a seed7",
+      "weighted_achievement": 0.5963,
+      "pct_goals_fully_funded": 0.4964,
+      "allocated_fraction": 0.6398,
+      "idle_fraction": 0.3602,
+      "market_value_earmarked": 789222.3994,
+      "net_worth": 3404120.2783
+    },
+    {
+      "policy": "RL candidate_a seed27",
+      "weighted_achievement": 0.5885,
+      "pct_goals_fully_funded": 0.4905,
+      "allocated_fraction": 0.6389,
+      "idle_fraction": 0.3611,
+      "market_value_earmarked": 1137823.3088,
+      "net_worth": 3526044.8586
+    },
+    {
+      "policy": "Savings only",
+      "weighted_achievement": 0.5873,
+      "pct_goals_fully_funded": 0.4536,
+      "allocated_fraction": 0.7253,
+      "idle_fraction": 0.2747,
+      "market_value_earmarked": 0.0,
+      "net_worth": 2982684.506
+    },
+    {
+      "policy": "RL candidate_a seed17",
+      "weighted_achievement": 0.5397,
+      "pct_goals_fully_funded": 0.4536,
+      "allocated_fraction": 0.5511,
+      "idle_fraction": 0.4489,
+      "market_value_earmarked": 523207.5404,
+      "net_worth": 3268595.0321
+    },
+    {
+      "policy": "RL archived_v1 seed7",
+      "weighted_achievement": 0.4896,
+      "pct_goals_fully_funded": 0.369,
+      "allocated_fraction": 0.6779,
+      "idle_fraction": 0.3221,
+      "market_value_earmarked": 560853.9428,
+      "net_worth": 3268973.1619
+    },
+    {
+      "policy": "RL archived_v1 seed27",
+      "weighted_achievement": 0.4561,
+      "pct_goals_fully_funded": 0.3131,
+      "allocated_fraction": 0.6621,
+      "idle_fraction": 0.3379,
+      "market_value_earmarked": 1182049.3193,
+      "net_worth": 3555902.7504
+    },
+    {
+      "policy": "Need-proportional both",
+      "weighted_achievement": 0.4358,
+      "pct_goals_fully_funded": 0.1429,
+      "allocated_fraction": 0.9409,
+      "idle_fraction": 0.0591,
+      "market_value_earmarked": 1730323.4764,
+      "net_worth": 3755961.1529
+    },
+    {
+      "policy": "RL archived_v1 seed17",
+      "weighted_achievement": 0.4268,
+      "pct_goals_fully_funded": 0.3083,
+      "allocated_fraction": 0.4853,
+      "idle_fraction": 0.5147,
+      "market_value_earmarked": 742153.5117,
+      "net_worth": 3367736.7248
+    },
+    {
+      "policy": "Rule-based urgency",
+      "weighted_achievement": 0.3713,
+      "pct_goals_fully_funded": 0.0714,
+      "allocated_fraction": 0.9527,
+      "idle_fraction": 0.0473,
+      "market_value_earmarked": 0.0,
+      "net_worth": 2982684.506
+    },
+    {
+      "policy": "Need-proportional savings",
+      "weighted_achievement": 0.3673,
+      "pct_goals_fully_funded": 0.0714,
+      "allocated_fraction": 0.9527,
+      "idle_fraction": 0.0473,
+      "market_value_earmarked": 0.0,
+      "net_worth": 2982684.506
+    }
+  ],
+  "rl_action_distributions": [
+    {
+      "policy": "RL archived_v1 seed17",
+      "channel": "invest",
+      "mean": 0.3134,
+      "sd": 0.4116,
+      "frac_below_0p05": 0.5697,
+      "frac_above_0p95": 0.1722,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed17",
+      "channel": "loan",
+      "mean": 0.0386,
+      "sd": 0.0815,
+      "frac_below_0p05": 0.7848,
+      "frac_above_0p95": 0.0,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed17",
+      "channel": "savings",
+      "mean": 0.2986,
+      "sd": 0.3815,
+      "frac_below_0p05": 0.4885,
+      "frac_above_0p95": 0.1339,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed27",
+      "channel": "invest",
+      "mean": 0.1467,
+      "sd": 0.1792,
+      "frac_below_0p05": 0.5076,
+      "frac_above_0p95": 0.0,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed27",
+      "channel": "loan",
+      "mean": 0.4164,
+      "sd": 0.2772,
+      "frac_below_0p05": 0.1038,
+      "frac_above_0p95": 0.0652,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed27",
+      "channel": "savings",
+      "mean": 0.258,
+      "sd": 0.3189,
+      "frac_below_0p05": 0.517,
+      "frac_above_0p95": 0.0479,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed7",
+      "channel": "invest",
+      "mean": 0.208,
+      "sd": 0.2757,
+      "frac_below_0p05": 0.572,
+      "frac_above_0p95": 0.0,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed7",
+      "channel": "loan",
+      "mean": 0.0901,
+      "sd": 0.2285,
+      "frac_below_0p05": 0.8102,
+      "frac_above_0p95": 0.0,
+      "n": 7810
+    },
+    {
+      "policy": "RL archived_v1 seed7",
+      "channel": "savings",
+      "mean": 0.5448,
+      "sd": 0.3828,
+      "frac_below_0p05": 0.288,
+      "frac_above_0p95": 0.1456,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed17",
+      "channel": "invest",
+      "mean": 0.3126,
+      "sd": 0.4156,
+      "frac_below_0p05": 0.4721,
+      "frac_above_0p95": 0.2545,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed17",
+      "channel": "loan",
+      "mean": 0.1301,
+      "sd": 0.1459,
+      "frac_below_0p05": 0.4759,
+      "frac_above_0p95": 0.0,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed17",
+      "channel": "savings",
+      "mean": 0.5361,
+      "sd": 0.3779,
+      "frac_below_0p05": 0.138,
+      "frac_above_0p95": 0.3125,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed27",
+      "channel": "invest",
+      "mean": 0.1798,
+      "sd": 0.2771,
+      "frac_below_0p05": 0.6138,
+      "frac_above_0p95": 0.0067,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed27",
+      "channel": "loan",
+      "mean": 0.4221,
+      "sd": 0.3059,
+      "frac_below_0p05": 0.1885,
+      "frac_above_0p95": 0.0149,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed27",
+      "channel": "savings",
+      "mean": 0.2344,
+      "sd": 0.2036,
+      "frac_below_0p05": 0.3494,
+      "frac_above_0p95": 0.0,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed7",
+      "channel": "invest",
+      "mean": 0.3251,
+      "sd": 0.2678,
+      "frac_below_0p05": 0.2461,
+      "frac_above_0p95": 0.0111,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed7",
+      "channel": "loan",
+      "mean": 0.1813,
+      "sd": 0.3306,
+      "frac_below_0p05": 0.6017,
+      "frac_above_0p95": 0.104,
+      "n": 7810
+    },
+    {
+      "policy": "RL candidate_a seed7",
+      "channel": "savings",
+      "mean": 0.2195,
+      "sd": 0.3232,
+      "frac_below_0p05": 0.6054,
+      "frac_above_0p95": 0.0169,
+      "n": 7810
+    }
+  ]
+}
+

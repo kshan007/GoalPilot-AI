@@ -1,6 +1,6 @@
 # GoalPilot Application
 
-> **Intelligent Single-Goal Financial Optimization & Longitudinal Planning Platform**  
+> **Intelligent Single-Goal Financial Optimization & Longitudinal Planning Platform**
 > Educational prototype exposing the core research findings and Linear Programming optimization engine of the GoalPilot AI project.
 
 ---
@@ -10,6 +10,7 @@
 **GoalPilot Application** is a full-stack financial decision-support tool built to interface with the **GoalPilot AI** research framework. It provides an intuitive, high-grade fintech user interface on top of the mathematically validated **Single-Goal Linear Programming Optimization Engine**.
 
 ### Core Value Proposition
+
 - Translates personal financial profiles and single-goal targets into dynamic macroeconomic trajectories.
 - Solves for the optimal monthly goal funding schedule using the empirical CPI-calibrated simulation model.
 - Strictly minimizes goal shortfall subject to monthly available cash-flow constraints.
@@ -20,12 +21,14 @@
 ## 2. Current vs. Future Capabilities
 
 ### Current Version (v1.0.0)
+
 - **Single Financial Goal Optimization**: Formulates and solves a discrete monthly Linear Program for exactly one financial target over a horizon of up to 144 months.
 - **Empirical Macroeconomic Simulation**: Dynamically adjusts income and essential living expenditures using calibrated Indian CPI inflation schedules.
 - **Decision Engine Interface**: Modular architecture decoupling user inputs, simulation layers, and solver engines.
 - **Benchmark Research Parity**: Includes direct validation tools to replicate results from the 10,000-user synthetic dataset.
 
 ### Future Extensibility
+
 - **Multiple Financial Goals**: Concurrent goal scheduling, cross-goal trade-offs, and multi-objective Pareto frontiers.
 - **Reinforcement Learning (RL)**: Closed-loop sequential decision-making adapting to real-time market shocks and cash-flow surprises.
 - **Dynamic Portfolio Optimization**: Active asset allocation rebalancing across equity, debt, and cash instruments.
@@ -56,10 +59,12 @@ Parent/
 ## 4. Setup & Running Locally
 
 ### Prerequisites
+
 - Python 3.10+ (Python 3.11 / 3.12 / 3.13 supported)
 - Node.js 18+ and npm
 
 ### Backend Setup
+
 ```bash
 cd GoalPilot_Application/backend
 
@@ -74,6 +79,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 ### Frontend Setup
+
 ```bash
 cd GoalPilot_Application/frontend
 

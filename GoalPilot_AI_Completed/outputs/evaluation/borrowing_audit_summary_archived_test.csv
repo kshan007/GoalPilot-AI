@@ -1,0 +1,3 @@
+comparison,users,users_with_loan,mean_loan_principal,total_loan_principal,total_interest_paid,mean_funding_ratio_no_loan,mean_funding_ratio_with_loan,mean_funding_delta,mean_net_worth_delta,mean_reward_delta,helps_funding,hurts_funding,funding_neutral,median_interest_per_extra_funded_rupee
+savings_vs_savings_and_loan,20,11,59198.301679671255,1183966.033593425,256912.42538848863,0.2256160888908439,0.23272184579305,0.007105756902206152,-65948.62958725361,-0.5447118317486507,5,5,1,0.28849674083536864
+half_savings_vs_half_savings_and_loan,20,11,59198.301679671255,1183966.033593425,256912.42538848863,0.2256160888908439,0.23272184579305,0.007105756902206152,-65948.62958725361,-0.5447118317486507,5,5,1,0.28849674083536864

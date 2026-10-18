@@ -1,0 +1,12 @@
+{
+  "reward_version": "archived_v1",
+  "seed": 7,
+  "timesteps": 50000,
+  "train_users": 48,
+  "seconds": 118.93392300605774,
+  "steps_per_second": 420.4015030888481,
+  "episodes_completed": 353,
+  "mean_train_episode_return": -13.57449934740884,
+  "checkpoint": "S:\\fyp\\GoalPilot_AI_Completed\\training_logs\\experiments\\fresh_split_v1\\archived_v1\\ppo_archived_v1_seed7.zip",
+  "checkpoint_saved": true
+}

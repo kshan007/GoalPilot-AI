@@ -1,0 +1,34 @@
+{
+  "tolerance": 1e-08,
+  "overall": "PASS",
+  "checks": [
+    {
+      "check": "rl_baseline_policy_comparison.csv vs policy_detail_archived_all.csv",
+      "status": "PASS",
+      "comparisons": 4800,
+      "mismatches": 0,
+      "examples": []
+    },
+    {
+      "check": "rl_policy_diagnostic_summary.csv vs policy_summary_archived_all.csv",
+      "status": "PASS",
+      "comparisons": 16,
+      "mismatches": 0,
+      "examples": []
+    },
+    {
+      "check": "rl_heldout_policy_comparison_detail.csv vs policy_detail_archived_test.csv",
+      "status": "PASS",
+      "comparisons": 700,
+      "mismatches": 0,
+      "examples": []
+    },
+    {
+      "check": "rl_heldout_policy_comparison_summary.csv vs policy_summary_archived_test.csv",
+      "status": "PASS",
+      "comparisons": 25,
+      "mismatches": 0,
+      "examples": []
+    }
+  ]
+}

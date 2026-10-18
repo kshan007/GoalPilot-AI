@@ -1,0 +1,57 @@
+{
+  "measured_steps_per_second": 585.8891119569424,
+  "runs_measured": 3,
+  "per_version_summary": [
+    {
+      "reward_version": "archived_v1",
+      "seeds": 3,
+      "mean_first50": -12.660923936645558,
+      "mean_last50": -14.461246575610396,
+      "seed_sd_of_last50": 1.0039510760588155,
+      "mean_tail_slope": -0.02820446244630791,
+      "max_abs_slope_t": 1.3344043792003275,
+      "runs_still_improving": 0,
+      "mean_residual_sd_tail": 7.219482973951789
+    },
+    {
+      "reward_version": "candidate_a",
+      "seeds": 3,
+      "mean_first50": -55.17872578401573,
+      "mean_last50": -52.02334245440509,
+      "seed_sd_of_last50": 7.8922541896678675,
+      "mean_tail_slope": -0.03304472633047684,
+      "max_abs_slope_t": 1.3949437978846442,
+      "runs_still_improving": 0,
+      "mean_residual_sd_tail": 35.81694194534339
+    },
+    {
+      "reward_version": "candidate_b",
+      "seeds": 3,
+      "mean_first50": 4502.573466266651,
+      "mean_last50": 10184.347460600608,
+      "seed_sd_of_last50": 356.27856906587556,
+      "mean_tail_slope": -58.77749792481617,
+      "max_abs_slope_t": 0.8178616583850261,
+      "runs_still_improving": 0,
+      "mean_residual_sd_tail": 72492.72110313545
+    }
+  ],
+  "extrapolated_wall_clock": {
+    "50000": {
+      "seconds_per_run": 85.34038093487314,
+      "minutes_per_run": 1.4223396822478855,
+      "minutes_for_3_seeds": 4.267019046743656
+    },
+    "150000": {
+      "seconds_per_run": 256.0211428046194,
+      "minutes_per_run": 4.267019046743656,
+      "minutes_for_3_seeds": 12.80105714023097
+    },
+    "300000": {
+      "seconds_per_run": 512.0422856092388,
+      "minutes_per_run": 8.534038093487313,
+      "minutes_for_3_seeds": 25.60211428046194
+    }
+  },
+  "note": "Extrapolation assumes constant throughput; PPO cost per timestep grows only with the number of gradient updates, which is linear in timesteps here, so this is a fair estimate on this host. No GPU is available."
+}

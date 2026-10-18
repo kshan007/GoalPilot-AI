@@ -1,0 +1,55 @@
+config,policy,horizon_group,weighted_goal_achievement,net_worth
+archived,Archived PPO,medium<=7y,0.2878308469110421,396281.4496001631
+archived,Archived PPO,long>7y,0.29547519093825786,1151375.3386239682
+archived,Investments only,medium<=7y,0.3716312880953385,983680.7073799914
+archived,Investments only,long>7y,0.41745703311264265,2828553.91575358
+archived,Mixed (0.50/0.50),medium<=7y,0.40630885407755685,665170.9001214681
+archived,Mixed (0.50/0.50),long>7y,0.4466522237987235,2057555.8647093177
+archived,No action,medium<=7y,0.020230327863310547,74685.43739116767
+archived,No action,long>7y,0.009678474513350521,317174.6010409385
+archived,Rule-based urgency (savings),medium<=7y,0.24664772137317623,701686.7568053758
+archived,Rule-based urgency (savings),long>7y,0.34391977303889976,2690293.3452558
+archived,Savings + loan,medium<=7y,0.4057285818889605,545064.9209039006
+archived,Savings + loan,long>7y,0.45831039113718874,1609228.809661364
+archived,Savings only,medium<=7y,0.40630885407755685,561478.6498406251
+archived,Savings only,long>7y,0.4466522237987235,1701850.0780604412
+corrected_accounting,Investments only,medium<=7y,0.3716312880953385,1302413.8312705718
+corrected_accounting,Investments only,long>7y,0.41745703311264265,4002096.852503041
+corrected_accounting,Mixed (0.50/0.50),medium<=7y,0.40630885407755685,946317.9421894958
+corrected_accounting,Mixed (0.50/0.50),long>7y,0.4466522237987235,3139784.505513356
+corrected_accounting,No action,medium<=7y,0.020230327863310547,842625.691908651
+corrected_accounting,No action,long>7y,0.009678474513350521,2784078.7188644805
+corrected_accounting,Rule-based urgency (savings),medium<=7y,0.24664772137317623,842625.691908651
+corrected_accounting,Rule-based urgency (savings),long>7y,0.34391977303889976,2784078.7188644805
+corrected_accounting,Savings + loan,medium<=7y,0.4057285818889605,839784.3148813415
+corrected_accounting,Savings + loan,long>7y,0.45831039113718874,2765846.196849299
+corrected_accounting,Savings only,medium<=7y,0.40630885407755685,842625.691908651
+corrected_accounting,Savings only,long>7y,0.4466522237987235,2784078.7188644805
+lp_parity,Investments only,medium<=7y,0.35078178632164897,1315403.6842197373
+lp_parity,Investments only,long>7y,0.3954852719284811,4054339.670217732
+lp_parity,LP optimizer plan,medium<=7y,0.22338170290036702,959216.2741519482
+lp_parity,LP optimizer plan,long>7y,0.12533889917330884,3597985.4033056307
+lp_parity,Mixed (0.50/0.50),medium<=7y,0.3855801511193387,949620.7693348862
+lp_parity,Mixed (0.50/0.50),long>7y,0.42488269369424425,3155917.7323297122
+lp_parity,No action,medium<=7y,0.0,842625.691908651
+lp_parity,No action,long>7y,0.0021307141162996033,2784078.7188644805
+lp_parity,Rule-based urgency (savings),medium<=7y,0.2234581525163785,842625.691908651
+lp_parity,Rule-based urgency (savings),long>7y,0.2795409252822364,2784078.7188644805
+lp_parity,Savings + loan,medium<=7y,0.38568664853167384,839760.7300309287
+lp_parity,Savings + loan,long>7y,0.4307789088712104,2769213.5188448783
+lp_parity,Savings only,medium<=7y,0.3855801511193387,842625.691908651
+lp_parity,Savings only,long>7y,0.42488269369424425,2784078.7188644805
+recommended,Investments only,medium<=7y,0.39862808976221203,979979.9779394809
+recommended,Investments only,long>7y,0.4488322682878235,3307976.0985034956
+recommended,LP optimizer plan,medium<=7y,0.39149977581631695,952964.756087351
+recommended,LP optimizer plan,long>7y,0.4475191892717326,3367006.0443594432
+recommended,Mixed (0.50/0.50),medium<=7y,0.39862808976221203,979979.9779394809
+recommended,Mixed (0.50/0.50),long>7y,0.4488322682878235,3307976.0985034956
+recommended,No action,medium<=7y,0.0,842625.691908651
+recommended,No action,long>7y,0.0021307141162996033,2784078.7188644805
+recommended,Rule-based urgency (savings),medium<=7y,0.2234581525163785,842625.691908651
+recommended,Rule-based urgency (savings),long>7y,0.2795409252822364,2784078.7188644805
+recommended,Savings + loan,medium<=7y,0.38568664853167384,839760.7300309287
+recommended,Savings + loan,long>7y,0.4307789088712104,2769213.5188448783
+recommended,Savings only,medium<=7y,0.3855801511193387,842625.691908651
+recommended,Savings only,long>7y,0.42488269369424425,2784078.7188644805

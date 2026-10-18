@@ -1,0 +1,9 @@
+income,expense,emi,surplus,rows_tested,mean_abs_difference,max_abs_difference,matching_rows_1e-6
+monthly_income,monthly_expenditure,monthly_emi,monthly_surplus,1430000,5195.49080969619,139834.6514099795,828256
+monthly_income,monthly_expenditure,monthly_emi,monthly_surplus_dynamic,1430000,12531.552429732079,713311.1216348697,0
+monthly_income,monthly_expenditure_dynamic,monthly_emi,monthly_surplus,1430000,38836.18265151714,942839.1292070281,0
+monthly_income,monthly_expenditure_dynamic,monthly_emi,monthly_surplus_dynamic,1430000,46070.84933594206,1503554.1303531167,0
+monthly_income_dynamic,monthly_expenditure,monthly_emi,monthly_surplus,1430000,41943.30186072247,1503554.1303531167,0
+monthly_income_dynamic,monthly_expenditure,monthly_emi,monthly_surplus_dynamic,1430000,33640.691841820946,942839.1292070281,0
+monthly_income_dynamic,monthly_expenditure_dynamic,monthly_emi,monthly_surplus,1430000,12114.721959991228,713311.12163487,0
+monthly_income_dynamic,monthly_expenditure_dynamic,monthly_emi,monthly_surplus_dynamic,1430000,4.381543353831896e-12,6.984919309616089e-10,1430000

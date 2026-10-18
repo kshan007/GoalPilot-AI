@@ -1,0 +1,72 @@
+{
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "test_users": [
+    "USER_00001",
+    "USER_00005",
+    "USER_00011",
+    "USER_00013",
+    "USER_00019",
+    "USER_00023",
+    "USER_00031",
+    "USER_00032",
+    "USER_00034",
+    "USER_00040",
+    "USER_00045",
+    "USER_00046",
+    "USER_00054",
+    "USER_00071",
+    "USER_00074",
+    "USER_00077",
+    "USER_00078",
+    "USER_00081",
+    "USER_00084",
+    "USER_00091"
+  ],
+  "dependency_versions": {
+    "python": "3.13.7",
+    "numpy": "2.2.3",
+    "pandas": "2.3.1",
+    "gymnasium": "1.4.0",
+    "stable_baselines3": "2.9.0",
+    "torch": "2.8.0+cpu"
+  },
+  "step2_check_env": "passed",
+  "step3_episode": {
+    "user": "USER_00001",
+    "months": 142,
+    "episode_length_expected": 142,
+    "total_reward": -5.412024303610364,
+    "finite_rewards": true,
+    "final_net_worth": 2357349.7949106432
+  },
+  "step5_archived_checkpoint": {
+    "model_path": "S:\\fyp\\GoalPilot_AI_Completed\\simulation\\05_simulation_runs\\rl_prototype\\models\\best_ppo\\best_model.zip",
+    "loaded": true,
+    "action_shape": [
+      5,
+      3
+    ],
+    "action_finite": true,
+    "episode_months": 142,
+    "episode_reward": -12.421241053755143,
+    "final_net_worth": 1384851.462478361
+  },
+  "step6_smoke_training": {
+    "timesteps": 2048,
+    "saved_to": "S:\\fyp\\GoalPilot_AI_Completed\\training_logs\\experiments\\smoke\\ppo_smoke.zip",
+    "saved": true
+  },
+  "step7_new_model_evaluation": {
+    "action_shape": [
+      5,
+      3
+    ],
+    "action_finite": true,
+    "episode_months": 142,
+    "episode_reward": -11.632156533780856,
+    "final_net_worth": 2810823.0902374815,
+    "mean_funding_ratio": 0.6166773943797578
+  },
+  "experiment_config_path": "S:\\fyp\\GoalPilot_AI_Completed\\training_logs\\experiments\\experiment_config_v1.json"
+}

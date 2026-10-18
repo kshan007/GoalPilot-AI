@@ -1,0 +1,43 @@
+
+[1/4] validity gate: reward version must not change environment dynamics
+      identical state trajectories across all three versions (archived_v1 as reference)
+[2/4] training 3 versions x 1 seeds x 2048 steps
+      archived_v1 seed=7: 439 steps/s, 14 episodes, saved=True
+      candidate_a seed=7: 428 steps/s, 14 episodes, saved=True
+      candidate_b seed=7: 459 steps/s, 14 episodes, saved=True
+[3/4] evaluating every trained policy on the same held-out users
+      evaluated archived_v1 seed=7
+      evaluated candidate_a seed=7
+      evaluated candidate_b seed=7
+      evaluated archived checkpoint (historical reference, archived semantics)
+[4/4] summarising
+{
+  "mode": "smoke",
+  "timesteps": 2048,
+  "seeds": [
+    7
+  ],
+  "gate": "identical state trajectories across all three versions (archived_v1 as reference)",
+  "training": [
+    {
+      "reward_version": "archived_v1",
+      "seed": 7,
+      "episodes_completed": 14,
+      "steps_per_second": 439.2209496591691
+    },
+    {
+      "reward_version": "candidate_a",
+      "seed": 7,
+      "episodes_completed": 14,
+      "steps_per_second": 427.5932980338025
+    },
+    {
+      "reward_version": "candidate_b",
+      "seed": 7,
+      "episodes_completed": 14,
+      "steps_per_second": 459.14957325490565
+    }
+  ],
+  "evaluated_rows": 60
+}
+

@@ -1,0 +1,18 @@
+metric,value
+Total users,10000.0
+Historical successful users,6451.0
+Optimized successful users,7582.0
+Newly successful users,1131.0
+Still unsuccessful users,2418.0
+Historical success rate,0.6451
+Optimized success rate,0.7582
+Success improvement percentage points,11.31
+Mean historical shortfall,30580.490390871095
+Mean optimized shortfall,22240.82745179166
+Mean shortfall reduction,8339.662939079435
+Total historical shortfall,305804903.90871096
+Total optimized shortfall,222408274.51791662
+Total shortfall reduction,83396629.39079435
+Maximum funding reconstruction error,2.3283064365386963e-10
+Maximum optimality error,2.3283064365386963e-10
+Maximum target accounting error,2.3283064365386963e-10

@@ -1,0 +1,98 @@
+{
+  "dataset": "government_small_savings_reference",
+  "curated_at": "2026-10-17",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-12-31",
+  "quarter": "Q3 FY 2026-27",
+  "verification": {
+    "status": "published_reference",
+    "official_publisher": "Department of Economic Affairs, Ministry of Finance, Government of India",
+    "official_url": "https://dea.gov.in/",
+    "official_page_reachable_from_this_host": false,
+    "official_page_note": "dea.gov.in and nsiindia.gov.in could not be retrieved from the build host: the TLS certificate chain is not trusted by the host trust store. TLS verification was not disabled.",
+    "cross_check_url": "https://m.economictimes.com/wealth/save/ppf-scss-nsc-interest-rates-has-the-government-changed-rates-for-october-december-2026/small-savings-schemes-interest-rates-for-october-december-2026/slideshow/134724859.cms",
+    "cross_check_published": "2026-10-06",
+    "cross_check_note": "A published report of the Finance Ministry notification confirms rates were left unchanged for 2026-10-01 to 2026-12-31 and states PPF 7.1%, SCSS 8.2% and Sukanya Samriddhi 8.2%. Only those three rates are encoded here; NSC and KVP were NOT verified and are deliberately omitted rather than guessed.",
+    "maintenance": "Re-verify against the official quarterly notification before each academic demonstration. Edit this file only after checking the notification; the app reports this file's effective_from and curated_at verbatim."
+  },
+  "products": [
+    {
+      "product_id": "govt_ppf",
+      "name": "Public Provident Fund (PPF)",
+      "issuer": "Government of India (Department of Economic Affairs)",
+      "category": "govt_scheme",
+      "sub_category": "Long-term sovereign savings",
+      "published_rate": 0.071,
+      "rate_type": "fixed",
+      "rate_basis": "notified_quarterly_rate",
+      "compounding": "annual",
+      "min_investment": 500,
+      "max_investment_per_year": 150000,
+      "lock_in_months": 180,
+      "liquidity": "lock_in",
+      "risk_level": "low",
+      "risk_score": 0.05,
+      "tax_note": "EEE treatment under the Income-tax Act as commonly described; confirm current rules with a tax professional.",
+      "eligibility": [
+        "Resident individual (one account per person)",
+        "Annual contribution between INR 500 and INR 150,000"
+      ],
+      "notes": [
+        "Sovereign-backed. Partial withdrawal is permitted only after the scheme's stipulated period.",
+        "The rate is notified quarterly and can change; the value here is the notified rate for the stated quarter."
+      ]
+    },
+    {
+      "product_id": "govt_ssy",
+      "name": "Sukanya Samriddhi Yojana (SSY)",
+      "issuer": "Government of India (Department of Economic Affairs)",
+      "category": "govt_scheme",
+      "sub_category": "Girl-child sovereign savings",
+      "published_rate": 0.082,
+      "rate_type": "fixed",
+      "rate_basis": "notified_quarterly_rate",
+      "compounding": "annual",
+      "min_investment": 250,
+      "max_investment_per_year": 150000,
+      "lock_in_months": 252,
+      "liquidity": "lock_in",
+      "risk_level": "low",
+      "risk_score": 0.05,
+      "tax_note": "EEE treatment as commonly described; confirm current rules with a tax professional.",
+      "eligibility": [
+        "Account opened by a guardian for a girl child below the scheme's age limit",
+        "Annual contribution between INR 250 and INR 150,000"
+      ],
+      "notes": [
+        "Only relevant to a household with an eligible girl child. It is not a general-purpose instrument.",
+        "The rate is notified quarterly and can change."
+      ]
+    },
+    {
+      "product_id": "govt_scss",
+      "name": "Senior Citizens' Savings Scheme (SCSS)",
+      "issuer": "Government of India (Department of Economic Affairs)",
+      "category": "govt_scheme",
+      "sub_category": "Retirement income, sovereign",
+      "published_rate": 0.082,
+      "rate_type": "fixed",
+      "rate_basis": "notified_quarterly_rate",
+      "compounding": "quarterly_payout",
+      "min_investment": 1000,
+      "max_investment_per_year": 3000000,
+      "lock_in_months": 60,
+      "liquidity": "at_maturity",
+      "risk_level": "low",
+      "risk_score": 0.05,
+      "tax_note": "Interest is taxable; deduction may apply under the applicable section. Confirm with a tax professional.",
+      "eligibility": [
+        "Individual aged 60 or above (with the scheme's specified exceptions)",
+        "Deposit within the scheme's minimum and maximum limits"
+      ],
+      "notes": [
+        "Age-restricted: unsuitable unless the user meets the eligibility condition.",
+        "The rate is notified quarterly and can change."
+      ]
+    }
+  ]
+}

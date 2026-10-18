@@ -1,0 +1,196 @@
+
+{
+  "versions": [
+    "archived_v1",
+    "candidate_a",
+    "candidate_b"
+  ],
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "rows": 180,
+  "total_invariant_violations": 0,
+  "by_version_mean_of_seed_means": {
+    "archived_v1": {
+      "weighted_goal_achievement": {
+        "mean_of_seed_means": 0.3202458654580001,
+        "sd_across_seeds": 0.022005285906617177
+      },
+      "pct_goals_fully_funded": {
+        "mean_of_seed_means": 0.23111111111111113,
+        "sd_across_seeds": 0.023633975857117566
+      },
+      "pct_goals_met_by_deadline": {
+        "mean_of_seed_means": 0.07805555555555556,
+        "sd_across_seeds": 0.02918253536570067
+      },
+      "goal_level_shortfall": {
+        "mean_of_seed_means": 6503587.325124006,
+        "sd_across_seeds": 449537.91222381947
+      },
+      "net_worth": {
+        "mean_of_seed_means": 2394967.2872440726,
+        "sd_across_seeds": 102037.36964396364
+      },
+      "final_liquid_cash": {
+        "mean_of_seed_means": 1650682.383832313,
+        "sd_across_seeds": 123424.35238083023
+      },
+      "final_portfolio_value": {
+        "mean_of_seed_means": 754299.1285383049,
+        "sd_across_seeds": 223609.83877500278
+      },
+      "outstanding_loan_balance": {
+        "mean_of_seed_means": 10014.225126544645,
+        "sd_across_seeds": 9454.49702394629
+      },
+      "total_loan_principal": {
+        "mean_of_seed_means": 29281.96965912459,
+        "sd_across_seeds": 23039.935845227883
+      },
+      "total_interest_paid": {
+        "mean_of_seed_means": 5675.14353354997,
+        "sd_across_seeds": 4654.620784127014
+      },
+      "downside_exposure": {
+        "mean_of_seed_means": 638326.0593523191,
+        "sd_across_seeds": 151681.97203985392
+      },
+      "budget_violations": {
+        "mean_of_seed_means": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "env_reward_total": {
+        "mean_of_seed_means": -13.511548473107865,
+        "sd_across_seeds": 1.5276892453785336
+      }
+    },
+    "candidate_a": {
+      "weighted_goal_achievement": {
+        "mean_of_seed_means": 0.40237554044152496,
+        "sd_across_seeds": 0.02148778652709314
+      },
+      "pct_goals_fully_funded": {
+        "mean_of_seed_means": 0.3361111111111111,
+        "sd_across_seeds": 0.01625178052923342
+      },
+      "pct_goals_met_by_deadline": {
+        "mean_of_seed_means": 0.12666666666666668,
+        "sd_across_seeds": 0.007949493345141223
+      },
+      "goal_level_shortfall": {
+        "mean_of_seed_means": 6492056.2771798605,
+        "sd_across_seeds": 296712.3637163412
+      },
+      "net_worth": {
+        "mean_of_seed_means": 2396401.711362267,
+        "sd_across_seeds": 90149.34212904653
+      },
+      "final_liquid_cash": {
+        "mean_of_seed_means": 1670587.0526585684,
+        "sd_across_seeds": 123446.46192336205
+      },
+      "final_portfolio_value": {
+        "mean_of_seed_means": 746178.3059956146,
+        "sd_across_seeds": 215761.87897615312
+      },
+      "outstanding_loan_balance": {
+        "mean_of_seed_means": 20363.647291915993,
+        "sd_across_seeds": 6597.827139499426
+      },
+      "total_loan_principal": {
+        "mean_of_seed_means": 67508.71083489899,
+        "sd_across_seeds": 22687.11906763226
+      },
+      "total_interest_paid": {
+        "mean_of_seed_means": 13727.878747770674,
+        "sd_across_seeds": 5031.868751554168
+      },
+      "downside_exposure": {
+        "mean_of_seed_means": 655572.1123192199,
+        "sd_across_seeds": 133627.26428651632
+      },
+      "budget_violations": {
+        "mean_of_seed_means": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "env_reward_total": {
+        "mean_of_seed_means": -40.243284628336596,
+        "sd_across_seeds": 0.7533462005278818
+      }
+    },
+    "candidate_b": {
+      "weighted_goal_achievement": {
+        "mean_of_seed_means": 0.38862905159114014,
+        "sd_across_seeds": 0.036527230416909584
+      },
+      "pct_goals_fully_funded": {
+        "mean_of_seed_means": 0.2819444444444444,
+        "sd_across_seeds": 0.02110379990358065
+      },
+      "pct_goals_met_by_deadline": {
+        "mean_of_seed_means": 0.11083333333333334,
+        "sd_across_seeds": 0.01596437005055668
+      },
+      "goal_level_shortfall": {
+        "mean_of_seed_means": 6207686.662969113,
+        "sd_across_seeds": 151522.85430478913
+      },
+      "net_worth": {
+        "mean_of_seed_means": 2473536.673238116,
+        "sd_across_seeds": 79390.79190536767
+      },
+      "final_liquid_cash": {
+        "mean_of_seed_means": 1515757.9976631312,
+        "sd_across_seeds": 82624.72820408129
+      },
+      "final_portfolio_value": {
+        "mean_of_seed_means": 974137.1481305481,
+        "sd_across_seeds": 168342.61701926723
+      },
+      "outstanding_loan_balance": {
+        "mean_of_seed_means": 16358.472555563165,
+        "sd_across_seeds": 8286.386701334462
+      },
+      "total_loan_principal": {
+        "mean_of_seed_means": 59420.43253307719,
+        "sd_across_seeds": 6219.874627812598
+      },
+      "total_interest_paid": {
+        "mean_of_seed_means": 12106.744321226492,
+        "sd_across_seeds": 2003.4609709951549
+      },
+      "downside_exposure": {
+        "mean_of_seed_means": 755056.1525379838,
+        "sd_across_seeds": 115899.89450914635
+      },
+      "budget_violations": {
+        "mean_of_seed_means": 0.0,
+        "sd_across_seeds": 0.0
+      },
+      "env_reward_total": {
+        "mean_of_seed_means": 2869.855741559209,
+        "sd_across_seeds": 6.0330269821306235
+      }
+    }
+  },
+  "archived_checkpoint_reference": {
+    "weighted_goal_achievement": 0.29279967052873235,
+    "pct_goals_fully_funded": 0.17,
+    "pct_goals_met_by_deadline": NaN,
+    "goal_level_shortfall": 5167241.483536891,
+    "net_worth": 887092.4774656363,
+    "final_liquid_cash": 549602.3279775131,
+    "final_portfolio_value": 351024.44658546103,
+    "outstanding_loan_balance": 13534.297097337854,
+    "total_loan_principal": 79674.80430050612,
+    "total_interest_paid": 19028.40329893458,
+    "downside_exposure": NaN,
+    "budget_violations": 0.0,
+    "env_reward_total": -11.811117119341143
+  },
+  "paired_file": "S:\\fyp\\GoalPilot_AI_Completed\\outputs\\reward_design\\v1\\reward_version_paired_full_v1.csv"
+}
+

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs / OS / editor
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local SQLite artefacts
+*.db
+*.sqlite
+*.sqlite3
+
+# Large data artefacts excluded from Git (exceed GitHub per-file limits / repo size budget)
+# These files stay on disk locally; they are NOT versioned.
+simulation/05_simulation_runs/monthly_financial_simulation_base.csv
+simulation/05_simulation_runs/portfolio_simulation_validated.csv
+simulation/01_input_data/household_scaled.csv
+optimization/lp_inputs/lp_5n_unexplained_portfolio_change.csv
+optimization/lp_inputs/lp_5t_full_optimization_monthly.csv

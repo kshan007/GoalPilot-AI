@@ -1,0 +1,12 @@
+check,description,comparisons,failures,max_abs_deviation,rtol,atol,status
+A1_surplus_identity,monthly_surplus == income - expenditure - emi,1430000,601744,139834.6514099795,1e-06,1e-06,FAIL
+A1b_surplus_excl_emi,monthly_surplus == income - expenditure (EMI excluded),1430000,0,9.458744898438454e-11,1e-06,1e-06,PASS
+A3_portfolio_compounding,portfolio_value[t] == prev*(1+return[t]),1430000,0,5.587935447692871e-09,1e-06,1e-06,PASS
+A4_return_eq_exposure_x_nifty,portfolio_return == market_exposure * nifty_monthly_return,1430000,0,9.999054535747565e-17,1e-06,1e-06,PASS
+A5_exposure_eq_risk,market_exposure == risk_score,1430000,0,0.0,1e-06,1e-06,PASS
+A2_constant_profile_income,monthly_income constant within a user,1430000,0,0.0,1e-06,1e-06,PASS
+A2_constant_profile_expenditure,monthly_expenditure constant within a user,1430000,0,0.0,1e-06,1e-06,PASS
+A6_range,"investment_capacity_ratio and risk_score in [0,1]",1430000,0,0.0,1e-06,1e-06,PASS
+X1_same_key_sequence,"identical (user_id, period) sequence across files",1430000,0,0.0,1e-06,1e-06,PASS
+X2_portfolio_return_agrees,portfolio_return matches across files,1430000,0,0.0,1e-06,1e-06,PASS
+X2_portfolio_value_agrees,portfolio_value matches across files,1430000,0,0.0,1e-06,1e-06,PASS

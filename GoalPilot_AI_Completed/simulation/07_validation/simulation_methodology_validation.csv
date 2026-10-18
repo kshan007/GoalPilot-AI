@@ -1,0 +1,12 @@
+validation_metric,value,interpretation
+Synthetic population,10000.0,"10,000 unique synthetic users"
+Simulation duration,143.0,Feb 2015 to Dec 2026
+Monthly simulation records,1430000.0,"10,000 users × 143 months"
+Goal success rate,0.6451,Percentage of users achieving the goal on time
+Aggressive goal success,0.9591959195919592,Higher than conservative
+Conservative goal success,0.21632163216321632,Lower than aggressive
+Long-term goal success,0.7559509497475355,Higher than immediate
+Immediate goal success,0.06593406593406594,Lowest horizon success
+High-saving goal success,0.9779735682819384,Higher financial capacity
+Financial-stress goal success,0.0,Lowest financial capacity
+Risk-capacity/investment-capacity correlation,0.9132350665856669,Strong derived relationship

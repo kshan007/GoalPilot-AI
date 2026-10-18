@@ -1,0 +1,7 @@
+strategy,status,weighted_goal_achievement,projected_new_funding,loan_cost,shortfall,monthly_contributions,new_emi,existing_assets_allocated
+Baseline/rule-based,optimal,1.0,1367404.5788823832,0.0,0.0,26595.579907329957,0.0,0.0
+Savings only,optimal,1.0,1367404.5788823832,0.0,0.0,26595.579907329957,0.0,0.0
+Savings + investment,optimal,1.0,1367404.5788823832,0.0,0.0,24685.416538816604,0.0,0.0
+Combined savings + investment + loan,optimal,1.0,1367404.5788823832,0.0,0.0,24685.416538816604,0.0,0.0
+Existing-asset-aware,optimal,1.0,1367404.5788823832,0.0,0.0,24685.416538816604,0.0,0.0
+Optimized LP,optimal,1.0,1367404.5788823832,0.0,0.0,24685.416538816604,0.0,0.0

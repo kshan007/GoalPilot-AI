@@ -1,0 +1,6 @@
+element,meaning,reason,status
+I_t,Monthly investment contribution,No explicit monthly contribution field,EXCLUDED
+WALR borrowing,Loan/borrowing decision,No borrowing variable/formulation established,EXCLUDED
+NIFTY future return,Decision-dependent future return,No LP return mechanism established,EXCLUDED
+Minimum cash reserve,Residual cash constraint,No explicit reserve policy,EXCLUDED
+goal_specific_monthly_capacity,Dynamic monthly hard cap,Static user parameter; not an exact historical monthly bound,NOT USED AS HARD DYNAMIC CAP

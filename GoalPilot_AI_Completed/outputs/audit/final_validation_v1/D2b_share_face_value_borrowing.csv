@@ -1,0 +1,9 @@
+action_mode,goal_credit,policy,months_with_loan,total_loan
+magnitude,face_value,"Savings+loan (0.5,0,1)",16,924617.823667634
+magnitude,face_value,"Loan only (0,0,1)",33,4170436.0544833597
+magnitude,growth_weighted,"Savings+loan (0.5,0,1)",16,924617.823667634
+magnitude,growth_weighted,"Loan only (0,0,1)",33,4170436.0544833597
+share,face_value,"Savings+loan (0.5,0,1)",16,924617.823667634
+share,face_value,"Loan only (0,0,1)",33,4170436.0544833597
+share,growth_weighted,"Savings+loan (0.5,0,1)",16,924617.823667634
+share,growth_weighted,"Loan only (0,0,1)",33,4170436.0544833597

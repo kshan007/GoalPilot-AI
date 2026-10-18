@@ -1,0 +1,205 @@
+rl_arm,baseline,metric,users,mean_diff,ci95_low,ci95_high,improved,worsened,verdict
+RL archived_v1,uniform savings,weighted_goal_achievement,16,-0.0742161226385461,-0.1186940623864489,-0.029842146403976803,1,13,uniform savings higher
+RL archived_v1,uniform savings,pct_goals_fully_funded,16,-0.08576388888888889,-0.15659722222222222,-0.026736111111111113,1,8,uniform savings higher
+RL archived_v1,uniform savings,pct_goals_met_by_deadline,16,-0.034375,-0.08125,0.009027777777777773,2,5,inconclusive
+RL archived_v1,uniform savings,goal_level_shortfall,16,190213.7488796285,-49825.47159189974,450408.2145946992,8,6,inconclusive
+RL archived_v1,uniform savings,savings_contribution,16,-673050.8937824843,-1135326.1535644073,-321279.9377434102,0,14,uniform savings higher
+RL archived_v1,uniform savings,investment_contribution,16,277868.789332466,124466.59266571255,481491.1713685614,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,investment_cap_overflow,16,776631.2169308534,461235.0321586848,1121203.8040371628,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,uniform savings,final_liquid_cash,16,-277862.46960711374,-482459.27377117594,-124863.85454306328,0,14,uniform savings higher
+RL archived_v1,uniform savings,final_portfolio_value,16,582119.1017317801,273255.6994984356,991502.3341537638,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,net_worth,16,295612.37712215347,140601.5505411483,500642.5031940564,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,outstanding_loan_balance,16,8644.255002513022,1579.2829471978116,18799.58265462542,9,0,RL archived_v1 higher
+RL archived_v1,uniform savings,total_loan_principal,16,38571.36387169302,18197.853812311907,66344.7894704015,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,total_interest_paid,16,8637.935277160614,4477.238313725183,13795.710578895125,13,0,RL archived_v1 higher
+RL archived_v1,uniform savings,investment_gain,16,304250.31239931413,147424.4253463199,510219.1824041609,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,downside_exposure,16,449815.95850737736,220332.24677246183,749898.7082759594,14,0,RL archived_v1 higher
+RL archived_v1,uniform savings,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,investment-only,weighted_goal_achievement,16,-0.09573896750380295,-0.14229078488501748,-0.04973902569815549,1,13,investment-only higher
+RL archived_v1,investment-only,pct_goals_fully_funded,16,-0.09826388888888889,-0.17951388888888886,-0.030208333333333327,1,8,investment-only higher
+RL archived_v1,investment-only,pct_goals_met_by_deadline,16,-0.034375,-0.08125,0.009027777777777773,2,5,inconclusive
+RL archived_v1,investment-only,goal_level_shortfall,16,406045.86409399635,113624.80131363774,746111.9941793415,11,3,RL archived_v1 higher
+RL archived_v1,investment-only,savings_contribution,16,-254601.66069696483,-485544.49423022446,-71706.31625414985,4,10,investment-only higher
+RL archived_v1,investment-only,investment_contribution,16,-109014.60483310689,-210332.32694231492,-29370.231716626644,1,13,investment-only higher
+RL archived_v1,investment-only,investment_cap_overflow,16,-702416.7571095818,-1054260.3176071523,-380766.50920205493,0,14,investment-only higher
+RL archived_v1,investment-only,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,investment-only,final_liquid_cash,16,109020.92455846208,30591.778236374706,208284.61409448154,12,2,RL archived_v1 higher
+RL archived_v1,investment-only,final_portfolio_value,16,-192651.61357631718,-380461.1731317515,-48188.50219500756,1,13,investment-only higher
+RL archived_v1,investment-only,net_worth,16,-92274.94402036801,-179273.4552975477,-25523.282181948067,1,13,investment-only higher
+RL archived_v1,investment-only,outstanding_loan_balance,16,8644.255002513022,1579.2829471978116,18799.58265462542,9,0,RL archived_v1 higher
+RL archived_v1,investment-only,total_loan_principal,16,38571.36387169302,18197.853812311907,66344.7894704015,14,0,RL archived_v1 higher
+RL archived_v1,investment-only,total_interest_paid,16,8637.935277160614,4477.238313725183,13795.710578895125,13,0,RL archived_v1 higher
+RL archived_v1,investment-only,investment_gain,16,-83637.00874320921,-170271.84696055003,-18650.150311977224,1,13,investment-only higher
+RL archived_v1,investment-only,downside_exposure,16,-116551.22328332282,-239311.0350746559,-25202.80113187344,3,11,investment-only higher
+RL archived_v1,investment-only,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,mixed allocation,weighted_goal_achievement,16,-0.09573896750380295,-0.14229078488501748,-0.04973902569815549,1,13,mixed allocation higher
+RL archived_v1,mixed allocation,pct_goals_fully_funded,16,-0.09826388888888889,-0.17951388888888886,-0.030208333333333327,1,8,mixed allocation higher
+RL archived_v1,mixed allocation,pct_goals_met_by_deadline,16,-0.034375,-0.08125,0.009027777777777773,2,5,inconclusive
+RL archived_v1,mixed allocation,goal_level_shortfall,16,406045.86409399635,113624.80131363774,746111.9941793415,11,3,RL archived_v1 higher
+RL archived_v1,mixed allocation,savings_contribution,16,-254601.66069696483,-485544.49423022446,-71706.31625414985,4,10,mixed allocation higher
+RL archived_v1,mixed allocation,investment_contribution,16,-109014.60483310689,-210332.32694231492,-29370.231716626644,1,13,mixed allocation higher
+RL archived_v1,mixed allocation,investment_cap_overflow,16,337475.684149388,180364.3030138881,530487.2831978907,14,0,RL archived_v1 higher
+RL archived_v1,mixed allocation,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,mixed allocation,final_liquid_cash,16,109020.92455846208,30591.778236374706,208284.61409448154,12,2,RL archived_v1 higher
+RL archived_v1,mixed allocation,final_portfolio_value,16,-192651.61357631718,-380461.1731317515,-48188.50219500756,1,13,mixed allocation higher
+RL archived_v1,mixed allocation,net_worth,16,-92274.94402036801,-179273.4552975477,-25523.282181948067,1,13,mixed allocation higher
+RL archived_v1,mixed allocation,outstanding_loan_balance,16,8644.255002513022,1579.2829471978116,18799.58265462542,9,0,RL archived_v1 higher
+RL archived_v1,mixed allocation,total_loan_principal,16,38571.36387169302,18197.853812311907,66344.7894704015,14,0,RL archived_v1 higher
+RL archived_v1,mixed allocation,total_interest_paid,16,8637.935277160614,4477.238313725183,13795.710578895125,13,0,RL archived_v1 higher
+RL archived_v1,mixed allocation,investment_gain,16,-83637.00874320921,-170271.84696055003,-18650.150311977224,1,13,mixed allocation higher
+RL archived_v1,mixed allocation,downside_exposure,16,-116551.22328332282,-239311.0350746559,-25202.80113187344,3,11,mixed allocation higher
+RL archived_v1,mixed allocation,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,need-proportional savings,weighted_goal_achievement,16,0.16317163797140727,0.06280947010317094,0.26041398209713323,10,4,RL archived_v1 higher
+RL archived_v1,need-proportional savings,pct_goals_fully_funded,16,0.3048611111111111,0.17881076388888886,0.42187499999999994,13,1,RL archived_v1 higher
+RL archived_v1,need-proportional savings,pct_goals_met_by_deadline,16,0.10833333333333332,0.05208333333333333,0.1684027777777778,9,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,goal_level_shortfall,16,848242.8909339233,278969.1341232853,1519069.882856158,13,1,RL archived_v1 higher
+RL archived_v1,need-proportional savings,savings_contribution,16,-1331080.03583678,-2171694.7176515325,-630238.1502941095,0,14,need-proportional savings higher
+RL archived_v1,need-proportional savings,investment_contribution,16,277868.789332466,124466.59266571255,481491.1713685614,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,investment_cap_overflow,16,776631.2169308534,461235.0321586848,1121203.8040371628,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,need-proportional savings,final_liquid_cash,16,-277862.46960711374,-482459.27377117594,-124863.85454306328,0,14,need-proportional savings higher
+RL archived_v1,need-proportional savings,final_portfolio_value,16,582119.1017317801,273255.6994984356,991502.3341537638,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,net_worth,16,295612.37712215347,140601.5505411483,500642.5031940564,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,outstanding_loan_balance,16,8644.255002513022,1579.2829471978116,18799.58265462542,9,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,total_loan_principal,16,38571.36387169302,18197.853812311907,66344.7894704015,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,total_interest_paid,16,8637.935277160614,4477.238313725183,13795.710578895125,13,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,investment_gain,16,304250.31239931413,147424.4253463199,510219.1824041609,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,downside_exposure,16,449815.95850737736,220332.24677246183,749898.7082759594,14,0,RL archived_v1 higher
+RL archived_v1,need-proportional savings,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,urgency,weighted_goal_achievement,16,0.07912248312747454,0.0075998495092584155,0.1503628827275607,11,3,RL archived_v1 higher
+RL archived_v1,urgency,pct_goals_fully_funded,16,0.3048611111111111,0.17881076388888886,0.42187499999999994,13,1,RL archived_v1 higher
+RL archived_v1,urgency,pct_goals_met_by_deadline,16,0.10833333333333332,0.05208333333333333,0.1684027777777778,9,0,RL archived_v1 higher
+RL archived_v1,urgency,goal_level_shortfall,16,848242.8909339234,278969.1341232852,1519069.8828561606,13,1,RL archived_v1 higher
+RL archived_v1,urgency,savings_contribution,16,-1331080.0358367802,-2171694.717651533,-630238.1502941095,0,14,urgency higher
+RL archived_v1,urgency,investment_contribution,16,277868.789332466,124466.59266571255,481491.1713685614,14,0,RL archived_v1 higher
+RL archived_v1,urgency,investment_cap_overflow,16,776631.2169308534,461235.0321586848,1121203.8040371628,14,0,RL archived_v1 higher
+RL archived_v1,urgency,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,urgency,final_liquid_cash,16,-277862.46960711374,-482459.27377117594,-124863.85454306328,0,14,urgency higher
+RL archived_v1,urgency,final_portfolio_value,16,582119.1017317801,273255.6994984356,991502.3341537638,14,0,RL archived_v1 higher
+RL archived_v1,urgency,net_worth,16,295612.37712215347,140601.5505411483,500642.5031940564,14,0,RL archived_v1 higher
+RL archived_v1,urgency,outstanding_loan_balance,16,8644.255002513022,1579.2829471978116,18799.58265462542,9,0,RL archived_v1 higher
+RL archived_v1,urgency,total_loan_principal,16,38571.36387169302,18197.853812311907,66344.7894704015,14,0,RL archived_v1 higher
+RL archived_v1,urgency,total_interest_paid,16,8637.935277160614,4477.238313725183,13795.710578895125,13,0,RL archived_v1 higher
+RL archived_v1,urgency,investment_gain,16,304250.31239931413,147424.4253463199,510219.1824041609,14,0,RL archived_v1 higher
+RL archived_v1,urgency,downside_exposure,16,449815.95850737736,220332.24677246183,749898.7082759594,14,0,RL archived_v1 higher
+RL archived_v1,urgency,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,constrained_LP,weighted_goal_achievement,16,0.23900178776611453,0.1515751316779345,0.3213886099318453,13,1,RL archived_v1 higher
+RL archived_v1,constrained_LP,pct_goals_fully_funded,16,0.13506944444444444,0.06145833333333334,0.2065972222222222,11,2,RL archived_v1 higher
+RL archived_v1,constrained_LP,pct_goals_met_by_deadline,16,-0.04479166666666667,-0.10833333333333334,0.01736111111111111,2,5,inconclusive
+RL archived_v1,constrained_LP,goal_level_shortfall,16,-219089.89071250716,-567262.7376705558,110028.22719739591,5,9,inconclusive
+RL archived_v1,constrained_LP,savings_contribution,16,113488.07754268806,-109925.28132430333,339773.36920315307,11,3,inconclusive
+RL archived_v1,constrained_LP,investment_contribution,16,62267.52879916381,-19674.279340795514,168047.7827097797,11,3,inconclusive
+RL archived_v1,constrained_LP,investment_cap_overflow,16,776631.2087011171,461235.0255741822,1121203.775369155,14,0,RL archived_v1 higher
+RL archived_v1,constrained_LP,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL archived_v1,constrained_LP,final_liquid_cash,16,-56881.299836768834,-166452.31693091156,29312.675598060596,5,9,inconclusive
+RL archived_v1,constrained_LP,final_portfolio_value,16,112190.57592962426,-13275.413177106893,263726.05481209845,10,4,inconclusive
+RL archived_v1,constrained_LP,net_worth,16,52642.5022006832,3889.5550741606735,102614.75095065501,11,3,RL archived_v1 higher
+RL archived_v1,constrained_LP,outstanding_loan_balance,16,2666.7738921722876,-13066.127455328362,16448.275848431138,8,2,inconclusive
+RL archived_v1,constrained_LP,total_loan_principal,16,-7370.937997179302,-70250.1921374371,44005.46390928966,10,4,inconclusive
+RL archived_v1,constrained_LP,total_interest_paid,16,-2719.455070222435,-16862.6440693323,8716.239839645594,9,4,inconclusive
+RL archived_v1,constrained_LP,investment_gain,16,49923.0471304604,3576.665160294671,100542.59821488183,10,4,RL archived_v1 higher
+RL archived_v1,constrained_LP,downside_exposure,16,64858.25633910112,3706.2108810010327,128831.9895238588,10,4,RL archived_v1 higher
+RL archived_v1,constrained_LP,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,uniform savings,weighted_goal_achievement,16,-0.11867292467325316,-0.1619427884192961,-0.07739513522288125,0,14,uniform savings higher
+RL candidate_a,uniform savings,pct_goals_fully_funded,16,-0.14722222222222225,-0.21145833333333333,-0.08958333333333335,1,12,uniform savings higher
+RL candidate_a,uniform savings,pct_goals_met_by_deadline,16,-0.053472222222222233,-0.10312500000000001,-0.0034722222222222255,3,8,uniform savings higher
+RL candidate_a,uniform savings,goal_level_shortfall,16,79553.0879363384,-39725.60336835202,195990.2896974772,10,4,inconclusive
+RL candidate_a,uniform savings,savings_contribution,16,-670851.4482612225,-1021254.0861477223,-369041.1599747822,0,14,uniform savings higher
+RL candidate_a,uniform savings,investment_contribution,16,287868.7579518742,137513.27388843035,467426.3194020301,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,investment_cap_overflow,16,355556.27807721926,203092.38021046354,523003.8785728905,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,uniform savings,final_liquid_cash,16,-291101.30165459274,-476698.6048178021,-134980.18504898302,1,13,uniform savings higher
+RL candidate_a,uniform savings,final_portfolio_value,16,577795.506680512,281901.3120799608,934695.20660415,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,net_worth,16,269879.94738745125,128944.04772468943,443362.3676506283,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,outstanding_loan_balance,16,16814.257638468098,9436.622401833452,25030.811620498047,13,0,RL candidate_a higher
+RL candidate_a,uniform savings,total_loan_principal,16,87924.81124610694,60390.27368816609,114300.60264038414,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,total_interest_paid,16,20046.801341185066,13186.324462406106,26888.9392595214,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,investment_gain,16,289926.7487286376,143761.2383343104,467813.65188705176,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,downside_exposure,16,425865.3534392219,212341.79265075873,686264.6963257617,14,0,RL candidate_a higher
+RL candidate_a,uniform savings,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,investment-only,weighted_goal_achievement,16,-0.14019576953850998,-0.18758392686044195,-0.09483596849803505,0,14,investment-only higher
+RL candidate_a,investment-only,pct_goals_fully_funded,16,-0.15972222222222224,-0.22083333333333333,-0.10451388888888889,0,13,investment-only higher
+RL candidate_a,investment-only,pct_goals_met_by_deadline,16,-0.053472222222222233,-0.10312500000000001,-0.0034722222222222255,3,8,investment-only higher
+RL candidate_a,investment-only,goal_level_shortfall,16,295385.20315070625,128102.86040962959,484406.4737058367,11,3,RL candidate_a higher
+RL candidate_a,investment-only,savings_contribution,16,-252402.21517570282,-386839.80435924756,-132824.58507842897,0,14,investment-only higher
+RL candidate_a,investment-only,investment_contribution,16,-99014.63621369867,-181864.0774355402,-30482.46501010721,3,11,investment-only higher
+RL candidate_a,investment-only,investment_cap_overflow,16,-1123491.6959632158,-1720499.0673405926,-591092.4839389502,0,14,investment-only higher
+RL candidate_a,investment-only,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,investment-only,final_liquid_cash,16,95782.09251098312,31088.1841365019,175750.17892820656,12,2,RL candidate_a higher
+RL candidate_a,investment-only,final_portfolio_value,16,-196975.20862758532,-358202.72628158523,-64335.94113217726,3,11,investment-only higher
+RL candidate_a,investment-only,net_worth,16,-118007.3737550702,-200482.38911733468,-49783.46214301932,0,14,investment-only higher
+RL candidate_a,investment-only,outstanding_loan_balance,16,16814.257638468098,9436.622401833452,25030.811620498047,13,0,RL candidate_a higher
+RL candidate_a,investment-only,total_loan_principal,16,87924.81124610694,60390.27368816609,114300.60264038414,14,0,RL candidate_a higher
+RL candidate_a,investment-only,total_interest_paid,16,20046.801341185066,13186.324462406106,26888.9392595214,14,0,RL candidate_a higher
+RL candidate_a,investment-only,investment_gain,16,-97960.57241388576,-176817.0473275006,-33600.02638919663,1,13,investment-only higher
+RL candidate_a,investment-only,downside_exposure,16,-140501.8283514783,-253070.34507250774,-48449.16300810751,0,14,investment-only higher
+RL candidate_a,investment-only,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,mixed allocation,weighted_goal_achievement,16,-0.14019576953850998,-0.18758392686044195,-0.09483596849803505,0,14,mixed allocation higher
+RL candidate_a,mixed allocation,pct_goals_fully_funded,16,-0.15972222222222224,-0.22083333333333333,-0.10451388888888889,0,13,mixed allocation higher
+RL candidate_a,mixed allocation,pct_goals_met_by_deadline,16,-0.053472222222222233,-0.10312500000000001,-0.0034722222222222255,3,8,mixed allocation higher
+RL candidate_a,mixed allocation,goal_level_shortfall,16,295385.20315070625,128102.86040962959,484406.4737058367,11,3,RL candidate_a higher
+RL candidate_a,mixed allocation,savings_contribution,16,-252402.21517570282,-386839.80435924756,-132824.58507842897,0,14,mixed allocation higher
+RL candidate_a,mixed allocation,investment_contribution,16,-99014.63621369867,-181864.0774355402,-30482.46501010721,3,11,mixed allocation higher
+RL candidate_a,mixed allocation,investment_cap_overflow,16,-83599.25470424602,-226462.70518417112,54503.94344345749,4,10,inconclusive
+RL candidate_a,mixed allocation,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,mixed allocation,final_liquid_cash,16,95782.09251098312,31088.1841365019,175750.17892820656,12,2,RL candidate_a higher
+RL candidate_a,mixed allocation,final_portfolio_value,16,-196975.20862758532,-358202.72628158523,-64335.94113217726,3,11,mixed allocation higher
+RL candidate_a,mixed allocation,net_worth,16,-118007.3737550702,-200482.38911733468,-49783.46214301932,0,14,mixed allocation higher
+RL candidate_a,mixed allocation,outstanding_loan_balance,16,16814.257638468098,9436.622401833452,25030.811620498047,13,0,RL candidate_a higher
+RL candidate_a,mixed allocation,total_loan_principal,16,87924.81124610694,60390.27368816609,114300.60264038414,14,0,RL candidate_a higher
+RL candidate_a,mixed allocation,total_interest_paid,16,20046.801341185066,13186.324462406106,26888.9392595214,14,0,RL candidate_a higher
+RL candidate_a,mixed allocation,investment_gain,16,-97960.57241388576,-176817.0473275006,-33600.02638919663,1,13,mixed allocation higher
+RL candidate_a,mixed allocation,downside_exposure,16,-140501.8283514783,-253070.34507250774,-48449.16300810751,0,14,mixed allocation higher
+RL candidate_a,mixed allocation,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,need-proportional savings,weighted_goal_achievement,16,0.11871483593670018,0.029075977252542393,0.2042638011763186,10,4,RL candidate_a higher
+RL candidate_a,need-proportional savings,pct_goals_fully_funded,16,0.24340277777777775,0.10694444444444445,0.3534722222222222,13,1,RL candidate_a higher
+RL candidate_a,need-proportional savings,pct_goals_met_by_deadline,16,0.0892361111111111,0.05347222222222221,0.1267361111111111,11,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,goal_level_shortfall,16,737582.2299906332,301335.90938570956,1243388.3812384054,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,savings_contribution,16,-1328880.590315518,-2069348.8364963362,-681666.2860151735,0,14,need-proportional savings higher
+RL candidate_a,need-proportional savings,investment_contribution,16,287868.7579518742,137513.27388843035,467426.3194020301,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,investment_cap_overflow,16,355556.27807721926,203092.38021046354,523003.8785728905,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,need-proportional savings,final_liquid_cash,16,-291101.30165459274,-476698.6048178021,-134980.18504898302,1,13,need-proportional savings higher
+RL candidate_a,need-proportional savings,final_portfolio_value,16,577795.506680512,281901.3120799608,934695.20660415,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,net_worth,16,269879.94738745125,128944.04772468943,443362.3676506283,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,outstanding_loan_balance,16,16814.257638468098,9436.622401833452,25030.811620498047,13,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,total_loan_principal,16,87924.81124610694,60390.27368816609,114300.60264038414,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,total_interest_paid,16,20046.801341185066,13186.324462406106,26888.9392595214,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,investment_gain,16,289926.7487286376,143761.2383343104,467813.65188705176,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,downside_exposure,16,425865.3534392219,212341.79265075873,686264.6963257617,14,0,RL candidate_a higher
+RL candidate_a,need-proportional savings,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,urgency,weighted_goal_achievement,16,0.034665681092767485,-0.04421552189649636,0.12086144901868213,8,6,inconclusive
+RL candidate_a,urgency,pct_goals_fully_funded,16,0.24340277777777775,0.10694444444444445,0.3534722222222222,13,1,RL candidate_a higher
+RL candidate_a,urgency,pct_goals_met_by_deadline,16,0.0892361111111111,0.05347222222222221,0.1267361111111111,11,0,RL candidate_a higher
+RL candidate_a,urgency,goal_level_shortfall,16,737582.2299906333,301335.9093857078,1243388.3812384058,14,0,RL candidate_a higher
+RL candidate_a,urgency,savings_contribution,16,-1328880.5903155184,-2069348.8364963364,-681666.2860151735,0,14,urgency higher
+RL candidate_a,urgency,investment_contribution,16,287868.7579518742,137513.27388843035,467426.3194020301,14,0,RL candidate_a higher
+RL candidate_a,urgency,investment_cap_overflow,16,355556.27807721926,203092.38021046354,523003.8785728905,14,0,RL candidate_a higher
+RL candidate_a,urgency,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,urgency,final_liquid_cash,16,-291101.30165459274,-476698.6048178021,-134980.18504898302,1,13,urgency higher
+RL candidate_a,urgency,final_portfolio_value,16,577795.506680512,281901.3120799608,934695.20660415,14,0,RL candidate_a higher
+RL candidate_a,urgency,net_worth,16,269879.94738745125,128944.04772468943,443362.3676506283,14,0,RL candidate_a higher
+RL candidate_a,urgency,outstanding_loan_balance,16,16814.257638468098,9436.622401833452,25030.811620498047,13,0,RL candidate_a higher
+RL candidate_a,urgency,total_loan_principal,16,87924.81124610694,60390.27368816609,114300.60264038414,14,0,RL candidate_a higher
+RL candidate_a,urgency,total_interest_paid,16,20046.801341185066,13186.324462406106,26888.9392595214,14,0,RL candidate_a higher
+RL candidate_a,urgency,investment_gain,16,289926.7487286376,143761.2383343104,467813.65188705176,14,0,RL candidate_a higher
+RL candidate_a,urgency,downside_exposure,16,425865.3534392219,212341.79265075873,686264.6963257617,14,0,RL candidate_a higher
+RL candidate_a,urgency,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,constrained_LP,weighted_goal_achievement,16,0.19454498573140744,0.10236198683219264,0.28614280058213115,12,2,RL candidate_a higher
+RL candidate_a,constrained_LP,pct_goals_fully_funded,16,0.0736111111111111,-0.0006944444444444525,0.1395833333333333,11,3,inconclusive
+RL candidate_a,constrained_LP,pct_goals_met_by_deadline,16,-0.0638888888888889,-0.1454861111111111,0.01632812499999924,5,8,inconclusive
+RL candidate_a,constrained_LP,goal_level_shortfall,16,-329750.55165579723,-820310.4728531158,106618.82603616714,5,9,inconclusive
+RL candidate_a,constrained_LP,savings_contribution,16,115687.5230639501,-152889.98091234025,391380.9900501296,9,5,inconclusive
+RL candidate_a,constrained_LP,investment_contribution,16,72267.49741857203,-12215.476221546483,170577.25776768618,10,4,inconclusive
+RL candidate_a,constrained_LP,investment_cap_overflow,16,355556.269847483,203092.36887927656,523003.86884315533,14,0,RL candidate_a higher
+RL candidate_a,constrained_LP,capacity_violation_months,16,0.0,0.0,0.0,0,0,inconclusive
+RL candidate_a,constrained_LP,final_liquid_cash,16,-70120.13188424779,-177391.68698477274,21183.471569555364,5,9,inconclusive
+RL candidate_a,constrained_LP,final_portfolio_value,16,107866.98087835607,-33340.85465867347,277543.4672468075,9,5,inconclusive
+RL candidate_a,constrained_LP,net_worth,16,26910.07246598102,-37425.287352980784,102243.05759300686,7,7,inconclusive
+RL candidate_a,constrained_LP,outstanding_loan_balance,16,10836.776528127362,-3152.41407541268,22533.084514521008,12,1,inconclusive
+RL candidate_a,constrained_LP,total_loan_principal,16,41982.50937723463,-22705.182831365793,92843.31373026455,11,3,inconclusive
+RL candidate_a,constrained_LP,total_interest_paid,16,8689.410993802016,-7018.676885872925,21706.142602538403,11,3,inconclusive
+RL candidate_a,constrained_LP,investment_gain,16,35599.483459783834,-30668.67587301295,115615.83598497882,8,6,inconclusive
+RL candidate_a,constrained_LP,downside_exposure,16,40907.651270945644,-59724.1359364528,159678.29443154062,8,6,inconclusive
+RL candidate_a,constrained_LP,affordability_violations,16,0.0,0.0,0.0,0,0,inconclusive

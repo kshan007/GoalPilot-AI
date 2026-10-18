@@ -1,0 +1,14 @@
+metric,value
+horizon_rows,626970.0
+expected_horizon_rows,626970.0
+funding_mean_abs_error,2.7003985403339926e-11
+funding_max_abs_error,3.725290298461914e-09
+funding_matches_1e-6,10000.0
+shortfall_mean_abs_error,9.550831236992962e-13
+shortfall_max_abs_error,1.1641532182693481e-10
+ratio_mean_abs_error,3.280102104779312e-16
+ratio_max_abs_error,1.4210854715202004e-14
+cash_bound_feasible_users,7582.0
+cash_bound_infeasible_users,2418.0
+additional_capacity_users,8534.0
+existing_policy_success_users,6451.0

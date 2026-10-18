@@ -1,0 +1,300 @@
+
+[PASS] rl_baseline_policy_comparison.csv vs policy_detail_archived_all.csv: 4800 field-comparisons, 0 mismatch(es)
+[PASS] rl_policy_diagnostic_summary.csv vs policy_summary_archived_all.csv: 16 field-comparisons, 0 mismatch(es)
+[PASS] rl_heldout_policy_comparison_detail.csv vs policy_detail_archived_test.csv: 700 field-comparisons, 0 mismatch(es)
+[PASS] rl_heldout_policy_comparison_summary.csv vs policy_summary_archived_test.csv: 25 field-comparisons, 0 mismatch(es)
+
+OVERALL: PASS
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\archive_verification.json
+=== Policy evaluation (archived, split=all, 100 users) ===
+                      policy  users  mean_goal_funding_ratio  median_goal_funding_ratio  mean_goal_funding_amount  mean_net_worth_ledger  mean_net_worth_archived_aggregate  mean_final_cash  mean_final_portfolio  mean_final_loan_balance  mean_new_loan_principal  mean_interest_paid  mean_unallocated_surplus  mean_total_reward  max_budget_excess  total_budget_violation_months  max_goal_overshoot
+                   No action    100                   0.0176                     0.0109                90669.8457            240811.8345                        331481.6801       75033.7750           165778.0594                   0.0000                   0.0000              0.0000              1906875.4218           -13.6186                0.0                              0                 0.0
+                Savings only    100                   0.2735                     0.2040              1220790.1787           1370932.1675                       2591722.3462     1205154.1081           165778.0594                   0.0000                   0.0000              0.0000               776755.0887            -7.9173                0.0                              0                 0.0
+            Investments only    100                   0.2440                     0.1436              1140057.1129           2334677.1969                       3474734.3098       75033.7750          2259643.4219                   0.0000                   0.0000              0.0000               857488.1545           -23.1258                0.0                              0                 0.0
+Mixed allocation (0.50/0.50)    100                   0.2735                     0.2040              1220790.1787           1644187.6280                       2864977.8067      933893.4117           710294.2164                   0.0000                   0.0000              0.0000               776755.0887           -11.6654                0.0                              0                 0.0
+Mixed allocation (0.25/0.25)    100                   0.2683                     0.2040              1207269.4868           1628807.6517                       2836077.1386      922142.2013           706665.4504                   0.0000                   0.0000              0.0000               790275.7806           -11.7058                0.0                              0                 0.0
+              Savings + loan    100                   0.2732                     0.2028              1210698.8905           1299089.4738                       2509788.3643     1138614.2598           165778.0594                5302.8454               56448.5601          14125.9889               776864.1841            -8.4703                0.0                              0                 0.0
+                         PPO    100                   0.1908                     0.1236               818063.2579            957561.6646                       1775624.9225      631807.7094           338240.7235               12486.7683               88030.2819          21520.6982              1168586.6678           -11.6734                0.0                              0                 0.0
+
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_detail_archived_all.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_summary_archived_all.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_config_archived_all.json
+=== Policy evaluation (archived, split=test, 20 users) ===
+                      policy  users  mean_goal_funding_ratio  median_goal_funding_ratio  mean_goal_funding_amount  mean_net_worth_ledger  mean_net_worth_archived_aggregate  mean_final_cash  mean_final_portfolio  mean_final_loan_balance  mean_new_loan_principal  mean_interest_paid  mean_unallocated_surplus  mean_total_reward  max_budget_excess  total_budget_violation_months  max_goal_overshoot
+                   No action     20                   0.0141                     0.0084                74130.3217            232303.3938                        306433.7154       57850.8458           174452.5480                   0.0000                   0.0000              0.0000              1798136.4440           -13.7143                0.0                              0                 0.0
+                Savings only     20                   0.2256                     0.1311              1144547.0061           1302720.0782                       2447267.0843     1128267.5302           174452.5480                   0.0000                   0.0000              0.0000               727719.7596            -8.5781                0.0                              0                 0.0
+            Investments only     20                   0.2144                     0.1088              1072037.5851           2182848.2928                       3254885.8779       57850.8458          2124997.4470                   0.0000                   0.0000              0.0000               800229.1806           -21.1482                0.0                              0                 0.0
+Mixed allocation (0.50/0.50)     20                   0.2256                     0.1311              1144547.0061           1570221.1271                       2714768.1332      849922.2845           720298.8426                   0.0000                   0.0000              0.0000               727719.7596           -11.8900                0.0                              0                 0.0
+Mixed allocation (0.25/0.25)     20                   0.2245                     0.1297              1132649.0607           1556708.3306                       2689357.3912      839591.5001           717116.8305                   0.0000                   0.0000              0.0000               739617.7050           -11.8916                0.0                              0                 0.0
+              Savings + loan     20                   0.2327                     0.1289              1151466.7610           1236771.4486                       2388238.2096     1075988.9834           174452.5480               13670.0828               59198.3017          12845.6213               720503.5780            -9.1228                0.0                              0                 0.0
+                         PPO     20                   0.1795                     0.0805               736475.7792            887092.4775                       1623568.2566      549602.3280           351024.4466               13534.2971               79674.8043          19028.4033              1128588.0468           -11.8111                0.0                              0                 0.0
+
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_detail_archived_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_summary_archived_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_config_archived_test.json
+=== Policy evaluation (corrected_accounting, split=all, 100 users) ===
+                      policy  users  mean_goal_funding_ratio  median_goal_funding_ratio  mean_goal_funding_amount  mean_net_worth_ledger  mean_net_worth_archived_aggregate  mean_final_cash  mean_final_portfolio  mean_final_loan_balance  mean_new_loan_principal  mean_interest_paid  mean_unallocated_surplus  mean_total_reward  max_budget_excess  total_budget_violation_months  max_goal_overshoot
+                   No action    100                   0.0176                     0.0109                90669.8457           2147687.2562                       2238357.1019     1981909.1968           165778.0594                   0.0000                   0.0000              0.0000              1906875.4218           -13.6186                0.0                              0                 0.0
+                Savings only    100                   0.2735                     0.2040              1220790.1787           2147687.2562                       3368477.4349     1981909.1968           165778.0594                   0.0000                   0.0000              0.0000               776755.0887            -7.9173                0.0                              0                 0.0
+            Investments only    100                   0.2440                     0.1436              1140057.1129           3192165.3514                       4332222.4643      932521.9296          2259643.4219                   0.0000                   0.0000              0.0000               857488.1545           -23.1258                0.0                              0                 0.0
+Mixed allocation (0.50/0.50)    100                   0.2735                     0.2040              1220790.1787           2420942.7168                       3641732.8955     1710648.5004           710294.2164                   0.0000                   0.0000              0.0000               776755.0887           -11.6654                0.0                              0                 0.0
+Mixed allocation (0.25/0.25)    100                   0.2683                     0.2040              1207269.4868           2419083.4323                       3626352.9192     1712417.9819           706665.4504                   0.0000                   0.0000              0.0000               790275.7806           -11.7058                0.0                              0                 0.0
+              Savings + loan    100                   0.2732                     0.2028              1210698.8905           2133601.7837                       3344300.6742     1973126.5696           165778.0594                5302.8454               56448.5601          14125.9889               776864.1841            -8.4703                0.0                              0                 0.0
+                         PPO    100                   0.1925                     0.1226               825695.0159           2216983.5667                       3042678.5826     1888308.3373           341245.3830               12570.1535               89979.7371          22031.4232              1160513.7179           -11.7002                0.0                              0                 0.0
+
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_detail_corrected_accounting_all.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_summary_corrected_accounting_all.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_config_corrected_accounting_all.json
+=== Policy evaluation (corrected_accounting, split=test, 20 users) ===
+                      policy  users  mean_goal_funding_ratio  median_goal_funding_ratio  mean_goal_funding_amount  mean_net_worth_ledger  mean_net_worth_archived_aggregate  mean_final_cash  mean_final_portfolio  mean_final_loan_balance  mean_new_loan_principal  mean_interest_paid  mean_unallocated_surplus  mean_total_reward  max_budget_excess  total_budget_violation_months  max_goal_overshoot
+                   No action     20                   0.0141                     0.0084                74130.3217           2030439.8378                       2104570.1594     1855987.2898           174452.5480                   0.0000                   0.0000              0.0000              1798136.4440           -13.7143                0.0                              0                 0.0
+                Savings only     20                   0.2256                     0.1311              1144547.0061           2030439.8378                       3174986.8438     1855987.2898           174452.5480                   0.0000                   0.0000              0.0000               727719.7596            -8.5781                0.0                              0                 0.0
+            Investments only     20                   0.2144                     0.1088              1072037.5851           2983077.4734                       4055115.0585      858080.0264          2124997.4470                   0.0000                   0.0000              0.0000               800229.1806           -21.1482                0.0                              0                 0.0
+Mixed allocation (0.50/0.50)     20                   0.2256                     0.1311              1144547.0061           2297940.8867                       3442487.8928     1577642.0441           720298.8426                   0.0000                   0.0000              0.0000               727719.7596           -11.8900                0.0                              0                 0.0
+Mixed allocation (0.25/0.25)     20                   0.2245                     0.1297              1132649.0607           2296326.0356                       3428975.0962     1579209.2051           717116.8305                   0.0000                   0.0000              0.0000               739617.7050           -11.8916                0.0                              0                 0.0
+              Savings + loan     20                   0.2327                     0.1289              1151466.7610           2017721.2403                       3169188.0013     1856938.7751           174452.5480               13670.0828               59198.3017          12845.6213               720503.5780            -9.1228                0.0                              0                 0.0
+                         PPO     20                   0.1789                     0.0804               739786.3083           2098076.4559                       2837862.7643     1758717.7044           352804.0096               13445.2581               79828.6180          19082.2082              1125131.3949           -11.8266                0.0                              0                 0.0
+
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_detail_corrected_accounting_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_summary_corrected_accounting_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_config_corrected_accounting_test.json
+=== Policy evaluation (lp_parity, split=all, 100 users) ===
+                      policy  users  mean_goal_funding_ratio  median_goal_funding_ratio  mean_goal_funding_amount  mean_net_worth_ledger  mean_net_worth_archived_aggregate  mean_final_cash  mean_final_portfolio  mean_final_loan_balance  mean_new_loan_principal  mean_interest_paid  mean_unallocated_surplus  mean_total_reward  max_budget_excess  total_budget_violation_months  max_goal_overshoot
+                   No action    100                   0.0030                     0.0000                19534.2095           2078167.7009                       2097701.9103     1912389.6414           165778.0594                   0.0000                   0.0000              0.0000              1906875.4218           -13.8317                0.0                              0                 0.0
+                Savings only    100                   0.2326                     0.1473              1187988.7279           2078167.7009                       3266156.4288     1912389.6414           165778.0594                   0.0000                   0.0000              0.0000               738420.9033            -8.3199                0.0                              0                 0.0
+            Investments only    100                   0.2054                     0.1072              1104321.4010           3158680.8452                       4263002.2462      827602.4499          2331078.3953                   0.0000                   0.0000              0.0000               822088.2302           -23.9931                0.0                              0                 0.0
+Mixed allocation (0.50/0.50)    100                   0.2326                     0.1473              1187988.7279           2361316.1996                       3549304.9275     1631857.3894           729458.8102                   0.0000                   0.0000              0.0000               738420.9033           -12.1976                0.0                              0                 0.0
+Mixed allocation (0.25/0.25)    100                   0.2277                     0.1473              1173865.2008           2359357.7138                       3533222.9145     1633681.2069           725676.5069                   0.0000                   0.0000              0.0000               752544.4305           -12.2482                0.0                              0                 0.0
+              Savings + loan    100                   0.2317                     0.1514              1181835.2880           2066963.0454                       3248798.3334     1906885.1890           165778.0594                5700.2030               45780.3977          11235.6386               738099.3103            -8.7599                0.0                              0                 0.0
+                         PPO    100                   0.1561                     0.0877               783844.5164           2157447.4089                       2941291.9253     1808715.8494           361856.5459               13124.9864               92142.4972          22478.4691              1131296.2631           -12.2908                0.0                              0                 0.0
+
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_detail_lp_parity_all.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_summary_lp_parity_all.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_config_lp_parity_all.json
+=== Policy evaluation (lp_parity, split=test, 20 users) ===
+                      policy  users  mean_goal_funding_ratio  median_goal_funding_ratio  mean_goal_funding_amount  mean_net_worth_ledger  mean_net_worth_archived_aggregate  mean_final_cash  mean_final_portfolio  mean_final_loan_balance  mean_new_loan_principal  mean_interest_paid  mean_unallocated_surplus  mean_total_reward  max_budget_excess  total_budget_violation_months  max_goal_overshoot
+                   No action     20                   0.0015                     0.0000                19022.9291           1975351.2214                       1994374.1505     1800898.6735           174452.5480                   0.0000                   0.0000              0.0000              1798136.4440           -13.8529                0.0                              0                 0.0
+                Savings only     20                   0.1929                     0.0994              1122893.1261           1975351.2214                       3098244.3475     1800898.6735           174452.5480                   0.0000                   0.0000              0.0000               694266.2470            -8.8848                0.0                              0                 0.0
+            Investments only     20                   0.1834                     0.0746              1047462.8577           2966493.1371                       4013955.9948      772458.7448          2194034.3923                   0.0000                   0.0000              0.0000               769696.5154           -21.8800                0.0                              0                 0.0
+Mixed allocation (0.50/0.50)     20                   0.1929                     0.0994              1122893.1261           2254494.8573                       3377387.9834     1513590.7576           740904.0997                   0.0000                   0.0000              0.0000               694266.2470           -12.3278                0.0                              0                 0.0
+Mixed allocation (0.25/0.25)     20                   0.1917                     0.0899              1109661.3479           2252860.1220                       3362521.4699     1515318.1784           737541.9436                   0.0000                   0.0000              0.0000               707498.0252           -12.3392                0.0                              0                 0.0
+              Savings + loan     20                   0.1959                     0.0996              1127308.7990           1964697.9287                       3092006.7277     1800064.9544           174452.5480                9819.5737               46230.8912          10665.1167               688043.8295            -9.3314                0.0                              0                 0.0
+                         PPO     20                   0.1462                     0.0571               721728.9649           2055804.7098                       2777533.6748     1692957.1369           376322.2883               13474.7153               76166.3379          18189.8113              1089080.4987           -12.2554                0.0                              0                 0.0
+
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_detail_lp_parity_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_summary_lp_parity_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\policy_config_lp_parity_test.json
+=== Reward decomposition (archived, split=test) ===
+                      policy  months  total_reward_sum  mean_reward_per_month         dominant_component  max_abs_component_residual  incremental_progress__sum  deadline_shortfall_penalty__sum  loan_penalty__sum  risk_penalty__sum
+                   No action    2840         -274.2863                -0.0966 deadline_shortfall_penalty                         0.0                     0.0000                        -246.9043             0.0000           -27.3821
+                Savings only    2840         -171.5627                -0.0604 deadline_shortfall_penalty                         0.0                    44.4822                        -188.6628             0.0000           -27.3821
+            Investments only    2840         -422.9645                -0.1489               risk_penalty                         0.0                    41.1274                        -193.6518             0.0000          -270.4401
+Mixed allocation (0.50/0.50)    2840         -237.8000                -0.0837 deadline_shortfall_penalty                         0.0                    44.4822                        -188.6628             0.0000           -93.6194
+Mixed allocation (0.25/0.25)    2840         -237.8318                -0.0837 deadline_shortfall_penalty                         0.0                    44.3142                        -189.1249             0.0000           -93.0210
+              Savings + loan    2840         -182.4569                -0.0642 deadline_shortfall_penalty                         0.0                    45.2597                        -188.4949           -11.8397           -27.3821
+                         PPO    2840         -236.2223                -0.0832 deadline_shortfall_penalty                         0.0                    29.9954                        -200.7802           -15.9350           -49.5025
+
+max |reward - sum(components)| = 1.776e-15  (must be ~0)
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\reward_decomposition_detail_archived_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\reward_decomposition_summary_archived_test.csv
+=== Reward decomposition (lp_parity, split=test) ===
+                      policy  months  total_reward_sum  mean_reward_per_month         dominant_component  max_abs_component_residual  incremental_progress__sum  deadline_shortfall_penalty__sum  loan_penalty__sum  risk_penalty__sum
+                   No action    2840         -277.0587                -0.0976 deadline_shortfall_penalty                         0.0                     0.0000                        -249.6766             0.0000           -27.3821
+                Savings only    2840         -177.6955                -0.0626 deadline_shortfall_penalty                         0.0                    43.3215                        -193.6350             0.0000           -27.3821
+            Investments only    2840         -437.6007                -0.1541               risk_penalty                         0.0                    39.9957                        -198.3762             0.0000          -279.2202
+Mixed allocation (0.50/0.50)    2840         -246.5568                -0.0868 deadline_shortfall_penalty                         0.0                    43.3215                        -193.6350             0.0000           -96.2434
+Mixed allocation (0.25/0.25)    2840         -246.7835                -0.0869 deadline_shortfall_penalty                         0.0                    42.9885                        -194.1384             0.0000           -95.6336
+              Savings + loan    2840         -186.6288                -0.0657 deadline_shortfall_penalty                         0.0                    43.7698                        -193.7703            -9.2462           -27.3821
+                         PPO    2840         -245.1080                -0.0863 deadline_shortfall_penalty                         0.0                    28.3272                        -205.9131           -15.2333           -52.2889
+
+max |reward - sum(components)| = 8.882e-16  (must be ~0)
+wrote:
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\reward_decomposition_detail_lp_parity_test.csv
+  S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\reward_decomposition_summary_lp_parity_test.csv
+=== Borrowing audit: savings_vs_savings_and_loan (config=corrected_accounting, split=test) ===
+   user_id  loan_principal  interest_paid  funding_ratio_no_loan  funding_ratio_with_loan  funding_delta  net_worth_delta  interest_per_extra_funded_rupee         verdict
+USER_00001     172874.0018     44982.2336                 0.1579                   0.1505        -0.0073      -44982.2336                              NaN   hurts funding
+USER_00005     150000.0000     41417.6851                 0.2558                   0.2495        -0.0062      -41417.6851                              NaN   hurts funding
+USER_00011       2120.1043       572.7360                 1.0000                   1.0000         0.0000        -572.7360                              NaN funding neutral
+USER_00013          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00019      58509.5770     15459.1307                 0.4572                   0.4453        -0.0120      -15459.1307                              NaN   hurts funding
+USER_00023      64979.7075     14794.6431                 0.1043                   0.1072         0.0029      -14794.6431                           0.8831   helps funding
+USER_00031          0.0000         0.0000                 0.0420                   0.0420         0.0000           0.0000                              NaN   no loan taken
+USER_00032     150113.1543     35468.8317                 0.4227                   0.4457         0.0230      -35468.8317                           0.5821   helps funding
+USER_00034          0.0000         0.0000                 0.0043                   0.0043         0.0000           0.0000                              NaN   no loan taken
+USER_00040          0.0000         0.0000                 0.0276                   0.0276         0.0000           0.0000                              NaN   no loan taken
+USER_00045          0.0000         0.0000                 0.2657                   0.2657         0.0000           0.0000                              NaN   no loan taken
+USER_00046          0.0000         0.0000                 0.0593                   0.0593         0.0000           0.0000                              NaN   no loan taken
+USER_00054          0.0000         0.0000                 0.0055                   0.0055         0.0000           0.0000                              NaN   no loan taken
+USER_00071      25054.5704      3857.7725                 0.0893                   0.0937         0.0044       -3857.7725                           0.2326   helps funding
+USER_00074          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00077          0.0000         0.0000                 0.0568                   0.0568         0.0000           0.0000                              NaN   no loan taken
+USER_00078     384100.2681     63623.6811                 0.6685                   0.7942         0.1258      -61089.1613                           0.2885   helps funding
+USER_00081      80466.8976     10581.6577                 0.1885                   0.2038         0.0153      -10575.7022                           0.2283   helps funding
+USER_00084       5319.9659      1457.8423                 0.2152                   0.2149        -0.0003       -1457.8423                              NaN   hurts funding
+USER_00091      90427.7867     24696.2115                 0.4918                   0.4885        -0.0034      -24696.2115                              NaN   hurts funding
+
+                 comparison  users  users_with_loan  mean_loan_principal  total_loan_principal  total_interest_paid  mean_funding_ratio_no_loan  mean_funding_ratio_with_loan  mean_funding_delta  mean_net_worth_delta  mean_reward_delta  helps_funding  hurts_funding  funding_neutral  median_interest_per_extra_funded_rupee
+savings_vs_savings_and_loan     20               11           59198.3017          1183966.0336          256912.4254                      0.2256                        0.2327              0.0071           -12718.5975            -0.5447              5              5                1                                  0.2885
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\borrowing_audit_savings_vs_savings_and_loan_corrected_accounting_test.csv
+
+=== Borrowing audit: half_savings_vs_half_savings_and_loan (config=corrected_accounting, split=test) ===
+   user_id  loan_principal  interest_paid  funding_ratio_no_loan  funding_ratio_with_loan  funding_delta  net_worth_delta  interest_per_extra_funded_rupee         verdict
+USER_00001     172874.0018     44982.2336                 0.1579                   0.1505        -0.0073      -44982.2336                              NaN   hurts funding
+USER_00005     150000.0000     41417.6851                 0.2558                   0.2495        -0.0062      -41417.6851                              NaN   hurts funding
+USER_00011       2120.1043       572.7360                 1.0000                   1.0000         0.0000        -572.7360                              NaN funding neutral
+USER_00013          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00019      58509.5770     15459.1307                 0.4572                   0.4453        -0.0120      -15459.1307                              NaN   hurts funding
+USER_00023      64979.7075     14794.6431                 0.1043                   0.1072         0.0029      -14794.6431                           0.8831   helps funding
+USER_00031          0.0000         0.0000                 0.0420                   0.0420         0.0000           0.0000                              NaN   no loan taken
+USER_00032     150113.1543     35468.8317                 0.4227                   0.4457         0.0230      -35468.8317                           0.5821   helps funding
+USER_00034          0.0000         0.0000                 0.0043                   0.0043         0.0000           0.0000                              NaN   no loan taken
+USER_00040          0.0000         0.0000                 0.0276                   0.0276         0.0000           0.0000                              NaN   no loan taken
+USER_00045          0.0000         0.0000                 0.2657                   0.2657         0.0000           0.0000                              NaN   no loan taken
+USER_00046          0.0000         0.0000                 0.0593                   0.0593         0.0000           0.0000                              NaN   no loan taken
+USER_00054          0.0000         0.0000                 0.0055                   0.0055         0.0000           0.0000                              NaN   no loan taken
+USER_00071      25054.5704      3857.7725                 0.0893                   0.0937         0.0044       -3857.7725                           0.2326   helps funding
+USER_00074          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00077          0.0000         0.0000                 0.0568                   0.0568         0.0000           0.0000                              NaN   no loan taken
+USER_00078     384100.2681     63623.6811                 0.6685                   0.7942         0.1258      -61089.1613                           0.2885   helps funding
+USER_00081      80466.8976     10581.6577                 0.1885                   0.2038         0.0153      -10575.7022                           0.2283   helps funding
+USER_00084       5319.9659      1457.8423                 0.2152                   0.2149        -0.0003       -1457.8423                              NaN   hurts funding
+USER_00091      90427.7867     24696.2115                 0.4918                   0.4885        -0.0034      -24696.2115                              NaN   hurts funding
+
+                           comparison  users  users_with_loan  mean_loan_principal  total_loan_principal  total_interest_paid  mean_funding_ratio_no_loan  mean_funding_ratio_with_loan  mean_funding_delta  mean_net_worth_delta  mean_reward_delta  helps_funding  hurts_funding  funding_neutral  median_interest_per_extra_funded_rupee
+half_savings_vs_half_savings_and_loan     20               11           59198.3017          1183966.0336          256912.4254                      0.2256                        0.2327              0.0071           -12718.5975            -0.5447              5              5                1                                  0.2885
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\borrowing_audit_half_savings_vs_half_savings_and_loan_corrected_accounting_test.csv
+
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\borrowing_audit_summary_corrected_accounting_test.csv
+
+max net-worth change attributable to borrowing alone: 0.00
+=== Borrowing audit: savings_vs_savings_and_loan (config=archived, split=test) ===
+   user_id  loan_principal  interest_paid  funding_ratio_no_loan  funding_ratio_with_loan  funding_delta  net_worth_delta  interest_per_extra_funded_rupee         verdict
+USER_00001     172874.0018     44982.2336                 0.1579                   0.1505        -0.0073     -251619.9768                              NaN   hurts funding
+USER_00005     150000.0000     41417.6851                 0.2558                   0.2495        -0.0062     -213805.8950                              NaN   hurts funding
+USER_00011       2120.1043       572.7360                 1.0000                   1.0000         0.0000       -2120.1043                              NaN funding neutral
+USER_00013          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00019      58509.5770     15459.1307                 0.4572                   0.4453        -0.0120      -88097.0601                              NaN   hurts funding
+USER_00023      64979.7075     14794.6431                 0.1043                   0.1072         0.0029      -67717.7878                           0.8831   helps funding
+USER_00031          0.0000         0.0000                 0.0420                   0.0420         0.0000           0.0000                              NaN   no loan taken
+USER_00032     150113.1543     35468.8317                 0.4227                   0.4457         0.0230     -126130.3408                           0.5821   helps funding
+USER_00034          0.0000         0.0000                 0.0043                   0.0043         0.0000           0.0000                              NaN   no loan taken
+USER_00040          0.0000         0.0000                 0.0276                   0.0276         0.0000           0.0000                              NaN   no loan taken
+USER_00045          0.0000         0.0000                 0.2657                   0.2657         0.0000           0.0000                              NaN   no loan taken
+USER_00046          0.0000         0.0000                 0.0593                   0.0593         0.0000           0.0000                              NaN   no loan taken
+USER_00054          0.0000         0.0000                 0.0055                   0.0055         0.0000           0.0000                              NaN   no loan taken
+USER_00071      25054.5704      3857.7725                 0.0893                   0.0937         0.0044      -24678.9382                           0.2326   helps funding
+USER_00074          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00077          0.0000         0.0000                 0.0568                   0.0568         0.0000           0.0000                              NaN   no loan taken
+USER_00078     384100.2681     63623.6811                 0.6685                   0.7942         0.1258     -309562.2370                           0.2885   helps funding
+USER_00081      80466.8976     10581.6577                 0.1885                   0.2038         0.0153      -79671.2305                           0.2283   helps funding
+USER_00084       5319.9659      1457.8423                 0.2152                   0.2149        -0.0003       -7579.2353                              NaN   hurts funding
+USER_00091      90427.7867     24696.2115                 0.4918                   0.4885        -0.0034     -147989.7858                              NaN   hurts funding
+
+                 comparison  users  users_with_loan  mean_loan_principal  total_loan_principal  total_interest_paid  mean_funding_ratio_no_loan  mean_funding_ratio_with_loan  mean_funding_delta  mean_net_worth_delta  mean_reward_delta  helps_funding  hurts_funding  funding_neutral  median_interest_per_extra_funded_rupee
+savings_vs_savings_and_loan     20               11           59198.3017          1183966.0336          256912.4254                      0.2256                        0.2327              0.0071           -65948.6296            -0.5447              5              5                1                                  0.2885
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\borrowing_audit_savings_vs_savings_and_loan_archived_test.csv
+
+=== Borrowing audit: half_savings_vs_half_savings_and_loan (config=archived, split=test) ===
+   user_id  loan_principal  interest_paid  funding_ratio_no_loan  funding_ratio_with_loan  funding_delta  net_worth_delta  interest_per_extra_funded_rupee         verdict
+USER_00001     172874.0018     44982.2336                 0.1579                   0.1505        -0.0073     -251619.9768                              NaN   hurts funding
+USER_00005     150000.0000     41417.6851                 0.2558                   0.2495        -0.0062     -213805.8950                              NaN   hurts funding
+USER_00011       2120.1043       572.7360                 1.0000                   1.0000         0.0000       -2120.1043                              NaN funding neutral
+USER_00013          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00019      58509.5770     15459.1307                 0.4572                   0.4453        -0.0120      -88097.0601                              NaN   hurts funding
+USER_00023      64979.7075     14794.6431                 0.1043                   0.1072         0.0029      -67717.7878                           0.8831   helps funding
+USER_00031          0.0000         0.0000                 0.0420                   0.0420         0.0000           0.0000                              NaN   no loan taken
+USER_00032     150113.1543     35468.8317                 0.4227                   0.4457         0.0230     -126130.3408                           0.5821   helps funding
+USER_00034          0.0000         0.0000                 0.0043                   0.0043         0.0000           0.0000                              NaN   no loan taken
+USER_00040          0.0000         0.0000                 0.0276                   0.0276         0.0000           0.0000                              NaN   no loan taken
+USER_00045          0.0000         0.0000                 0.2657                   0.2657         0.0000           0.0000                              NaN   no loan taken
+USER_00046          0.0000         0.0000                 0.0593                   0.0593         0.0000           0.0000                              NaN   no loan taken
+USER_00054          0.0000         0.0000                 0.0055                   0.0055         0.0000           0.0000                              NaN   no loan taken
+USER_00071      25054.5704      3857.7725                 0.0893                   0.0937         0.0044      -24678.9382                           0.2326   helps funding
+USER_00074          0.0000         0.0000                 0.0000                   0.0000         0.0000           0.0000                              NaN   no loan taken
+USER_00077          0.0000         0.0000                 0.0568                   0.0568         0.0000           0.0000                              NaN   no loan taken
+USER_00078     384100.2681     63623.6811                 0.6685                   0.7942         0.1258     -309562.2370                           0.2885   helps funding
+USER_00081      80466.8976     10581.6577                 0.1885                   0.2038         0.0153      -79671.2305                           0.2283   helps funding
+USER_00084       5319.9659      1457.8423                 0.2152                   0.2149        -0.0003       -7579.2353                              NaN   hurts funding
+USER_00091      90427.7867     24696.2115                 0.4918                   0.4885        -0.0034     -147989.7858                              NaN   hurts funding
+
+                           comparison  users  users_with_loan  mean_loan_principal  total_loan_principal  total_interest_paid  mean_funding_ratio_no_loan  mean_funding_ratio_with_loan  mean_funding_delta  mean_net_worth_delta  mean_reward_delta  helps_funding  hurts_funding  funding_neutral  median_interest_per_extra_funded_rupee
+half_savings_vs_half_savings_and_loan     20               11           59198.3017          1183966.0336          256912.4254                      0.2256                        0.2327              0.0071           -65948.6296            -0.5447              5              5                1                                  0.2885
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\borrowing_audit_half_savings_vs_half_savings_and_loan_archived_test.csv
+
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\borrowing_audit_summary_archived_test.csv
+
+max net-worth change attributable to borrowing alone: 0.00
+NOTE: accounting_mode='legacy' inflates this figure (finding F-04).
+generating plots...
+  wrote 01_funding_ratio_by_policy_archived_all.png
+  wrote 02_funding_ratio_by_policy_archived_test.png
+  wrote 03_net_worth_double_count.png
+  wrote 04_reward_components.png
+  wrote 05_borrowing_audit.png
+  wrote 06_action_mode_comparison.png
+plots written to S:\fyp\GoalPilot_AI_Completed\outputs\plots
+GoalPilotPaths(root=S:\fyp\GoalPilot_AI_Completed, source=argument, rl_prototype=S:\fyp\GoalPilot_AI_Completed\simulation\05_simulation_runs\rl_prototype)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\verify_against_archive.py --project-root S:\fyp\GoalPilot_AI_Completed
+  exit=0  (1.0s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\policy_evaluation.py --project-root S:\fyp\GoalPilot_AI_Completed --config archived --split all --include-ppo --tag archived_all
+  exit=0  (98.7s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\policy_evaluation.py --project-root S:\fyp\GoalPilot_AI_Completed --config archived --split test --include-ppo --tag archived_test
+  exit=0  (27.9s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\policy_evaluation.py --project-root S:\fyp\GoalPilot_AI_Completed --config corrected_accounting --split all --include-ppo --tag corrected_accounting_all
+  exit=0  (95.4s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\policy_evaluation.py --project-root S:\fyp\GoalPilot_AI_Completed --config corrected_accounting --split test --include-ppo --tag corrected_accounting_test
+  exit=0  (28.2s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\policy_evaluation.py --project-root S:\fyp\GoalPilot_AI_Completed --config lp_parity --split all --include-ppo --tag lp_parity_all
+  exit=0  (102.1s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\policy_evaluation.py --project-root S:\fyp\GoalPilot_AI_Completed --config lp_parity --split test --include-ppo --tag lp_parity_test
+  exit=0  (31.1s)
+
+=== Action-mode comparison ===
+action_mode                       policy  mean_goal_funding_ratio  mean_unallocated_surplus
+  magnitude            Flat 0.25 savings                   0.1796               782167.9207
+  magnitude            Flat 0.50 savings                   0.1929               694266.2470
+  magnitude            Flat 0.75 savings                   0.1929               694266.2470
+  magnitude                 Savings only                   0.1929               694266.2470
+  magnitude Mixed allocation (0.50/0.50)                   0.1929               694266.2470
+      share            Flat 0.25 savings                   0.1929               694266.2470
+      share            Flat 0.50 savings                   0.1929               694266.2470
+      share            Flat 0.75 savings                   0.1929               694266.2470
+      share                 Savings only                   0.1929               694266.2470
+      share Mixed allocation (0.50/0.50)                   0.1929               694266.2470
+wrote S:\fyp\GoalPilot_AI_Completed\outputs\evaluation\action_mode_comparison.csv
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\reward_decomposition.py --project-root S:\fyp\GoalPilot_AI_Completed --config archived --split test --include-ppo --tag archived_test
+  exit=0  (28.1s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\reward_decomposition.py --project-root S:\fyp\GoalPilot_AI_Completed --config lp_parity --split test --include-ppo --tag lp_parity_test
+  exit=0  (28.4s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\borrowing_audit.py --project-root S:\fyp\GoalPilot_AI_Completed --config corrected_accounting --split test --tag corrected_accounting_test
+  exit=0  (9.5s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\borrowing_audit.py --project-root S:\fyp\GoalPilot_AI_Completed --config archived --split test --tag archived_test
+  exit=0  (9.6s)
+
+$ S:\fyp\GoalPilot_AI_Completed\evaluation\make_plots.py --project-root S:\fyp\GoalPilot_AI_Completed
+  exit=0  (2.5s)
+
+======================================================================
+ALL EVALUATION STAGES COMPLETED
+artefacts: S:\fyp\GoalPilot_AI_Completed\outputs\evaluation
+plots    : S:\fyp\GoalPilot_AI_Completed\outputs\plots
+

@@ -1,0 +1,139 @@
+
+[eval] 6 checkpoints, 16 fresh test users
+{
+  "split": "fresh_split_v1",
+  "train_users": 48,
+  "validation_users": 16,
+  "fresh_test_users": 16,
+  "feasibility_eligible_test_users": 14,
+  "excluded_zero_surplus_test_users": [
+    "USER_00087",
+    "USER_00082"
+  ],
+  "validation_partition_used_for_selection": false,
+  "arms": {
+    "candidate_a": 3,
+    "archived_v1": 3
+  },
+  "timesteps_per_arm": 50000,
+  "per_seed_headline": [
+    {
+      "reward_version": "archived_v1",
+      "seed": 7,
+      "weighted_goal_achievement": 0.5908,
+      "pct_goals_fully_funded": 0.4812,
+      "pct_goals_met_by_deadline": 0.1042
+    },
+    {
+      "reward_version": "archived_v1",
+      "seed": 17,
+      "weighted_goal_achievement": 0.5265,
+      "pct_goals_fully_funded": 0.4198,
+      "pct_goals_met_by_deadline": 0.0938
+    },
+    {
+      "reward_version": "archived_v1",
+      "seed": 27,
+      "weighted_goal_achievement": 0.4399,
+      "pct_goals_fully_funded": 0.3177,
+      "pct_goals_met_by_deadline": 0.1062
+    },
+    {
+      "reward_version": "candidate_a",
+      "seed": 7,
+      "weighted_goal_achievement": 0.4895,
+      "pct_goals_fully_funded": 0.3792,
+      "pct_goals_met_by_deadline": 0.1344
+    },
+    {
+      "reward_version": "candidate_a",
+      "seed": 17,
+      "weighted_goal_achievement": 0.5299,
+      "pct_goals_fully_funded": 0.4073,
+      "pct_goals_met_by_deadline": 0.1062
+    },
+    {
+      "reward_version": "candidate_a",
+      "seed": 27,
+      "weighted_goal_achievement": 0.5586,
+      "pct_goals_fully_funded": 0.3771,
+      "pct_goals_met_by_deadline": 0.1375
+    }
+  ],
+  "affordability_violations_total": 0,
+  "headline_paired": [
+    {
+      "population": "all fresh test users (n=16)",
+      "metric": "weighted_goal_achievement",
+      "independent_users": 16,
+      "mean_diff_candidate_a_minus_archived": 0.0069,
+      "cluster_ci95_low": -0.0268,
+      "cluster_ci95_high": 0.0444,
+      "paired_t_pvalue": 0.7154,
+      "verdict_naive": "inconclusive",
+      "verdict_clustered": "inconclusive",
+      "verdict_paired_t": "inconclusive"
+    },
+    {
+      "population": "all fresh test users (n=16)",
+      "metric": "pct_goals_fully_funded",
+      "independent_users": 16,
+      "mean_diff_candidate_a_minus_archived": -0.0184,
+      "cluster_ci95_low": -0.0556,
+      "cluster_ci95_high": 0.0201,
+      "paired_t_pvalue": 0.3723,
+      "verdict_naive": "inconclusive",
+      "verdict_clustered": "inconclusive",
+      "verdict_paired_t": "inconclusive"
+    },
+    {
+      "population": "all fresh test users (n=16)",
+      "metric": "pct_goals_met_by_deadline",
+      "independent_users": 16,
+      "mean_diff_candidate_a_minus_archived": 0.0247,
+      "cluster_ci95_low": 0.001,
+      "cluster_ci95_high": 0.0483,
+      "paired_t_pvalue": 0.065,
+      "verdict_naive": "inconclusive",
+      "verdict_clustered": "favours_candidate_a",
+      "verdict_paired_t": "inconclusive"
+    },
+    {
+      "population": "feasibility-eligible fresh test users (n=14)",
+      "metric": "weighted_goal_achievement",
+      "independent_users": 14,
+      "mean_diff_candidate_a_minus_archived": 0.0079,
+      "cluster_ci95_low": -0.03,
+      "cluster_ci95_high": 0.0501,
+      "paired_t_pvalue": 0.7173,
+      "verdict_naive": "inconclusive",
+      "verdict_clustered": "inconclusive",
+      "verdict_paired_t": "inconclusive"
+    },
+    {
+      "population": "feasibility-eligible fresh test users (n=14)",
+      "metric": "pct_goals_fully_funded",
+      "independent_users": 14,
+      "mean_diff_candidate_a_minus_archived": -0.021,
+      "cluster_ci95_low": -0.0635,
+      "cluster_ci95_high": 0.023,
+      "paired_t_pvalue": 0.3748,
+      "verdict_naive": "inconclusive",
+      "verdict_clustered": "inconclusive",
+      "verdict_paired_t": "inconclusive"
+    },
+    {
+      "population": "feasibility-eligible fresh test users (n=14)",
+      "metric": "pct_goals_met_by_deadline",
+      "independent_users": 14,
+      "mean_diff_candidate_a_minus_archived": 0.0282,
+      "cluster_ci95_low": 0.0024,
+      "cluster_ci95_high": 0.054,
+      "paired_t_pvalue": 0.0645,
+      "verdict_naive": "inconclusive",
+      "verdict_clustered": "favours_candidate_a",
+      "verdict_paired_t": "inconclusive"
+    }
+  ]
+}
+

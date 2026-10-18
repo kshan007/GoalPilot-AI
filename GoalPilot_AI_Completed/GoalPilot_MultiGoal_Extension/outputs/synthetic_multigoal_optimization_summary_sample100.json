@@ -1,0 +1,18 @@
+{
+  "users_attempted": 100,
+  "users_solved_optimal": 100,
+  "users_failed": 0,
+  "goal_allocations_written": 390,
+  "goal_rows_with_shortfall": 130,
+  "goal_rows_fully_funded": 260,
+  "users_all_goals_fully_funded": 49,
+  "mean_weighted_goal_achievement": 0.8165482407889922,
+  "median_weighted_goal_achievement": 0.9806507789069852,
+  "mean_total_shortfall_in_currency_units": 3041651.0771590252,
+  "total_monthly_contributions_allocated": 1694936.161699753,
+  "total_new_emi_monthly": 636462.3521686079,
+  "all_allocation_constraints_respected": true,
+  "users_whose_starting_savings_were_below_emergency_target": 20,
+  "users_whose_emergency_target_was_met_after_allocation": 80,
+  "note": "Optimization outcomes are conditional on synthetic generated goals and prototype assumptions; weighted achievement is not a probability of success."
+}

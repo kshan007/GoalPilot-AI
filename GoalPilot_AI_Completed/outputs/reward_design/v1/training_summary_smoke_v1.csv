@@ -1,0 +1,4 @@
+reward_version,seed,timesteps,seconds,steps_per_second,episodes_completed,mean_train_episode_return,final_train_episode_return,checkpoint,checkpoint_saved
+archived_v1,7,2048,4.662801265716553,439.2209496591691,14,-14.215834189693485,-10.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\archived_v1\ppo_archived_v1_seed7.zip,True
+candidate_a,7,2048,4.789597988128662,427.5932980338025,14,-58.70590607084407,-65.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_a\ppo_candidate_a_seed7.zip,True
+candidate_b,7,2048,4.46042013168335,459.14957325490565,14,205.27423517926195,-65.0,S:\fyp\GoalPilot_AI_Completed\training_logs\experiments\reward_experiment_v1\candidate_b\ppo_candidate_b_seed7.zip,True

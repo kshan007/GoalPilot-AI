@@ -1,0 +1,3 @@
+case,mean_required_funding,mean_max_new_goal_contribution,mean_potential_shortfall,potentially_feasible_users,potentially_infeasible_users
+A_initial_savings_excluded,138353.8349725079,564385.7669796908,43658.09461090045,4890,5110
+B_initial_savings_included,24896.14251925145,564385.7669796908,12240.307623909232,7339,2661

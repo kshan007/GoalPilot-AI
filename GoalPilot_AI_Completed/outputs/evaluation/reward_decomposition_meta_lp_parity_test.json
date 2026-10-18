@@ -1,0 +1,19 @@
+{
+  "config": {
+    "target_basis": "inflated",
+    "annual_inflation": 0.03,
+    "emergency_months": 6.0,
+    "emi_income_ratio_cap": 0.35,
+    "annual_savings_return": 0.0,
+    "investment_return_assumption": 0.05,
+    "loan_tenure_months": 60,
+    "max_new_loan": 150000.0,
+    "action_mode": "magnitude",
+    "accounting_mode": "ledger",
+    "goal_credit_mode": "face_value",
+    "n_goal_slots": 5,
+    "seed": 2026
+  },
+  "split": "test",
+  "max_component_residual": 8.881784197001252e-16
+}

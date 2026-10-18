@@ -1,0 +1,10 @@
+element,formulation,status
+Objective,minimize sum(D_u),SUPPORTED
+Goal variable,"G_(u,t) >= 0",SUPPORTED
+Goal upper bound,"G_(u,t) <= PositiveCashFlow_(u,t)",SUPPORTED
+Target accounting,"sum(G_(u,t)) + D_u = Target_u",SUPPORTED
+Shortfall,D_u >= 0,SUPPORTED
+Monthly investment I_t,Not included,UNSUPPORTED
+Borrowing/WALR,Not included,UNSUPPORTED
+Future NIFTY return,Not included,UNSUPPORTED
+Minimum reserve,Not included,UNSUPPORTED

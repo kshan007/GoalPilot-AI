@@ -1,0 +1,92 @@
+{
+  "configs": [
+    "archived",
+    "corrected_accounting",
+    "lp_parity",
+    "recommended"
+  ],
+  "heldout_users": 20,
+  "train_users": 80,
+  "reward_versions_evaluated": [
+    "archived_v1",
+    "candidate_a",
+    "candidate_b"
+  ],
+  "max_component_residual": 8.881784197001252e-16,
+  "budget_violations_total": 0,
+  "lp_vs_savings_only": [
+    {
+      "config": "lp_parity",
+      "policy": "LP optimizer plan",
+      "reference": "Savings only",
+      "metric": "weighted_goal_achievement",
+      "n_pairs": 20,
+      "mean_paired_difference": -0.2514729233152481,
+      "median_paired_difference": -0.26969436731914664,
+      "ci95_low": -0.3532714612621461,
+      "ci95_high": -0.15650633828587004,
+      "significantly_different": true
+    },
+    {
+      "config": "lp_parity",
+      "policy": "LP optimizer plan",
+      "reference": "Savings only",
+      "metric": "net_worth",
+      "n_pairs": 20,
+      "mean_paired_difference": 569846.0486719016,
+      "median_paired_difference": 143923.77283713163,
+      "ci95_low": 141968.5806482051,
+      "ci95_high": 1252722.5760017238,
+      "significantly_different": true
+    },
+    {
+      "config": "lp_parity",
+      "policy": "LP optimizer plan",
+      "reference": "Savings only",
+      "metric": "funding_vs_inflated_targets",
+      "n_pairs": 20,
+      "mean_paired_difference": -0.06734782252600369,
+      "median_paired_difference": -0.0462796880960124,
+      "ci95_low": -0.1024468081002062,
+      "ci95_high": -0.03586207903016608,
+      "significantly_different": true
+    },
+    {
+      "config": "recommended",
+      "policy": "LP optimizer plan",
+      "reference": "Savings only",
+      "metric": "weighted_goal_achievement",
+      "n_pairs": 20,
+      "mean_paired_difference": 0.016785590769309803,
+      "median_paired_difference": 0.0,
+      "ci95_low": -0.003372319585289287,
+      "ci95_high": 0.03660898945752888,
+      "significantly_different": false
+    },
+    {
+      "config": "recommended",
+      "policy": "LP optimizer plan",
+      "reference": "Savings only",
+      "metric": "net_worth",
+      "n_pairs": 20,
+      "mean_paired_difference": 417521.43403427093,
+      "median_paired_difference": 126880.79817019362,
+      "ci95_low": 133906.15849376525,
+      "ci95_high": 774416.5764816788,
+      "significantly_different": true
+    },
+    {
+      "config": "recommended",
+      "policy": "LP optimizer plan",
+      "reference": "Savings only",
+      "metric": "funding_vs_inflated_targets",
+      "n_pairs": 20,
+      "mean_paired_difference": 0.03976070286269658,
+      "median_paired_difference": 0.0032763492923927884,
+      "ci95_low": 0.0050957879247652774,
+      "ci95_high": 0.07723897357853998,
+      "significantly_different": true
+    }
+  ],
+  "note": "The LP column is the optimizer's one-shot plan mapped onto the environment's monthly share weights; the environment still enforces its own EMI cap and max_new_loan, so the LP plan can be truncated. The archived PPO checkpoint is only valid under archived semantics and is reported only for the archived preset."
+}

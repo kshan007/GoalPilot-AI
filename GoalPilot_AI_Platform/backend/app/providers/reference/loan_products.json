@@ -1,0 +1,79 @@
+{
+  "dataset": "published_lending_products_reference",
+  "curated_at": "2026-10-17",
+  "what_this_is": "A snapshot of minimum advertised ('from') interest rates published on lenders' own public product pages, captured on the date shown. It is reference information, NOT a personalised offer, NOT an approval, and NOT a rate the user will necessarily be given.",
+  "what_this_is_not": [
+    "Not an eligibility decision",
+    "Not a quote",
+    "Not an APR: it excludes processing fees, insurance and other charges unless stated",
+    "Not an aggregator or bureau response"
+  ],
+  "maintenance": "Re-capture by re-running scripts/refresh_provider_reference.py or by editing this file after visiting the lender page. Never overwrite a value without recording the new retrieval date.",
+  "products": [
+    {
+      "product_id": "icici_personal_loan",
+      "lender": "ICICI Bank",
+      "product_name": "Personal Loan",
+      "category": "personal",
+      "published_rate": 0.0999,
+      "rate_type": "floating",
+      "rate_basis": "advertised_from_rate",
+      "max_amount": 5000000,
+      "collateral_required": false,
+      "source_url": "https://www.icicibank.com/personal-banking/loans/personal-loan",
+      "retrieved_at": "2026-10-17",
+      "quoted_text": "low interest rates starting at 9.99%",
+      "eligibility": [
+        "Salaried or self-employed individual meeting the lender's own criteria",
+        "The lender's published page does not state the full eligibility grid; it is not reproduced here"
+      ],
+      "notes": [
+        "Advertised minimum rate. The rate actually offered depends on the lender's assessment.",
+        "Processing fee and tenure range were not stated in a form that could be captured verbatim, so they are left null."
+      ]
+    },
+    {
+      "product_id": "axis_personal_loan",
+      "lender": "Axis Bank",
+      "product_name": "Personal Loan",
+      "category": "personal",
+      "published_rate": 0.0999,
+      "rate_type": "floating",
+      "rate_basis": "advertised_from_rate",
+      "max_amount": 5000000,
+      "collateral_required": false,
+      "source_url": "https://www.axisbank.com/retail/loans/personal-loan/features-benefits",
+      "retrieved_at": "2026-10-17",
+      "quoted_text": "interest rates starting at 9.99% p.a., instant approval with no collateral",
+      "eligibility": [
+        "Salaried or self-employed individual meeting the lender's own criteria",
+        "Collateral is advertised as not required"
+      ],
+      "notes": [
+        "Advertised minimum rate; not a personalised offer.",
+        "Tenure range and processing fee were not captured verbatim and are left null."
+      ]
+    },
+    {
+      "product_id": "bob_personal_loan",
+      "lender": "Bank of Baroda",
+      "product_name": "Personal Loan",
+      "category": "personal",
+      "published_rate": 0.11,
+      "rate_type": "floating",
+      "rate_basis": "advertised_from_rate",
+      "max_amount": 2000000,
+      "collateral_required": false,
+      "source_url": "https://www.bankofbaroda.in/personal-banking/loans/personal-loan",
+      "retrieved_at": "2026-10-17",
+      "quoted_text": "instant personal loan up to Rs 20 Lakh at an 11% p.a. interest rate",
+      "eligibility": [
+        "Salaried or self-employed individual meeting the lender's own criteria"
+      ],
+      "notes": [
+        "Advertised minimum rate; not a personalised offer.",
+        "Processing fee and tenure range were not captured verbatim and are left null."
+      ]
+    }
+  ]
+}

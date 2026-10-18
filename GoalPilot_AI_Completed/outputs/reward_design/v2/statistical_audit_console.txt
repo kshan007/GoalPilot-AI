@@ -1,0 +1,64 @@
+
+{
+  "held_out_users": 20,
+  "feasibility_eligible_users": 14,
+  "excluded_zero_surplus_users": [
+    "USER_00013",
+    "USER_00031",
+    "USER_00034",
+    "USER_00040",
+    "USER_00054",
+    "USER_00074"
+  ],
+  "independent_sample_size_per_arm": 20,
+  "observations_if_pseudo_replicated": 60,
+  "seed_variability_note": "seeds are repeated measures on the same users; they reduce estimation noise but do not increase the independent sample size beyond the 20 held-out users",
+  "conclusions_that_flip_between_methods": [
+    {
+      "analysis_population": "all held-out users (n=20)",
+      "version_a": "archived_v1",
+      "version_b": "candidate_b",
+      "metric": "goal_level_shortfall",
+      "naive_verdict": "inconclusive",
+      "cluster_verdict": "favours_b",
+      "user_mean_verdict": "favours_b",
+      "ci_width_ratio_cluster_over_naive": 0.757209930500578
+    },
+    {
+      "analysis_population": "all held-out users (n=20)",
+      "version_a": "candidate_a",
+      "version_b": "candidate_b",
+      "metric": "goal_level_shortfall",
+      "naive_verdict": "inconclusive",
+      "cluster_verdict": "favours_b",
+      "user_mean_verdict": "favours_b",
+      "ci_width_ratio_cluster_over_naive": 0.9534221972928454
+    },
+    {
+      "analysis_population": "feasibility-eligible users, surplus>0 (n=14)",
+      "version_a": "archived_v1",
+      "version_b": "candidate_b",
+      "metric": "goal_level_shortfall",
+      "naive_verdict": "inconclusive",
+      "cluster_verdict": "favours_b",
+      "user_mean_verdict": "favours_b",
+      "ci_width_ratio_cluster_over_naive": 0.7444550005366556
+    },
+    {
+      "analysis_population": "feasibility-eligible users, surplus>0 (n=14)",
+      "version_a": "candidate_a",
+      "version_b": "candidate_b",
+      "metric": "goal_level_shortfall",
+      "naive_verdict": "inconclusive",
+      "cluster_verdict": "favours_b",
+      "user_mean_verdict": "favours_b",
+      "ci_width_ratio_cluster_over_naive": 0.9252777264040912
+    }
+  ],
+  "n_flipped": 4,
+  "ci_width_ratio_summary": {
+    "median": 1.0159174568720077,
+    "max": 1.3268608414239487
+  }
+}
+

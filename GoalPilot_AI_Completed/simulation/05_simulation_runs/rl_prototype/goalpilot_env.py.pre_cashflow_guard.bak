@@ -1,0 +1,367 @@
+
+import numpy as np
+import pandas as pd
+import gymnasium as gym
+from gymnasium import spaces
+
+
+class GoalPilotEnv(gym.Env):
+    """Monthly multi-goal financial allocation environment.
+
+    This is a research prototype, not a financial-advice system.
+    Inflation is deliberately excluded until a defensible rate series is available.
+    """
+
+    metadata = {"render_modes": ["human"]}
+
+    def __init__(self, profiles, goals, market, user_ids=None, seed=None):
+        super().__init__()
+
+        self.profiles = profiles.copy().reset_index(drop=True)
+        self.goals = goals.copy()
+        self.market = market.sort_values("period").reset_index(drop=True).copy()
+
+        self.profiles["user_id"] = self.profiles["user_id"].astype(str)
+        self.goals["user_id"] = self.goals["user_id"].astype(str)
+        self.market["period"] = pd.to_datetime(self.market["period"])
+
+        self.user_ids = list(user_ids) if user_ids is not None else \
+            self.profiles["user_id"].tolist()
+
+        self.profile_map = self.profiles.set_index("user_id").to_dict("index")
+        self.goal_map = {
+            uid: group.sort_values("time_horizon_months").reset_index(drop=True)
+            for uid, group in self.goals.groupby("user_id")
+        }
+
+        if not self.user_ids:
+            raise ValueError("At least one user is required.")
+        if not self.market["period"].is_monotonic_increasing:
+            raise ValueError("Market periods must be sorted.")
+        if self.market["period"].duplicated().any():
+            raise ValueError("Market periods must be unique.")
+
+        self.max_goals = int(
+            self.goals.groupby("user_id").size().max()
+        )
+        self.max_steps = len(self.market)
+
+        # Action per goal: savings allocation, investment allocation,
+        # and loan request. All action components are normalized to [0, 1].
+        self.action_space = spaces.Box(
+            low=0.0,
+            high=1.0,
+            shape=(self.max_goals, 3),
+            dtype=np.float32,
+        )
+
+        # Fixed-length observation supports users with different goal counts.
+        # Per-goal features: remaining goal amount, horizon, priority,
+        # criticality, current funding ratio, and active flag.
+        self.observation_space = spaces.Box(
+            low=0.0,
+            high=1.0,
+            shape=(12 + self.max_goals * 6,),
+            dtype=np.float32,
+        )
+
+        self.rng = np.random.default_rng(seed)
+        self.user_id = None
+        self.user_goals = None
+        self.month_index = 0
+        self.cash = 0.0
+        self.portfolio = 0.0
+        self.loan_balance = 0.0
+        self.loan_emi = 0.0
+        self.loan_months_left = 0
+        self.goal_balances = None
+        self.goal_deadlines = None
+        self.goal_targets = None
+        self.total_rewards = 0.0
+
+    def _get_observation(self):
+        p = self.profile_map[self.user_id]
+        surplus = max(
+            0.0,
+            float(p["monthly_income"])
+            - float(p["monthly_expenditure"])
+            - float(p["monthly_emi"]),
+        )
+
+        market_row = self.market.iloc[self.month_index]
+        obs = [
+            np.clip(float(p["monthly_income"]) / 200000, 0, 1),
+            np.clip(float(p["monthly_expenditure"]) / 200000, 0, 1),
+            np.clip(float(p["monthly_emi"]) / 200000, 0, 1),
+            np.clip(surplus / 100000, 0, 1),
+            np.clip(self.cash / 2_000_000, 0, 1),
+            np.clip(self.portfolio / 5_000_000, 0, 1),
+            np.clip(self.loan_balance / 2_000_000, 0, 1),
+            np.clip(float(p["investment_capacity_ratio"]), 0, 1),
+            np.clip(float(p["risk_score"]), 0, 1),
+            np.clip(self.month_index / max(1, self.max_steps - 1), 0, 1),
+            np.clip(
+                (float(market_row["walr_monthly"]) / 100), 0, 1
+            ),
+            np.clip(
+                (float(market_row["nifty_monthly_return"]) + 0.25) / 0.50,
+                0, 1,
+            ),
+        ]
+
+        for j in range(self.max_goals):
+            if j < len(self.goal_targets):
+                target = max(float(self.goal_targets[j]), 1.0)
+                remaining = max(0.0, target - self.goal_balances[j])
+                horizon = max(0, self.goal_deadlines[j] - self.month_index)
+                row = self.user_goals.iloc[j]
+                obs.extend([
+                    np.clip(remaining / 30_000_000, 0, 1),
+                    np.clip(horizon / 240, 0, 1),
+                    np.clip(float(row["priority"]) / 5, 0, 1),
+                    np.clip(float(row["criticality"]) / 5, 0, 1),
+                    np.clip(self.goal_balances[j] / target, 0, 1),
+                    1.0,
+                ])
+            else:
+                obs.extend([0.0] * 6)
+
+        return np.asarray(obs, dtype=np.float32)
+
+    def reset(self, seed=None, options=None):
+        super().reset(seed=seed)
+        if seed is not None:
+            self.rng = np.random.default_rng(seed)
+
+        options = options or {}
+        requested_user = options.get("user_id")
+        if requested_user is not None:
+            requested_user = str(requested_user)
+            if requested_user not in self.user_ids:
+                raise ValueError(f"Unknown user_id: {requested_user}")
+            self.user_id = requested_user
+        else:
+            self.user_id = self.rng.choice(self.user_ids)
+
+        p = self.profile_map[self.user_id]
+        self.user_goals = self.goal_map[self.user_id].copy().reset_index(drop=True)
+
+        self.month_index = 0
+        self.cash = max(0.0, float(p["initial_savings"]))
+        self.portfolio = max(0.0, float(p["initial_investment"]))
+        self.loan_balance = 0.0
+        self.loan_emi = 0.0
+        self.loan_months_left = 0
+        self.total_rewards = 0.0
+
+        self.goal_targets = self.user_goals["current_cost"].astype(float).to_numpy()
+        self.goal_deadlines = self.user_goals["time_horizon_months"].astype(int).to_numpy()
+        self.goal_balances = self.user_goals["existing_funding"].astype(float).to_numpy()
+
+        return self._get_observation(), {
+            "user_id": self.user_id,
+            "goal_count": len(self.user_goals),
+        }
+
+    def step(self, action):
+        action = np.asarray(action, dtype=np.float32)
+        if action.shape != self.action_space.shape:
+            raise ValueError(f"Expected action shape {self.action_space.shape}, got {action.shape}")
+        if not np.isfinite(action).all():
+            raise ValueError("Action contains non-finite values.")
+
+        action = np.clip(action, 0, 1)
+        p = self.profile_map[self.user_id]
+        m = self.market.iloc[self.month_index]
+
+        income = float(p["monthly_income"])
+        expenses = float(p["monthly_expenditure"])
+        existing_emi = float(p["monthly_emi"])
+        surplus = max(0.0, income - expenses - existing_emi)
+
+        # Reserve only the payment actually due, including a capped final payment.
+        if self.loan_months_left > 0 and self.loan_balance > 1e-6:
+            annual_rate_existing = float(m["walr_monthly"]) / 100.0
+            monthly_rate_existing = (1.0 + annual_rate_existing) ** (1.0 / 12.0) - 1.0
+            interest_due_before_allocation = self.loan_balance * monthly_rate_existing
+            scheduled_emi = max(0.0, self.loan_emi)
+            payoff_amount = self.loan_balance + interest_due_before_allocation
+            current_emi_due = min(scheduled_emi, payoff_amount, surplus)
+        else:
+            current_emi_due = 0.0
+            self.loan_balance = 0.0
+            self.loan_emi = 0.0
+            self.loan_months_left = 0
+
+        available_after_existing_loan = max(0.0, surplus - current_emi_due)
+        invest_cap = (
+            available_after_existing_loan
+            * float(p["investment_capacity_ratio"])
+        )
+
+        # Allocate a single shared monthly budget across goal contributions.
+        raw_savings = action[:len(self.user_goals), 0] * available_after_existing_loan
+        raw_investments = action[:len(self.user_goals), 1] * invest_cap
+
+        total_raw = float(raw_savings.sum() + raw_investments.sum())
+        budget_scale = min(
+            1.0,
+            available_after_existing_loan / total_raw if total_raw > 0 else 1.0,
+        )
+        savings_alloc = raw_savings * budget_scale
+        invest_alloc = raw_investments * budget_scale
+
+        # A new loan can be requested only if the EMI fits remaining surplus.
+        # This prototype allows at most one active loan at a time.
+        new_loan = 0.0
+        new_emi = 0.0
+        if self.loan_months_left == 0 and available_after_existing_loan > 0:
+            goal_idx = int(np.argmax(action[:len(self.user_goals), 2]))
+            requested_fraction = float(action[goal_idx, 2])
+            annual_rate = float(m["walr_monthly"]) / 100.0
+            monthly_rate = (1 + annual_rate) ** (1 / 12) - 1
+            tenure = 60
+            emi_factor = (
+                monthly_rate * (1 + monthly_rate) ** tenure
+                / ((1 + monthly_rate) ** tenure - 1)
+            )
+            emi_budget = max(
+                0.0,
+                min(
+                    available_after_existing_loan
+                    - float(savings_alloc.sum())
+                    - float(invest_alloc.sum()),
+                    income * 0.35 - existing_emi - self.loan_emi,
+                ),
+            )
+            new_emi = min(emi_budget, requested_fraction * emi_budget)
+            new_loan = new_emi / emi_factor if emi_factor > 0 else 0.0
+            new_loan = min(new_loan, 150000.0)
+            new_emi = new_loan * emi_factor
+
+            if new_emi > emi_budget + 1e-5:
+                new_loan = emi_budget / emi_factor
+                new_emi = new_loan * emi_factor
+
+        # Apply monthly portfolio return. Losses cannot make holdings negative.
+        market_return = float(m["nifty_monthly_return"])
+        previous_portfolio = self.portfolio
+        self.portfolio = max(
+            0.0,
+            self.portfolio * (1 + market_return) + float(invest_alloc.sum()),
+        )
+        self.cash += float(savings_alloc.sum())
+
+        # Repay the existing loan with interest-first amortization.
+        emi_due = current_emi_due
+        if emi_due > 0.0:
+            annual_rate_existing = float(m["walr_monthly"]) / 100.0
+            monthly_rate_existing = (1.0 + annual_rate_existing) ** (1.0 / 12.0) - 1.0
+            interest_due = self.loan_balance * monthly_rate_existing
+            payment_due = self.loan_balance + interest_due
+            actual_payment = min(emi_due, payment_due)
+            principal_paid = max(0.0, actual_payment - interest_due)
+            self.loan_balance = max(0.0, self.loan_balance - principal_paid)
+            self.loan_months_left = max(0, self.loan_months_left - 1)
+
+            if self.loan_balance <= 1e-6 or self.loan_months_left == 0:
+                self.loan_balance = 0.0
+                self.loan_emi = 0.0
+                self.loan_months_left = 0
+
+        # Originate a new loan only after the previous loan has closed.
+        if new_loan > 0:
+            self.loan_balance = float(new_loan)
+            self.loan_emi = float(new_emi)
+            self.loan_months_left = int(tenure)
+
+        monthly_loan_commitment = emi_due + float(new_emi)
+
+        # Credit goal balances using the cash/investment allocations.
+        # Contributions are split across goals in proportion to action weights.
+        contribution = savings_alloc + invest_alloc
+        total_contribution = float(contribution.sum())
+        if total_contribution > 0:
+            weights = contribution / total_contribution
+            for j, amount in enumerate(contribution):
+                self.goal_balances[j] += float(amount)
+
+        # Reward incremental goal progress, deadline attainment, and affordability.
+        reward = 0.0
+        for j in range(len(self.user_goals)):
+            target = max(1.0, float(self.goal_targets[j]))
+            old_ratio = min(1.0, max(0.0, self.goal_balances[j] / target))
+            # Avoid rewarding the same already funded balance repeatedly.
+            reward += 2.0 * old_ratio * float(self.user_goals.iloc[j]["priority"]) / 5.0
+
+            if self.month_index + 1 >= self.goal_deadlines[j]:
+                shortfall_ratio = max(
+                    0.0, (target - self.goal_balances[j]) / target
+                )
+                reward -= 5.0 * shortfall_ratio * float(
+                    self.user_goals.iloc[j]["criticality"]
+                ) / 5.0
+
+        # Small penalties discourage unnecessary debt and risky exposure.
+        reward -= 0.00001 * new_loan
+        risk_score = float(p["risk_score"])
+        reward -= max(0.0, abs(market_return) - risk_score * 0.05) * (
+            self.portfolio / 100000.0
+        )
+
+        # Validate the actual current-month cash commitments.
+        combined_commitment = (
+            float(savings_alloc.sum())
+            + float(invest_alloc.sum())
+            + monthly_loan_commitment
+        )
+        if combined_commitment > surplus + 1e-4:
+            raise RuntimeError(
+                "Combined monthly cash-flow budget was exceeded. "
+                f"month_index={self.month_index}, user_id={self.user_id}, "
+                f"surplus={surplus:.6f}, "
+                f"savings={float(savings_alloc.sum()):.6f}, "
+                f"investments={float(invest_alloc.sum()):.6f}, "
+                f"monthly_loan_commitment={monthly_loan_commitment:.6f}, "
+                f"new_emi={new_emi:.6f}, "
+                f"new_loan={new_loan:.6f}, "
+                f"available_after_existing_loan={available_after_existing_loan:.6f}, "
+                f"loan_months_left={self.loan_months_left}"
+            )
+
+        self.month_index += 1
+        terminated = self.month_index >= self.max_steps
+        truncated = False
+        observation = (
+            self._get_observation()
+            if not terminated
+            else np.zeros(self.observation_space.shape, dtype=np.float32)
+        )
+        self.total_rewards += reward
+
+        info = {
+            "user_id": self.user_id,
+            "monthly_surplus": surplus,
+            "savings_contribution": float(savings_alloc.sum()),
+            "investment_contribution": float(invest_alloc.sum()),
+            "new_loan_principal": float(new_loan),
+            "new_loan_emi": float(new_emi),
+            "active_loan_emi": float(self.loan_emi),
+            "combined_monthly_commitment": combined_commitment,
+            "portfolio_value": self.portfolio,
+            "loan_balance": self.loan_balance,
+            "goal_balances": self.goal_balances.copy(),
+            "goal_targets": self.goal_targets.copy(),
+            "portfolio_market_change": self.portfolio - previous_portfolio,
+        }
+        return observation, float(reward), terminated, truncated, info
+
+    def render(self):
+        print({
+            "user_id": self.user_id,
+            "month_index": self.month_index,
+            "cash": round(self.cash, 2),
+            "portfolio": round(self.portfolio, 2),
+            "loan_balance": round(self.loan_balance, 2),
+            "total_rewards": round(self.total_rewards, 3),
+        })

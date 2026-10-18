@@ -1,0 +1,5 @@
+scenario,status,total_funding_gap,weighted_goal_achievement,total_shortfall,monthly_contributions,loan_cost
+Baseline,optimal,1367404.5788823832,1.0,0.0,24685.416538816604,0.0
+Higher inflation,optimal,1645972.0330922245,1.0,0.0,28195.18706428429,0.0
+Lower market returns,optimal,1367404.5788823832,1.0,0.0,26595.579907329957,0.0
+Higher loan rate,optimal,1367404.5788823832,1.0,0.0,24685.416538816604,0.0

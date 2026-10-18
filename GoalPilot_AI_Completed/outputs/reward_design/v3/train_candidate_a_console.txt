@@ -1,0 +1,6 @@
+
+[train] 1 versions x 3 seeds x 50000 steps on 48 fresh train users
+      candidate_a seed=7: 417 steps/s, 353 episodes, saved=True
+      candidate_a seed=17: 268 steps/s, 353 episodes, saved=True
+      candidate_a seed=27: 215 steps/s, 353 episodes, saved=True
+

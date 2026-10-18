@@ -1,0 +1,4 @@
+goal_id,goal_name,current_cost,target_date,time_horizon_months,priority,criticality,existing_funding
+G1,Professional certification,90000,2027-10-10,12,4,5,10000
+G2,Vehicle down payment,300000,2029-10-10,36,3,3,50000
+G3,Home deposit,900000,2033-10-10,84,5,4,100000

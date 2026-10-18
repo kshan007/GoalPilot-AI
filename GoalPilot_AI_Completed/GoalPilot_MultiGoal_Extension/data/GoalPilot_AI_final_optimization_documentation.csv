@@ -1,0 +1,83 @@
+section,item,value
+Project,Project name,GoalPilot AI
+Optimization,Optimization type,Linear Programming (LP)
+Optimization scope,Primary optimization objective,Maximize achievable goal funding within observed positive cash flow
+Population,Number of users,10000
+Historical baseline,Historical goal funding logic,"Positive cash flow × goal allocation factor, aggregated over the user's goal horizon"
+Decision variable,"Goal contribution G(u,t)",Monthly goal funding allocated from positive cash flow
+Slack variable,Goal shortfall D(u),Remaining amount required to reach the target
+Constraint,Goal funding upper bound,"0 <= G(u,t) <= PositiveCashFlow(u,t)"
+Constraint,Target accounting,Sum of monthly goal funding + shortfall = target amount
+Objective,Formal objective,"Minimize total goal shortfall, equivalently maximize total achievable goal funding"
+Time,Optimization horizon,"User-specific goal horizon, 6–120 months"
+Solver,LP solver,HiGHS
+Solver scope,Users optimized,10000
+Validation,Independent solution validation,Completed
+Validation,Maximum optimality error,2.3283064365386963e-10
+Validation,Maximum target accounting error,2.3283064365386963e-10
+Validation,Maximum funding reconstruction error,2.3283064365386963e-10
+Results,Historical successful users,6451
+Results,Optimized successful users,7582
+Results,Newly successful users,1131
+Results,Still unsuccessful users,2418
+Results,Historical success rate,0.6451
+Results,Optimized success rate,0.7582
+Results,Success improvement (percentage points),11.309999999999999
+Results,Mean historical shortfall,30580.490390871095
+Results,Mean optimized shortfall,22240.82745179166
+Results,Mean shortfall reduction,8339.662939079435
+Results,Total historical shortfall,305804903.90871096
+Results,Total optimized shortfall,222408274.51791662
+Results,Total shortfall reduction,83396629.39079435
+Success transitions,Successful → Successful,6451
+Success transitions,Failed → Failed,2418
+Success transitions,Failed → Successful,1131
+Model inputs,monthly_income,Present in final optimization dataset
+Model inputs,monthly_expenditure,Present in final optimization dataset
+Model inputs,monthly_emi,Present in final optimization dataset
+Model inputs,initial_savings,Present in final optimization dataset
+Model inputs,initial_investment,Present in final optimization dataset
+Model inputs,investment_capacity_ratio,Present in final optimization dataset
+Model inputs,financial_situation,Present in final optimization dataset
+Model inputs,risk_score,Present in final optimization dataset
+Model inputs,risk_profile,Present in final optimization dataset
+Model inputs,goal_horizon_months,Present in final optimization dataset
+Model inputs,target_amount,Present in final optimization dataset
+Model inputs,goal_specific_monthly_capacity,Present in final optimization dataset
+Model inputs,goal_allocation_factor,Present in final optimization dataset
+Model exclusions,Monthly investment contribution,No explicit monthly investment-contribution variable exists in the validated simulation.
+Model exclusions,Borrowing,Borrowing was not included in the final LP.
+Model exclusions,WALR-based borrowing cost,WALR was not used as a borrowing decision constraint in the final LP.
+Model exclusions,Future NIFTY return decision,No future investment-return decision was introduced into the LP.
+Model exclusions,Minimum cash reserve,No reserve requirement was established in the validated formulation.
+Model exclusions,Initial savings as goal funding,Initial savings were not counted toward the target-funding achievement.
+Model exclusions,Static goal capacity as dynamic hard cap,The static user-level goal-specific monthly capacity was not imposed as a dynamic monthly hard constraint.
+Financial situation analysis,financial_stress,"Users=474, Historical success rate=0.0000, Optimized success rate=0.0506, Newly successful=24, Shortfall reduction=4317.14"
+Financial situation analysis,high_saving,"Users=2043, Historical success rate=0.9780, Optimized success rate=0.9941, Newly successful=33, Shortfall reduction=377.64"
+Financial situation analysis,low_saving,"Users=2923, Historical success rate=0.3230, Optimized success rate=0.4831, Newly successful=468, Shortfall reduction=12475.05"
+Financial situation analysis,moderate_saving,"Users=4560, Historical success rate=0.7695, Optimized success rate=0.9024, Newly successful=606, Shortfall reduction=9674.17"
+Risk profile analysis,aggressive,"Users=3333, Historical success rate=0.9592, Optimized success rate=0.9859, Newly successful=89, Shortfall reduction=834.31"
+Risk profile analysis,conservative,"Users=3333, Historical success rate=0.2163, Optimized success rate=0.3831, Newly successful=556, Shortfall reduction=17699.29"
+Risk profile analysis,moderate,"Users=3334, Historical success rate=0.7597, Optimized success rate=0.9055, Newly successful=486, Shortfall reduction=6485.94"
+Goal horizon analysis,1-12 months,"Users=636, Historical success rate=0.2248, Optimized success rate=0.3962, Newly successful=109, Shortfall reduction=14151.65"
+Goal horizon analysis,13-24 months,"Users=1081, Historical success rate=0.4422, Optimized success rate=0.6142, Newly successful=186, Shortfall reduction=11342.87"
+Goal horizon analysis,25-36 months,"Users=1043, Historical success rate=0.5849, Optimized success rate=0.7392, Newly successful=161, Shortfall reduction=9819.81"
+Goal horizon analysis,37-60 months,"Users=2045, Historical success rate=0.6469, Optimized success rate=0.7848, Newly successful=282, Shortfall reduction=8318.80"
+Goal horizon analysis,61-120 months,"Users=5195, Historical success rate=0.7501, Optimized success rate=0.8258, Newly successful=393, Shortfall reduction=6714.25"
+Risk score band analysis,0.00-0.25,"Users=1961, Historical success rate=0.0428, Optimized success rate=0.1525, Newly successful=215, Shortfall reduction=15582.57"
+Risk score band analysis,0.25-0.50,"Users=2414, Historical success rate=0.5174, Optimized success rate=0.7548, Newly successful=573, Shortfall reduction=16715.90"
+Risk score band analysis,0.50-0.75,"Users=4281, Historical success rate=0.8844, Optimized success rate=0.9617, Newly successful=331, Shortfall reduction=2891.47"
+Risk score band analysis,0.75-1.00,"Users=1344, Historical success rate=0.9911, Optimized success rate=1.0000, Newly successful=12, Shortfall reduction=80.83"
+Limitations,Goal-funding optimization,The LP optimizes goal funding capacity; it is not a complete portfolio-allocation optimizer.
+Limitations,Observed cash-flow basis,Optimization uses the observed simulated positive cash-flow series within each user's horizon.
+Limitations,Investment decisions,The validated simulation does not provide an explicit monthly investment contribution variable.
+Limitations,Market forecasting,The LP does not independently forecast future NIFTY returns.
+Limitations,Credit decisions,The final LP does not optimize borrowing or credit usage.
+Limitations,Reserve policy,A minimum emergency-cash or liquidity reserve was not defined in the validated LP.
+Limitations,Historical comparison,"Historical funding can exceed the target, whereas optimized funding is capped at the target for success accounting; therefore raw funding totals should not be interpreted as direct performance losses."
+Conclusion,Historical baseline,64.51% of users achieved their target.
+Conclusion,Optimized outcome,75.82% of users can achieve their target under the validated LP.
+Conclusion,Additional successful users,1131 users move from unsuccessful to successful.
+Conclusion,Shortfall,Mean shortfall decreases by 8339.66.
+Conclusion,Total shortfall reduction,"83396629.39 across the 10,000-user population."
+Conclusion,Validation,The final saved LP solution agrees with the independent analytical formulation within numerical tolerance.

@@ -1,0 +1,25 @@
+
+[train] skipped; 9 existing run record(s) discovered
+[3/4] evaluating every trained policy on the same held-out users
+      evaluated archived_v1 seed=7 -> metrics_archived_v1_seed7.csv
+      evaluated archived_v1 seed=17 -> metrics_archived_v1_seed17.csv
+      evaluated archived_v1 seed=27 -> metrics_archived_v1_seed27.csv
+      evaluated candidate_a seed=7 -> metrics_candidate_a_seed7.csv
+      evaluated candidate_a seed=17 -> metrics_candidate_a_seed17.csv
+      evaluated candidate_a seed=27 -> metrics_candidate_a_seed27.csv
+      evaluated candidate_b seed=7 -> metrics_candidate_b_seed7.csv
+      evaluated candidate_b seed=17 -> metrics_candidate_b_seed17.csv
+      evaluated candidate_b seed=27 -> metrics_candidate_b_seed27.csv
+      evaluated archived checkpoint (historical reference, archived semantics)
+[4/4] summarising
+{
+  "mode": "full",
+  "stage": "eval",
+  "timesteps": 50000,
+  "seeds": [
+    7
+  ],
+  "trained_runs_available": 9,
+  "evaluated_rows": 180
+}
+

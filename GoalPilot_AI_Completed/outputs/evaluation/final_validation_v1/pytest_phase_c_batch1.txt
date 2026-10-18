@@ -1,0 +1,249 @@
+FFFF....F....F...........................................                [100%]
+================================== FAILURES ===================================
+____________ test_share_mode_constant_weights_are_equivalent[0.25] ____________
+
+rl_data = {'profiles':        user_id  monthly_income  ...  goal_funding_ratio_capped  goal_shortfall_ratio
+0   USER_00001    51... train
+96  USER_00097  train
+97  USER_00098  train
+98  USER_00099  train
+99  USER_00100  train
+
+[100 rows x 2 columns]}
+weight = 0.25
+
+    @pytest.mark.parametrize("weight", [0.25, 0.50, 0.75, 1.00])
+    def test_share_mode_constant_weights_are_equivalent(rl_data, weight):
+        """A constant savings weight must always commit the whole budget in share mode.
+    
+        This is the F-02 fix: in ``magnitude`` mode 0.25 captured only ~94 % of the budget,
+        whereas ``share`` normalises, so 0.25 behaves exactly like 1.00.
+        """
+        users = ["USER_00001", "USER_00003"]
+        env = _env(rl_data, users, SHARE_LP)
+        reference = {}
+        for uid in users:
+            months = _roll(env, uid, SAVINGS_ONLY, weights=weight)
+            reference[uid] = float(np.sum(months[-1]["goal_balances"]))
+            # the whole discretionary budget is allocated, leaving nothing behind
+            for m in months:
+                ba = m["budget_audit"]
+>               assert ba["unallocated_surplus"] == pytest.approx(0.0, abs=1e-6), ba
+E               AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+E               assert 496.4915765173355 == 0.0 ± 1.0e-06
+E                 
+E                 comparison failed
+E                 Obtained: 496.4915765173355
+E                 Expected: 0.0 ± 1.0e-06
+
+tests\test_goalpilot_env_semantics.py:85: AssertionError
+____________ test_share_mode_constant_weights_are_equivalent[0.5] _____________
+
+rl_data = {'profiles':        user_id  monthly_income  ...  goal_funding_ratio_capped  goal_shortfall_ratio
+0   USER_00001    51... train
+96  USER_00097  train
+97  USER_00098  train
+98  USER_00099  train
+99  USER_00100  train
+
+[100 rows x 2 columns]}
+weight = 0.5
+
+    @pytest.mark.parametrize("weight", [0.25, 0.50, 0.75, 1.00])
+    def test_share_mode_constant_weights_are_equivalent(rl_data, weight):
+        """A constant savings weight must always commit the whole budget in share mode.
+    
+        This is the F-02 fix: in ``magnitude`` mode 0.25 captured only ~94 % of the budget,
+        whereas ``share`` normalises, so 0.25 behaves exactly like 1.00.
+        """
+        users = ["USER_00001", "USER_00003"]
+        env = _env(rl_data, users, SHARE_LP)
+        reference = {}
+        for uid in users:
+            months = _roll(env, uid, SAVINGS_ONLY, weights=weight)
+            reference[uid] = float(np.sum(months[-1]["goal_balances"]))
+            # the whole discretionary budget is allocated, leaving nothing behind
+            for m in months:
+                ba = m["budget_audit"]
+>               assert ba["unallocated_surplus"] == pytest.approx(0.0, abs=1e-6), ba
+E               AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+E               assert 496.4915765173355 == 0.0 ± 1.0e-06
+E                 
+E                 comparison failed
+E                 Obtained: 496.4915765173355
+E                 Expected: 0.0 ± 1.0e-06
+
+tests\test_goalpilot_env_semantics.py:85: AssertionError
+____________ test_share_mode_constant_weights_are_equivalent[0.75] ____________
+
+rl_data = {'profiles':        user_id  monthly_income  ...  goal_funding_ratio_capped  goal_shortfall_ratio
+0   USER_00001    51... train
+96  USER_00097  train
+97  USER_00098  train
+98  USER_00099  train
+99  USER_00100  train
+
+[100 rows x 2 columns]}
+weight = 0.75
+
+    @pytest.mark.parametrize("weight", [0.25, 0.50, 0.75, 1.00])
+    def test_share_mode_constant_weights_are_equivalent(rl_data, weight):
+        """A constant savings weight must always commit the whole budget in share mode.
+    
+        This is the F-02 fix: in ``magnitude`` mode 0.25 captured only ~94 % of the budget,
+        whereas ``share`` normalises, so 0.25 behaves exactly like 1.00.
+        """
+        users = ["USER_00001", "USER_00003"]
+        env = _env(rl_data, users, SHARE_LP)
+        reference = {}
+        for uid in users:
+            months = _roll(env, uid, SAVINGS_ONLY, weights=weight)
+            reference[uid] = float(np.sum(months[-1]["goal_balances"]))
+            # the whole discretionary budget is allocated, leaving nothing behind
+            for m in months:
+                ba = m["budget_audit"]
+>               assert ba["unallocated_surplus"] == pytest.approx(0.0, abs=1e-6), ba
+E               AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+E               assert 496.4915765173355 == 0.0 ± 1.0e-06
+E                 
+E                 comparison failed
+E                 Obtained: 496.4915765173355
+E                 Expected: 0.0 ± 1.0e-06
+
+tests\test_goalpilot_env_semantics.py:85: AssertionError
+____________ test_share_mode_constant_weights_are_equivalent[1.0] _____________
+
+rl_data = {'profiles':        user_id  monthly_income  ...  goal_funding_ratio_capped  goal_shortfall_ratio
+0   USER_00001    51... train
+96  USER_00097  train
+97  USER_00098  train
+98  USER_00099  train
+99  USER_00100  train
+
+[100 rows x 2 columns]}
+weight = 1.0
+
+    @pytest.mark.parametrize("weight", [0.25, 0.50, 0.75, 1.00])
+    def test_share_mode_constant_weights_are_equivalent(rl_data, weight):
+        """A constant savings weight must always commit the whole budget in share mode.
+    
+        This is the F-02 fix: in ``magnitude`` mode 0.25 captured only ~94 % of the budget,
+        whereas ``share`` normalises, so 0.25 behaves exactly like 1.00.
+        """
+        users = ["USER_00001", "USER_00003"]
+        env = _env(rl_data, users, SHARE_LP)
+        reference = {}
+        for uid in users:
+            months = _roll(env, uid, SAVINGS_ONLY, weights=weight)
+            reference[uid] = float(np.sum(months[-1]["goal_balances"]))
+            # the whole discretionary budget is allocated, leaving nothing behind
+            for m in months:
+                ba = m["budget_audit"]
+>               assert ba["unallocated_surplus"] == pytest.approx(0.0, abs=1e-6), ba
+E               AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+E               assert 496.4915765173355 == 0.0 ± 1.0e-06
+E                 
+E                 comparison failed
+E                 Obtained: 496.4915765173355
+E                 Expected: 0.0 ± 1.0e-06
+
+tests\test_goalpilot_env_semantics.py:85: AssertionError
+_______________ test_zero_investment_capacity_blocks_investment _______________
+
+rl_data = {'profiles':        user_id  monthly_income  ...  goal_funding_ratio_capped  goal_shortfall_ratio
+0   USER_00001    51... train
+96  USER_00097  train
+97  USER_00098  train
+98  USER_00099  train
+99  USER_00100  train
+
+[100 rows x 2 columns]}
+
+    def test_zero_investment_capacity_blocks_investment(rl_data):
+        """A user with no investment capacity cannot invest, under any credit mode."""
+        profiles = rl_data["profiles"].copy()
+        profiles["investment_capacity_ratio"] = 0.0
+        env = goalpilot_env.GoalPilotEnv(
+            profiles=profiles, goals=rl_data["goals"], market=rl_data["market"],
+            user_ids=["USER_00001"], config=GoalPilotConfig.recommended(),
+        )
+        for m in _roll(env, "USER_00001", INVEST_ONLY):
+            assert m["budget_audit"]["investment_contribution"] == pytest.approx(0.0, abs=1e-9)
+            # the budget is not lost: it stays liquid
+            assert m["budget_audit"]["savings_contribution"] >= 0.0
+>       assert env.total_investment_gain == pytest.approx(0.0, abs=1e-6)
+E       assert 76488.97689411782 == 0.0 ± 1.0e-06
+E         
+E         comparison failed
+E         Obtained: 76488.97689411782
+E         Expected: 0.0 ± 1.0e-06
+
+tests\test_goalpilot_env_semantics.py:191: AssertionError
+______________ test_earmarking_neither_creates_nor_destroys_cash ______________
+
+rl_data = {'profiles':        user_id  monthly_income  ...  goal_funding_ratio_capped  goal_shortfall_ratio
+0   USER_00001    51... train
+96  USER_00097  train
+97  USER_00098  train
+98  USER_00099  train
+99  USER_00100  train
+
+[100 rows x 2 columns]}
+
+    def test_earmarking_neither_creates_nor_destroys_cash(rl_data):
+        """B2: the pre-existing earmark stays inside cash; goal_balances is only a label.
+    
+        The ledger previously subtracted the earmark from cash at reset while the memo doctrine
+        forbade adding `goal_balances` back, so net worth understated the household's position
+        by the earmark (finding R-11). Ledger mode now keeps the full balance in cash.
+        """
+        env = _env(rl_data, ["USER_00001"], GoalPilotConfig.lp_parity())
+        _, info = env.reset(options={"user_id": "USER_00001"})
+        profile = env.profile_map["USER_00001"]
+    
+>       assert env.cash + env.restricted_cash == pytest.approx(
+            float(profile["initial_savings"]), rel=1e-12, abs=1e-6
+        )
+E       assert 357467.3049406669 == 178733.65247033344 ± 1.0e-06
+E         
+E         comparison failed
+E         Obtained: 357467.3049406669
+E         Expected: 178733.65247033344 ± 1.0e-06
+
+tests\test_goalpilot_env_semantics.py:278: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_goalpilot_env_semantics.py::test_share_mode_constant_weights_are_equivalent[0.25] - AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+assert 496.4915765173355 == 0.0 ± 1.0e-06
+  
+  comparison failed
+  Obtained: 496.4915765173355
+  Expected: 0.0 ± 1.0e-06
+FAILED tests/test_goalpilot_env_semantics.py::test_share_mode_constant_weights_are_equivalent[0.5] - AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+assert 496.4915765173355 == 0.0 ± 1.0e-06
+  
+  comparison failed
+  Obtained: 496.4915765173355
+  Expected: 0.0 ± 1.0e-06
+FAILED tests/test_goalpilot_env_semantics.py::test_share_mode_constant_weights_are_equivalent[0.75] - AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+assert 496.4915765173355 == 0.0 ± 1.0e-06
+  
+  comparison failed
+  Obtained: 496.4915765173355
+  Expected: 0.0 ± 1.0e-06
+FAILED tests/test_goalpilot_env_semantics.py::test_share_mode_constant_weights_are_equivalent[1.0] - AssertionError: {'month': 26, 'income': 51351.335333988885, 'expenses': 36870.0, 'profile_existing_emi': 0.0, ...}
+assert 496.4915765173355 == 0.0 ± 1.0e-06
+  
+  comparison failed
+  Obtained: 496.4915765173355
+  Expected: 0.0 ± 1.0e-06
+FAILED tests/test_goalpilot_env_semantics.py::test_zero_investment_capacity_blocks_investment - assert 76488.97689411782 == 0.0 ± 1.0e-06
+  
+  comparison failed
+  Obtained: 76488.97689411782
+  Expected: 0.0 ± 1.0e-06
+FAILED tests/test_goalpilot_env_semantics.py::test_earmarking_neither_creates_nor_destroys_cash - assert 357467.3049406669 == 178733.65247033344 ± 1.0e-06
+  
+  comparison failed
+  Obtained: 357467.3049406669
+  Expected: 178733.65247033344 ± 1.0e-06
+6 failed, 51 passed in 40.18s

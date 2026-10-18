@@ -362,10 +362,15 @@ class SingleGoalOptimizationAdapter(DecisionEngineInterface):
             "serves as the strict feasibility boundary for the LP optimizer."
         )
 
+        # General educational principles only. The project has no verified copy of any external
+        # investor-education publication, so no source is asserted: these are not quotations from
+        # NISM or any other institution and are not personalised advice. (The response field is
+        # still named `nism_guidance_notes` for API compatibility with the existing frontend.)
         nism_notes = [
-            "NISM Guidance: A healthy financial foundation requires establishing an emergency fund of 3 to 6 months of essential expenses before locking surplus into long-term capital goals.",
-            "Surplus Rule: Investable surplus is rigorously defined as Net Income minus Non-discretionary Living Costs minus Debt EMIs.",
-            "Horizon Matching: Goals under 24 months should prioritize capital preservation over speculative equity market volatility."
+            "General principle: a healthy financial foundation typically starts with an emergency fund covering several months of essential expenses before locking surplus into long-term capital goals.",
+            "Surplus rule: investable surplus is defined here as net income minus non-discretionary living costs minus debt EMIs.",
+            "Horizon matching: goals with short horizons should generally prioritize capital preservation over volatile assets.",
+            "Disclaimer: these are general educational principles shown by the GoalPilot prototype. They are not quotations from NISM or any other institution, and they are not personalised financial advice.",
         ]
 
         future_notice = (

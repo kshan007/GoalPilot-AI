@@ -1,0 +1,12 @@
+{
+  "user_id": "SYNTHETIC_DEMO_USER_00001",
+  "source_note": "Synthetic demonstration profile. Not an actual person. Values are illustrative and are not presented as verified personal finances.",
+  "monthly_income": 75000,
+  "essential_expenses": 42000,
+  "existing_emi": 4000,
+  "liquid_savings": 350000,
+  "existing_investments": 80000,
+  "emergency_months": 6,
+  "emi_income_ratio_cap": 0.35,
+  "risk_capacity": 0.55
+}

@@ -1,0 +1,167 @@
+
+{
+  "cohorts": [
+    {
+      "cohort": "high",
+      "independent_users": 8,
+      "risk_score_min": 0.6718,
+      "risk_score_max": 0.8325250000000001,
+      "risk_score_mean": 0.750034375,
+      "mean_monthly_income": 62744.60570375689,
+      "mean_monthly_expenditure": 36858.75,
+      "mean_monthly_emi": 0.0,
+      "mean_surplus": 25885.85570375689,
+      "mean_initial_savings": 234268.70493759884,
+      "mean_initial_investment": 143369.3621319618,
+      "mean_investment_capacity_ratio": 0.36796160435487957,
+      "mean_goals_per_user": 3.75
+    },
+    {
+      "cohort": "low",
+      "independent_users": 6,
+      "risk_score_min": 0.0896375,
+      "risk_score_max": 0.2797624999999999,
+      "risk_score_mean": 0.16056249999999997,
+      "mean_monthly_income": 31438.718989461933,
+      "mean_monthly_expenditure": 25333.333333333332,
+      "mean_monthly_emi": 7841.223951407218,
+      "mean_surplus": -1735.8382952786199,
+      "mean_initial_savings": 48441.8038946522,
+      "mean_initial_investment": 2693.81974121126,
+      "mean_investment_capacity_ratio": 0.0,
+      "mean_goals_per_user": 4.166666666666667
+    },
+    {
+      "cohort": "mid",
+      "independent_users": 6,
+      "risk_score_min": 0.444375,
+      "risk_score_max": 0.591275,
+      "risk_score_mean": 0.5192625000000001,
+      "mean_monthly_income": 47135.54654511953,
+      "mean_monthly_expenditure": 38733.333333333336,
+      "mean_monthly_emi": 706.911802415506,
+      "mean_surplus": 7695.301409370692,
+      "mean_initial_savings": 79137.14766263409,
+      "mean_initial_investment": 23868.38194354805,
+      "mean_investment_capacity_ratio": 0.1518657993092604,
+      "mean_goals_per_user": 4.166666666666667
+    }
+  ],
+  "low_risk_users": [
+    "USER_00013",
+    "USER_00031",
+    "USER_00034",
+    "USER_00040",
+    "USER_00054",
+    "USER_00074"
+  ],
+  "low_risk_surplus": [
+    {
+      "user_id": "USER_00013",
+      "monthly_surplus": 0.0,
+      "sum_inflated_target": 9504726.564008255,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 9504726.564008255,
+      "investment_capacity_ratio": 0.0
+    },
+    {
+      "user_id": "USER_00031",
+      "monthly_surplus": 0.0,
+      "sum_inflated_target": 1874532.905569572,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 1874532.905569572,
+      "investment_capacity_ratio": 0.0
+    },
+    {
+      "user_id": "USER_00034",
+      "monthly_surplus": 0.0,
+      "sum_inflated_target": 875727.260958258,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 875727.260958258,
+      "investment_capacity_ratio": 0.0
+    },
+    {
+      "user_id": "USER_00040",
+      "monthly_surplus": 0.0,
+      "sum_inflated_target": 2086225.5502350316,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 2086225.5502350316,
+      "investment_capacity_ratio": 0.0
+    },
+    {
+      "user_id": "USER_00054",
+      "monthly_surplus": 0.0,
+      "sum_inflated_target": 3877399.949992767,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 3877399.949992767,
+      "investment_capacity_ratio": 0.0
+    },
+    {
+      "user_id": "USER_00074",
+      "monthly_surplus": 0.0,
+      "sum_inflated_target": 3531725.2468216238,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 3531725.2468216238,
+      "investment_capacity_ratio": 0.0
+    }
+  ],
+  "feasibility_test_means": [
+    {
+      "policy": "AGGRESSIVE all-channels mixed+loan",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "AGGRESSIVE all-channels savings-only",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "AGGRESSIVE all-channels savings-only (mid/high)",
+      "cohort": "high",
+      "weighted_achievement": 0.7267301194046474,
+      "funded_total": 2915220.7780860984,
+      "net_worth": 5100532.796811409,
+      "loan_principal": 92393.11953559745
+    },
+    {
+      "policy": "AGGRESSIVE all-channels savings-only (mid/high)",
+      "cohort": "mid",
+      "weighted_achievement": 0.48980555669049836,
+      "funded_total": 1073400.0782980716,
+      "net_worth": 1383029.250330439,
+      "loan_principal": 42078.108418387805
+    },
+    {
+      "policy": "archived_v1 (trained)",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "candidate_a (trained)",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "candidate_b (trained)",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    }
+  ]
+}
+

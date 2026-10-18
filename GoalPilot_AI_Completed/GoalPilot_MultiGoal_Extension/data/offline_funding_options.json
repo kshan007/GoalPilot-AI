@@ -1,0 +1,113 @@
+{
+  "investment_candidates": [
+    {
+      "candidate_id": "INV_NIFTY_INDEX_FIXTURE",
+      "name": "Diversified equity index proxy",
+      "asset_class": "equity_index",
+      "source": "Existing project NIFTY 50 historical dataset",
+      "provenance": "offline_fixture_from_project_market_data",
+      "expected_annual_return": 0.05,
+      "risk_score": 0.45,
+      "min_horizon_months": 36,
+      "liquidity_days": 3,
+      "observation_date": "2026-10-10",
+      "assumption_label": "historical_proxy_not_forecast"
+    },
+    {
+      "candidate_id": "INV_SHORT_DEBT_FIXTURE",
+      "name": "Short-duration debt proxy",
+      "asset_class": "debt",
+      "source": "Offline prototype fixture",
+      "provenance": "synthetic_configurable_fixture",
+      "expected_annual_return": 0.035,
+      "risk_score": 0.18,
+      "min_horizon_months": 6,
+      "liquidity_days": 2,
+      "observation_date": "2026-10-10",
+      "assumption_label": "synthetic_not_product_recommendation"
+    }
+  ],
+  "loan_offers": [
+    {
+      "offer_id": "LOAN_SYNTH_PERSONAL_12PCT",
+      "lender": "Synthetic lender fixture",
+      "product": "Personal loan prototype",
+      "source": "Offline test fixture; not a lender quote",
+      "provenance": "synthetic_configurable_fixture",
+      "annual_interest_rate": 0.12,
+      "tenure_months": 60,
+      "max_principal": 150000,
+      "fee_rate": 0.0,
+      "assumption_label": "synthetic_not_approval_or_quote"
+    },
+    {
+      "offer_id": "LOAN_SYNTH_ZERO_INTEREST_TEST",
+      "lender": "Synthetic lender fixture",
+      "product": "Zero-interest edge-case loan",
+      "source": "Offline test fixture; not a lender quote",
+      "provenance": "synthetic_test_case",
+      "annual_interest_rate": 0.0,
+      "tenure_months": 12,
+      "max_principal": 25000,
+      "fee_rate": 0.0,
+      "assumption_label": "synthetic_edge_case_only"
+    }
+  ],
+  "savings_products": [
+    {
+      "product_id": "SAVE_CASH_FIXTURE",
+      "name": "Cash / savings balance",
+      "product_type": "cash",
+      "source": "User supplied state",
+      "provenance": "offline_fixture",
+      "annual_return": 0.0,
+      "lock_in_months": 0,
+      "assumption_label": "cash_no_return_assumption"
+    },
+    {
+      "product_id": "SAVE_RD_FIXTURE",
+      "name": "Recurring deposit prototype",
+      "product_type": "deposit",
+      "source": "Offline configurable fixture",
+      "provenance": "synthetic_configurable_fixture",
+      "annual_return": 0.04,
+      "lock_in_months": 12,
+      "assumption_label": "synthetic_not_current_verified_rate"
+    }
+  ],
+  "economic_scenarios": [
+    {
+      "name": "baseline_offline",
+      "source": "Project CPI/NIFTY/WALR historical artifacts",
+      "provenance": "offline_fixture_from_project_data",
+      "annual_inflation": 0.03,
+      "savings_return": 0.0,
+      "investment_return": 0.05,
+      "loan_annual_rate": 0.12,
+      "observation_date": "2026-10-10",
+      "assumption_label": "prototype_baseline"
+    },
+    {
+      "name": "adverse_offline",
+      "source": "Project CPI/NIFTY/WALR stress assumption",
+      "provenance": "offline_stress_fixture",
+      "annual_inflation": 0.06,
+      "savings_return": 0.0,
+      "investment_return": 0.01,
+      "loan_annual_rate": 0.16,
+      "observation_date": "2026-10-10",
+      "assumption_label": "prototype_stress"
+    },
+    {
+      "name": "favorable_offline",
+      "source": "Project CPI/NIFTY/WALR favorable assumption",
+      "provenance": "offline_stress_fixture",
+      "annual_inflation": 0.02,
+      "savings_return": 0.01,
+      "investment_return": 0.07,
+      "loan_annual_rate": 0.10,
+      "observation_date": "2026-10-10",
+      "assumption_label": "prototype_favorable"
+    }
+  ]
+}

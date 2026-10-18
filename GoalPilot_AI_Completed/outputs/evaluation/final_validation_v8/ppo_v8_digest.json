@@ -1,0 +1,49 @@
+{
+  "config_preset": "recommended",
+  "reward_versions": [
+    "archived_v1",
+    "candidate_a"
+  ],
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "timesteps_per_run": 50000,
+  "train_users": 48,
+  "validation_users": 16,
+  "heldout_test_users": 16,
+  "feasibility_eligible_test_users": 14,
+  "arms": [
+    "RL archived_v1",
+    "RL candidate_a",
+    "constrained_LP",
+    "investment-only",
+    "mixed allocation",
+    "need-proportional savings",
+    "uniform savings",
+    "urgency"
+  ],
+  "total_affordability_violations": 0,
+  "max_budget_residual": 7.275957614183426e-12,
+  "per_arm_mean_achievement": {
+    "RL archived_v1": 0.4842,
+    "RL candidate_a": 0.4398,
+    "constrained_LP": 0.2452,
+    "investment-only": 0.58,
+    "mixed allocation": 0.58,
+    "need-proportional savings": 0.3211,
+    "uniform savings": 0.5584,
+    "urgency": 0.4051
+  },
+  "per_arm_mean_net_worth": {
+    "RL archived_v1": 2659502.0,
+    "RL candidate_a": 2633769.57,
+    "constrained_LP": 2606859.5,
+    "investment-only": 2751776.94,
+    "mixed allocation": 2751776.94,
+    "need-proportional savings": 2363889.62,
+    "uniform savings": 2363889.62,
+    "urgency": 2363889.62
+  }
+}

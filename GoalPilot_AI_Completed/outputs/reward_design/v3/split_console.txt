@@ -1,0 +1,28 @@
+
+{
+  "counts": {
+    "train": 48,
+    "validation": 16,
+    "test": 16,
+    "excluded_contaminated": 20
+  },
+  "test_users": [
+    "USER_00088",
+    "USER_00087",
+    "USER_00062",
+    "USER_00039",
+    "USER_00024",
+    "USER_00064",
+    "USER_00085",
+    "USER_00029",
+    "USER_00079",
+    "USER_00066",
+    "USER_00075",
+    "USER_00015",
+    "USER_00048",
+    "USER_00030",
+    "USER_00082",
+    "USER_00055"
+  ]
+}
+

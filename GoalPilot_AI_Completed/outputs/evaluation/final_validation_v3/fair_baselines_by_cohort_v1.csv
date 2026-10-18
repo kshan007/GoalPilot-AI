@@ -1,0 +1,45 @@
+config,policy,feasibility_cohort,weighted_goal_achievement,goal_level_shortfall,net_worth
+flag_off_recommended,LP optimizer plan,surplus>0,0.5662594512819541,9038193.785480184,3065168.2808672087
+flag_off_recommended,LP optimizer plan,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,RL archived_v1 seed17,surplus>0,0.6016685068411763,9245380.838614399,3052022.952643841
+flag_off_recommended,RL archived_v1 seed17,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,RL archived_v1 seed27,surplus>0,0.5027896606048684,9205426.74179411,3034329.9701172016
+flag_off_recommended,RL archived_v1 seed27,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,RL archived_v1 seed7,surplus>0,0.6752525670263549,8923047.559677793,3133997.7950632647
+flag_off_recommended,RL archived_v1 seed7,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,RL candidate_a seed17,surplus>0,0.6055663872315223,9445436.077602137,3024748.3871245417
+flag_off_recommended,RL candidate_a seed17,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,RL candidate_a seed27,surplus>0,0.638424062456238,8895086.517072756,3089450.030028866
+flag_off_recommended,RL candidate_a seed27,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,RL candidate_a seed7,surplus>0,0.5593886073406352,9307236.759333504,3042782.323356101
+flag_off_recommended,RL candidate_a seed7,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: need-proportional both,surplus>0,0.4147445565524371,7904907.364053917,3238699.7539931587
+flag_off_recommended,Rule: need-proportional both,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: need-proportional investment,surplus>0,0.666904752532628,8283752.838709831,3239001.021197964
+flag_off_recommended,Rule: need-proportional investment,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: need-proportional savings,surplus>0,0.3669262619380178,8392714.114133205,2693957.5768815977
+flag_off_recommended,Rule: need-proportional savings,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: uniform 50/50,surplus>0,0.6628240967668295,8898082.144807408,3137257.372473051
+flag_off_recommended,Rule: uniform 50/50,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: uniform investment,surplus>0,0.6628240967668295,8898082.144807408,3137257.372473051
+flag_off_recommended,Rule: uniform investment,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: uniform savings,surplus>0,0.6382265597779645,9144747.419338113,2693957.5768815977
+flag_off_recommended,Rule: uniform savings,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_off_recommended,Rule: urgency (known-defective),surplus>0,0.4629824389025123,8392714.114133205,2693957.5768815977
+flag_off_recommended,Rule: urgency (known-defective),zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,LP optimizer plan,surplus>0,0.5935194942693913,8430738.23872884,3120219.2524599284
+flag_on_with_reallocation,LP optimizer plan,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: need-proportional both,surplus>0,0.41436615759803647,7906044.573447302,3238766.534714424
+flag_on_with_reallocation,Rule: need-proportional both,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: need-proportional investment,surplus>0,0.6857398462587303,7925487.1770537095,3238928.1474628868
+flag_on_with_reallocation,Rule: need-proportional investment,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: need-proportional savings,surplus>0,0.3669262619380178,8392714.114133205,2693957.5768815977
+flag_on_with_reallocation,Rule: need-proportional savings,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: uniform 50/50,surplus>0,0.696246370846229,8274695.861162388,3239184.055921214
+flag_on_with_reallocation,Rule: uniform 50/50,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: uniform investment,surplus>0,0.696246370846229,8274695.861162388,3239184.055921214
+flag_on_with_reallocation,Rule: uniform investment,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: uniform savings,surplus>0,0.6801489245932338,8392714.114133205,2693957.5768815977
+flag_on_with_reallocation,Rule: uniform savings,zero surplus,0.0,6252574.876893999,53413.92301471824
+flag_on_with_reallocation,Rule: urgency (known-defective),surplus>0,0.4629824389025123,8392714.114133205,2693957.5768815977
+flag_on_with_reallocation,Rule: urgency (known-defective),zero surplus,0.0,6252574.876893999,53413.92301471824

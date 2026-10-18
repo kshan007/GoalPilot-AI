@@ -1,0 +1,8 @@
+issue,finding,action
+Objective function,Existing data does not explicitly identify the optimization objective.,Must be selected/formally justified before solver.
+Initial savings,Initial savings exists but its eligibility as goal funding is not established by Step 5I.,Must be explicitly decided.
+Initial investment,Initial investment exists as an initial state.,Do not automatically count it as goal funding.
+Investment return,LP input contains no future monthly return series.,A deterministic LP should not invent return assumptions.
+Risk score,Risk score/profile are available parameters.,Do not invent arbitrary risk thresholds.
+WALR,WALR is available in the economic environment but borrowing is not modeled.,Exclude from base LP unless borrowing is explicitly introduced.
+NIFTY,NIFTY exists in simulation history but is not directly present in the LP input.,Do not insert NIFTY returns into the base LP without a defined investment-return formulation.

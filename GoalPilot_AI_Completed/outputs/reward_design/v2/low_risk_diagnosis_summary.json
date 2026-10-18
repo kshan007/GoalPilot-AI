@@ -1,0 +1,144 @@
+{
+  "cohort_binning_used": {
+    "bins": [
+      -0.01,
+      0.33,
+      0.66,
+      1.01
+    ],
+    "labels": [
+      "low",
+      "mid",
+      "high"
+    ],
+    "provenance": "this audit's own binning, not a project definition"
+  },
+  "published_label_disagreements": 0,
+  "cohort_counts": {
+    "high": 8,
+    "low": 6,
+    "mid": 6
+  },
+  "low_risk_user_ids": [
+    "USER_00013",
+    "USER_00031",
+    "USER_00034",
+    "USER_00040",
+    "USER_00054",
+    "USER_00074"
+  ],
+  "low_risk_feasibility": {
+    "USER_00013": {
+      "monthly_surplus": 0.0,
+      "surplus_is_zero": true,
+      "investment_capacity_ratio": 0.0,
+      "sum_inflated_target": 9504726.564008255,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 9504726.564008255,
+      "reserve_consumes_all_savings": true
+    },
+    "USER_00031": {
+      "monthly_surplus": 0.0,
+      "surplus_is_zero": true,
+      "investment_capacity_ratio": 0.0,
+      "sum_inflated_target": 1874532.905569572,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 1874532.905569572,
+      "reserve_consumes_all_savings": true
+    },
+    "USER_00034": {
+      "monthly_surplus": 0.0,
+      "surplus_is_zero": true,
+      "investment_capacity_ratio": 0.0,
+      "sum_inflated_target": 875727.260958258,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 875727.260958258,
+      "reserve_consumes_all_savings": true
+    },
+    "USER_00040": {
+      "monthly_surplus": 0.0,
+      "surplus_is_zero": true,
+      "investment_capacity_ratio": 0.0,
+      "sum_inflated_target": 2086225.5502350316,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 2086225.5502350316,
+      "reserve_consumes_all_savings": true
+    },
+    "USER_00054": {
+      "monthly_surplus": 0.0,
+      "surplus_is_zero": true,
+      "investment_capacity_ratio": 0.0,
+      "sum_inflated_target": 3877399.949992767,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 3877399.949992767,
+      "reserve_consumes_all_savings": true
+    },
+    "USER_00074": {
+      "monthly_surplus": 0.0,
+      "surplus_is_zero": true,
+      "investment_capacity_ratio": 0.0,
+      "sum_inflated_target": 3531725.2468216238,
+      "max_achievable_from_surplus": 0.0,
+      "target_over_surplus_capacity": 3531725.2468216238,
+      "reserve_consumes_all_savings": true
+    }
+  },
+  "feasibility_test_means": [
+    {
+      "policy": "AGGRESSIVE all-channels mixed+loan",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "AGGRESSIVE all-channels savings-only",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "AGGRESSIVE all-channels savings-only (mid/high)",
+      "cohort": "high",
+      "weighted_achievement": 0.7267301194046474,
+      "funded_total": 2915220.7780860984,
+      "net_worth": 5100532.796811409,
+      "loan_principal": 92393.11953559745
+    },
+    {
+      "policy": "AGGRESSIVE all-channels savings-only (mid/high)",
+      "cohort": "mid",
+      "weighted_achievement": 0.48980555669049836,
+      "funded_total": 1073400.0782980716,
+      "net_worth": 1383029.250330439,
+      "loan_principal": 42078.108418387805
+    },
+    {
+      "policy": "archived_v1 (trained)",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "candidate_a (trained)",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    },
+    {
+      "policy": "candidate_b (trained)",
+      "cohort": "low",
+      "weighted_achievement": 0.0,
+      "funded_total": 0.0,
+      "net_worth": 55636.68418640622,
+      "loan_principal": 0.0
+    }
+  ]
+}

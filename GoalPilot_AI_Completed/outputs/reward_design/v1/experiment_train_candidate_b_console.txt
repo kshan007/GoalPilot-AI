@@ -1,0 +1,27 @@
+
+[1/4] validity gate: reward version must not change environment dynamics
+      identical state trajectories across all three versions (archived_v1 as reference)
+[2/4] training 1 versions x 2 seeds x 50000 steps
+      candidate_b seed=17: 563 steps/s, 353 episodes, saved=True
+      candidate_b seed=27: 648 steps/s, 353 episodes, saved=True
+      adopted existing checkpoint archived_v1 seed=17 (353 training episodes)
+      adopted existing checkpoint archived_v1 seed=27 (353 training episodes)
+      adopted existing checkpoint archived_v1 seed=7 (353 training episodes)
+      adopted existing checkpoint candidate_a seed=17 (353 training episodes)
+      adopted existing checkpoint candidate_a seed=27 (353 training episodes)
+      adopted existing checkpoint candidate_a seed=7 (353 training episodes)
+      adopted existing checkpoint candidate_b seed=7 (14 training episodes)
+      9 run record(s) on disk
+[4/4] summarising
+{
+  "mode": "full",
+  "stage": "train",
+  "timesteps": 50000,
+  "seeds": [
+    17,
+    27
+  ],
+  "trained_runs_available": 9,
+  "evaluated_rows": 0
+}
+

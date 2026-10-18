@@ -1,0 +1,81 @@
+{
+  "D1_residual_writeoff": {
+    "episodes_with_any_unamortised_residual": 140,
+    "episodes_with_silent_writeoff": 12,
+    "episodes_total": 560,
+    "writeoff_events_total": 12,
+    "max_residual_written_off": 2534.519836795485,
+    "sum_residual_written_off": 11107.817406058923,
+    "example_writeoff": {
+      "user_id": "USER_00078",
+      "tag": "corrected_accounting",
+      "policy": "(0.5, 0.0, 1.0)",
+      "month": 138,
+      "balance_before": 5591.571396420334,
+      "interest_due": 41.46612705481806,
+      "emi_paid": 3098.517686679667,
+      "residual_unamortised": 2534.519836795485,
+      "months_left_before": 1,
+      "months_left_after": 0,
+      "balance_after": 0.0,
+      "silently_written_off": true
+    }
+  },
+  "D2_share_mode_borrowing": {
+    "mean_months_with_origination": {
+      "magnitude|Loan request only": 1.65,
+      "magnitude|Savings + loan": 0.8,
+      "magnitude|Savings only + max loan": 0.8,
+      "share|Loan request only": 1.65,
+      "share|Savings + loan": 0.8,
+      "share|Savings only + max loan": 0.8
+    },
+    "users_originating_any_loan": {
+      "magnitude|Loan request only": 14,
+      "magnitude|Savings + loan": 10,
+      "magnitude|Savings only + max loan": 10,
+      "share|Loan request only": 14,
+      "share|Savings + loan": 10,
+      "share|Savings only + max loan": 10
+    }
+  },
+  "D3_goal_credit": {
+    "archived_face_value": {
+      "rupees_actually_contributed": 1070416.6844199882,
+      "goal_funding_booked_total": 1144547.0060738274,
+      "actual_portfolio_market_value": 720298.8425614641,
+      "funding_ratio": 0.22561608889084384
+    },
+    "recommended_growth_weighted": {
+      "rupees_actually_contributed": 1090186.861162627,
+      "goal_funding_booked_total": 1189245.134267431,
+      "actual_portfolio_market_value": 950428.9790536631,
+      "funding_ratio": 0.19728856263282463
+    }
+  },
+  "D5_reconciliation": {
+    "max_abs_episode_recon_residual": 13352497.353258338,
+    "episodes_beyond_1e-6": 102,
+    "by_config": {
+      "archived": 13352497.353258338,
+      "corrected_accounting": 2534.5198367868707,
+      "lp_parity": 236.4789583243496,
+      "recommended": 236.4789583243496
+    }
+  },
+  "config_used": {
+    "target_basis": "inflated",
+    "annual_inflation": 0.03,
+    "emergency_months": 6.0,
+    "emi_income_ratio_cap": 0.35,
+    "annual_savings_return": 0.0,
+    "investment_return_assumption": 0.05,
+    "loan_tenure_months": 60,
+    "max_new_loan": 150000.0,
+    "action_mode": "share",
+    "accounting_mode": "ledger",
+    "goal_credit_mode": "growth_weighted",
+    "n_goal_slots": 5,
+    "seed": 2026
+  }
+}

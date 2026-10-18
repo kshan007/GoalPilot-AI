@@ -1,0 +1,29 @@
+# GoalPilot AI - verified dependency set
+# Environment used for every result in docs/final/EVALUATION_AND_RESULTS.md:
+#   CPython 3.13.7 on Windows (x64), torch CPU build, no GPU.
+# Reproduce with:
+#   C:\Users\sudha\AppData\Local\Programs\Python\Python313\python.exe -m pip install -r requirements.txt
+
+numpy==2.2.3
+pandas==2.3.1
+scipy==1.16.0
+scikit-learn==1.7.2
+statsmodels==0.14.6
+matplotlib==3.10.3
+seaborn==0.13.2
+plotly==6.2.0
+
+# RL environment and training
+gymnasium==1.4.0
+stable-baselines3==2.9.0
+sb3_contrib==2.9.0
+torch==2.8.0        # verified as the CPU build (2.8.0+cpu); no GPU required
+tensorboard==2.20.0
+
+# Testing and notebook tooling
+pytest==9.1.1
+nbformat==5.10.4
+nbconvert==7.17.1
+
+# Optional: the LP uses scipy.optimize.linprog(method="highs"); pulp is not required.
+# pulp==4.0.0

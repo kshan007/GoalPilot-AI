@@ -1,0 +1,35 @@
+{
+  "env_module": "S:\\fyp\\GoalPilot_AI\\simulation\\05_simulation_runs\\rl_prototype\\goalpilot_env.py",
+  "n_users": 100,
+  "action_shape": [
+    5,
+    3
+  ],
+  "obs_shape": [
+    42
+  ],
+  "max_goals": 5,
+  "max_steps": 142,
+  "h1_users_exact_match": 100,
+  "h1_max_abs_diff": 1.6653345369377348e-16,
+  "h2": {
+    "mean_funded": {
+      "Flat 0.25 savings": 1150004.96,
+      "Flat 0.50 savings": 1220790.18,
+      "Flat 0.75 savings": 1220790.18,
+      "Savings only": 1220790.18
+    },
+    "mean_unallocated": {
+      "Flat 0.25 savings": 847540.31,
+      "Flat 0.50 savings": 776755.09,
+      "Flat 0.75 savings": 776755.09,
+      "Savings only": 776755.09
+    },
+    "mean_funding_ratio": {
+      "Flat 0.25 savings": 0.25,
+      "Flat 0.50 savings": 0.27,
+      "Flat 0.75 savings": 0.27,
+      "Savings only": 0.27
+    }
+  }
+}

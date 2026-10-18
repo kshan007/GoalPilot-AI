@@ -1,0 +1,121 @@
+action_mode,policy,user_id,months_with_loan_origination,total_new_loan,final_funding_ratio
+magnitude,Savings + loan,USER_00001,2,173164.51938753415,0.11272305241122627
+magnitude,Savings + loan,USER_00005,1,107532.91504986199,0.20178578253423374
+magnitude,Savings + loan,USER_00011,1,43784.749761600026,1.0
+magnitude,Savings + loan,USER_00013,0,0.0,0.0
+magnitude,Savings + loan,USER_00019,2,31134.23688380263,0.40961755679204587
+magnitude,Savings + loan,USER_00023,2,58529.126539629964,0.06567269667195914
+magnitude,Savings + loan,USER_00031,0,0.0,0.0
+magnitude,Savings + loan,USER_00032,2,109499.73253448498,0.39057454977130895
+magnitude,Savings + loan,USER_00034,0,0.0,0.0
+magnitude,Savings + loan,USER_00040,0,0.0,0.0
+magnitude,Savings + loan,USER_00045,0,0.0,0.23625715317830642
+magnitude,Savings + loan,USER_00046,0,0.0,0.04285807807855627
+magnitude,Savings + loan,USER_00054,0,0.0,0.0
+magnitude,Savings + loan,USER_00071,1,24149.97068148212,0.08640953145883488
+magnitude,Savings + loan,USER_00074,0,0.0,0.0
+magnitude,Savings + loan,USER_00077,0,0.0,0.03778563132726389
+magnitude,Savings + loan,USER_00078,2,300000.0,0.6781004686058761
+magnitude,Savings + loan,USER_00081,2,66918.92407655992,0.16460849468708735
+magnitude,Savings + loan,USER_00084,0,0.0,0.13339421031114398
+magnitude,Savings + loan,USER_00091,1,9903.648752678157,0.35754864935330793
+magnitude,Savings only + max loan,USER_00001,2,173164.51938753415,0.11272305241122627
+magnitude,Savings only + max loan,USER_00005,1,107532.91504986199,0.20178578253423374
+magnitude,Savings only + max loan,USER_00011,1,43784.749761600026,1.0
+magnitude,Savings only + max loan,USER_00013,0,0.0,0.0
+magnitude,Savings only + max loan,USER_00019,2,31134.23688380263,0.40961755679204587
+magnitude,Savings only + max loan,USER_00023,2,58529.126539629964,0.06567269667195914
+magnitude,Savings only + max loan,USER_00031,0,0.0,0.0
+magnitude,Savings only + max loan,USER_00032,2,109499.73253448498,0.39057454977130895
+magnitude,Savings only + max loan,USER_00034,0,0.0,0.0
+magnitude,Savings only + max loan,USER_00040,0,0.0,0.0
+magnitude,Savings only + max loan,USER_00045,0,0.0,0.23625715317830642
+magnitude,Savings only + max loan,USER_00046,0,0.0,0.04285807807855627
+magnitude,Savings only + max loan,USER_00054,0,0.0,0.0
+magnitude,Savings only + max loan,USER_00071,1,24149.97068148212,0.08640953145883488
+magnitude,Savings only + max loan,USER_00074,0,0.0,0.0
+magnitude,Savings only + max loan,USER_00077,0,0.0,0.03778563132726389
+magnitude,Savings only + max loan,USER_00078,2,300000.0,0.6781004686058761
+magnitude,Savings only + max loan,USER_00081,2,66918.92407655992,0.16460849468708735
+magnitude,Savings only + max loan,USER_00084,0,0.0,0.13339421031114398
+magnitude,Savings only + max loan,USER_00091,1,9903.648752678157,0.35754864935330793
+magnitude,Loan request only,USER_00001,3,450000.0,0.035736212757838705
+magnitude,Loan request only,USER_00005,3,392565.98637417087,0.031048805355589956
+magnitude,Loan request only,USER_00011,1,89183.45163914491,0.2555091768124734
+magnitude,Loan request only,USER_00013,0,0.0,0.0
+magnitude,Loan request only,USER_00019,2,254235.01097897274,0.09189968329356588
+magnitude,Loan request only,USER_00023,3,450000.0,0.04971141549416071
+magnitude,Loan request only,USER_00031,0,0.0,0.0
+magnitude,Loan request only,USER_00032,3,450000.0,0.15113224812071216
+magnitude,Loan request only,USER_00034,0,0.0,0.0
+magnitude,Loan request only,USER_00040,0,0.0,0.0
+magnitude,Loan request only,USER_00045,2,155109.59687133177,0.02146585876301582
+magnitude,Loan request only,USER_00046,2,207475.8463174451,0.006003281559395444
+magnitude,Loan request only,USER_00054,0,0.0,0.0
+magnitude,Loan request only,USER_00071,3,338237.03008952294,0.08098746563052525
+magnitude,Loan request only,USER_00074,0,0.0,0.0
+magnitude,Loan request only,USER_00077,1,59280.74428351637,0.00973527109089241
+magnitude,Loan request only,USER_00078,3,450000.0,0.24532349407821544
+magnitude,Loan request only,USER_00081,2,274051.89630657673,0.07450722149287205
+magnitude,Loan request only,USER_00084,2,150296.49162267786,0.017443973202542398
+magnitude,Loan request only,USER_00091,3,450000.0,0.033241515040343644
+share,Savings + loan,USER_00001,2,173164.51938753415,0.11272305241122627
+share,Savings + loan,USER_00005,1,107532.91504986199,0.20178578253423374
+share,Savings + loan,USER_00011,1,43784.749761600026,1.0
+share,Savings + loan,USER_00013,0,0.0,0.0
+share,Savings + loan,USER_00019,2,31134.23688380263,0.40961755679204587
+share,Savings + loan,USER_00023,2,58529.126539629964,0.06567269667195914
+share,Savings + loan,USER_00031,0,0.0,0.0
+share,Savings + loan,USER_00032,2,109499.73253448494,0.3905745497713089
+share,Savings + loan,USER_00034,0,0.0,0.0
+share,Savings + loan,USER_00040,0,0.0,0.0
+share,Savings + loan,USER_00045,0,0.0,0.23625715317830642
+share,Savings + loan,USER_00046,0,0.0,0.04285807807855627
+share,Savings + loan,USER_00054,0,0.0,0.0
+share,Savings + loan,USER_00071,1,24149.97068148212,0.08640953145883488
+share,Savings + loan,USER_00074,0,0.0,0.0
+share,Savings + loan,USER_00077,0,0.0,0.03778563132726389
+share,Savings + loan,USER_00078,2,300000.0,0.6781004686058761
+share,Savings + loan,USER_00081,2,66918.92407655992,0.16460849468708735
+share,Savings + loan,USER_00084,0,0.0,0.13339421031114398
+share,Savings + loan,USER_00091,1,9903.648752678157,0.35754864935330793
+share,Savings only + max loan,USER_00001,2,173164.51938753415,0.11272305241122627
+share,Savings only + max loan,USER_00005,1,107532.91504986199,0.20178578253423374
+share,Savings only + max loan,USER_00011,1,43784.749761600026,1.0
+share,Savings only + max loan,USER_00013,0,0.0,0.0
+share,Savings only + max loan,USER_00019,2,31134.23688380263,0.40961755679204587
+share,Savings only + max loan,USER_00023,2,58529.126539629964,0.06567269667195914
+share,Savings only + max loan,USER_00031,0,0.0,0.0
+share,Savings only + max loan,USER_00032,2,109499.73253448494,0.3905745497713089
+share,Savings only + max loan,USER_00034,0,0.0,0.0
+share,Savings only + max loan,USER_00040,0,0.0,0.0
+share,Savings only + max loan,USER_00045,0,0.0,0.23625715317830642
+share,Savings only + max loan,USER_00046,0,0.0,0.04285807807855627
+share,Savings only + max loan,USER_00054,0,0.0,0.0
+share,Savings only + max loan,USER_00071,1,24149.97068148212,0.08640953145883488
+share,Savings only + max loan,USER_00074,0,0.0,0.0
+share,Savings only + max loan,USER_00077,0,0.0,0.03778563132726389
+share,Savings only + max loan,USER_00078,2,300000.0,0.6781004686058761
+share,Savings only + max loan,USER_00081,2,66918.92407655992,0.16460849468708735
+share,Savings only + max loan,USER_00084,0,0.0,0.13339421031114398
+share,Savings only + max loan,USER_00091,1,9903.648752678157,0.35754864935330793
+share,Loan request only,USER_00001,3,450000.0,0.035736212757838705
+share,Loan request only,USER_00005,3,392565.98637417087,0.031048805355589956
+share,Loan request only,USER_00011,1,89183.45163914491,0.2555091768124734
+share,Loan request only,USER_00013,0,0.0,0.0
+share,Loan request only,USER_00019,2,254235.01097897274,0.09189968329356588
+share,Loan request only,USER_00023,3,450000.0,0.04971141549416071
+share,Loan request only,USER_00031,0,0.0,0.0
+share,Loan request only,USER_00032,3,450000.0,0.15113224812071216
+share,Loan request only,USER_00034,0,0.0,0.0
+share,Loan request only,USER_00040,0,0.0,0.0
+share,Loan request only,USER_00045,2,155109.59687133177,0.02146585876301582
+share,Loan request only,USER_00046,2,207475.8463174451,0.006003281559395444
+share,Loan request only,USER_00054,0,0.0,0.0
+share,Loan request only,USER_00071,3,338237.03008952294,0.08098746563052525
+share,Loan request only,USER_00074,0,0.0,0.0
+share,Loan request only,USER_00077,1,59280.74428351637,0.00973527109089241
+share,Loan request only,USER_00078,3,450000.0,0.24532349407821544
+share,Loan request only,USER_00081,2,274051.89630657673,0.07450722149287205
+share,Loan request only,USER_00084,2,150296.49162267786,0.017443973202542398
+share,Loan request only,USER_00091,3,450000.0,0.033241515040343644
